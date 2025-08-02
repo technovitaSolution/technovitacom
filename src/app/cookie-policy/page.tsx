@@ -129,10 +129,10 @@ const CookiePolicy: React.FC = () => {
                 Most web browsers automatically accept cookies, but you can modify your browser settings to decline cookies if you prefer. Here's how to manage cookies in popular browsers:
               </p>
               <ul className="list-disc list-inside text-gray-700 mb-4 space-y-2">
-                <li><strong>Chrome:</strong> Settings > Privacy and Security > Cookies and other site data</li>
-                <li><strong>Firefox:</strong> Options > Privacy & Security > Cookies and Site Data</li>
-                <li><strong>Safari:</strong> Preferences > Privacy > Cookies and website data</li>
-                <li><strong>Edge:</strong> Settings > Cookies and site permissions</li>
+                <li><strong>Chrome:</strong> Settings &gt; Privacy and Security &gt; Cookies and other site data</li>
+                <li><strong>Firefox:</strong> Options &gt; Privacy &amp; Security &gt; Cookies and Site Data</li>
+                <li><strong>Safari:</strong> Preferences &gt; Privacy &gt; Cookies and website data</li>
+                <li><strong>Edge:</strong> Settings &gt; Cookies and site permissions</li>
               </ul>
 
               <h3 className="text-xl font-medium text-gray-900 mb-3">6.2 Opt-Out Tools</h3>

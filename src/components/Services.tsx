@@ -219,7 +219,7 @@ const Services: React.FC = () => {
           
           <div className="bg-white rounded-2xl shadow-lg p-8">
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 items-center justify-items-center">
-              {['Amazon', 'Flipkart', 'Myntra', 'Nykaa', 'Ajio', 'Meesho', 'Paytm', 'Shopee', 'eBay'].map((platform, index) => (
+              {['Amazon', 'Flipkart', 'Myntra', 'Nykaa', 'Ajio', 'Meesho', 'Paytm', 'Shopee', 'eBay'].map((platform) => (
                 <div 
                   key={platform} 
                   className="flex items-center justify-center p-4 bg-gray-50 rounded-lg hover:bg-pink-50 transition-colors duration-200 min-w-[120px]"
