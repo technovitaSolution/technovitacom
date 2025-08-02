@@ -1,0 +1,194 @@
+---
+alwaysApply: true
+---
+# Next.js Development Rules for Cursor AI
+
+## Project Structure & Organization
+- Use App Router (app directory) for all new projects
+- Organize components in feature-based folders under `/components`
+- Keep utilities in `/lib` directory
+- Store types in `/types` directory
+- Use `/public` for static assets with optimized file names
+- Create `/hooks` for custom React hooks
+- Implement `/constants` for application constants
+
+## Performance Optimization Rules
+
+### Images & Assets
+- Always use `next/image` component instead of HTML `<img>` tags
+- Implement `priority` prop for above-the-fold images
+- Use `loading="lazy"` for images below the fold
+- Optimize image formats: prefer WebP/AVIF over JPEG/PNG
+- Include `alt` attributes for accessibility and SEO
+- Use `fill` prop with proper container positioning for responsive images
+- Implement `placeholder="blur"` with `blurDataURL` for better UX
+
+### Code Splitting & Lazy Loading
+- Use dynamic imports with `next/dynamic` for heavy components
+- Implement lazy loading for components not immediately visible
+- Split large pages into smaller components
+- Use `React.lazy()` and `Suspense` for client-side code splitting
+- Avoid importing entire libraries; use tree-shaking friendly imports
+
+### Bundle Optimization
+- Always analyze bundle size with `@next/bundle-analyzer`
+- Use `import` statements at the top level only
+- Implement barrel exports carefully to avoid large bundle sizes
+- Use `next/dynamic` with `ssr: false` for client-only components
+- Prefer ES modules over CommonJS when possible
+
+## SEO Best Practices
+
+### Metadata Implementation
+- Use `generateMetadata` function for dynamic metadata
+- Include proper `title`, `description`, and `keywords`
+- Implement Open Graph tags for social media sharing
+- Add Twitter Card meta tags
+- Use canonical URLs to prevent duplicate content
+- Include proper `robots` meta tags
+- Implement structured data with JSON-LD when applicable
+
+### URL Structure
+- Use descriptive, SEO-friendly URLs in routing
+- Implement proper redirects for changed URLs
+- Use lowercase URLs with hyphens for word separation
+- Keep URLs under 60 characters when possible
+- Implement breadcrumb navigation
+
+## TypeScript Best Practices
+- Use strict TypeScript configuration
+- Define interfaces for all props and API responses
+- Use proper typing for async functions and promises
+- Implement generic types where applicable
+- Use `const assertions` for immutable data
+- Prefer `interface` over `type` for object shapes
+- Use utility types (`Pick`, `Omit`, `Partial`) effectively
+
+## Component Architecture
+
+### React Server Components (RSC)
+- Use Server Components by default for static content
+- Add "use client" directive only when necessary
+- Keep client components small and focused
+- Pass serializable data from Server to Client components
+- Use Server Components for data fetching when possible
+
+### Component Design
+- Keep components pure and functional when possible
+- Use custom hooks for complex state logic
+- Implement proper error boundaries
+- Use React.memo() for expensive re-renders
+- Follow single responsibility principle
+- Implement proper prop validation with TypeScript
+
+## State Management
+- Use built-in React state (useState, useReducer) for local state
+- Implement Zustand or Context API for global state
+- Avoid prop drilling; use proper state lifting
+- Use SWR or TanStack Query for server state management
+- Implement optimistic updates for better UX
+
+## Data Fetching Best Practices
+- Use Server Components for initial data loading
+- Implement proper loading states and error handling
+- Use `fetch` with Next.js caching strategies
+- Implement incremental static regeneration (ISR) when appropriate
+- Use `unstable_cache` for expensive computations
+- Handle race conditions in data fetching
+
+## CSS & Styling Rules
+- Use CSS Modules or Tailwind CSS for styling
+- Implement mobile-first responsive design
+- Use CSS custom properties for theme values
+- Avoid inline styles; prefer CSS classes
+- Implement proper CSS organization and naming conventions
+- Use `clsx` or `cn` utility for conditional classes
+
+## Error Handling & Monitoring
+- Implement proper error boundaries for each route
+- Use `error.tsx` files for route-level error handling
+- Add proper try-catch blocks for async operations
+- Implement proper logging for production errors
+- Use `notFound()` function for 404 scenarios
+- Handle network errors gracefully
+
+## Security Best Practices
+- Sanitize user inputs and API responses
+- Use environment variables for sensitive data
+- Implement proper CORS policies
+- Use HTTPS in production
+- Validate API inputs server-side
+- Implement rate limiting for API routes
+
+## API Routes Best Practices
+- Use proper HTTP methods (GET, POST, PUT, DELETE)
+- Implement proper status codes and error responses
+- Use middleware for common functionality
+- Validate request data with schemas (Zod recommended)
+- Implement proper authentication and authorization
+- Use edge runtime when possible for better performance
+
+## Code Quality Rules
+- Use ESLint with Next.js recommended configuration
+- Implement Prettier for consistent code formatting
+- Use meaningful variable and function names
+- Write self-documenting code with proper comments
+- Follow consistent naming conventions (camelCase, PascalCase)
+- Keep functions small and focused (max 20-30 lines)
+
+## Testing Guidelines
+- Write unit tests for utility functions
+- Implement integration tests for API routes
+- Use React Testing Library for component testing
+- Test error scenarios and edge cases
+- Maintain minimum 80% test coverage
+- Use MSW for API mocking in tests
+
+## Environment & Deployment
+- Use proper environment variables configuration
+- Implement different configs for dev/staging/production
+- Use `next.config.js` for build optimizations
+- Implement proper CI/CD pipelines
+- Use static generation where possible
+- Monitor Core Web Vitals in production
+
+## Accessibility (a11y) Rules
+- Use semantic HTML elements
+- Implement proper ARIA attributes
+- Ensure keyboard navigation works properly
+- Use proper color contrast ratios
+- Include focus indicators for interactive elements
+- Test with screen readers
+
+## File Naming Conventions
+- Use kebab-case for file and folder names
+- Use PascalCase for React component files
+- Use camelCase for utility functions and hooks
+- Include file extensions in imports
+- Use descriptive file names that indicate purpose
+
+## Git & Version Control
+- Use conventional commit messages
+- Create feature branches for new functionality
+- Keep commits small and focused
+- Use proper branch naming conventions
+- Include proper pull request descriptions
+- Tag releases properly
+
+## Performance Monitoring
+- Implement Core Web Vitals tracking
+- Monitor bundle sizes in CI/CD
+- Use Lighthouse CI for performance testing
+- Track real user metrics (RUM)
+- Monitor API response times
+- Implement proper caching strategies
+
+## Documentation Requirements
+- Document complex business logic
+- Include README with setup instructions
+- Document API endpoints and their usage
+- Include component prop documentation
+- Maintain changelog for releases
+- Document deployment procedures
+
+Remember: These rules should be applied consistently throughout the project to ensure optimal performance, maintainability, and SEO for technovitasolution.com
