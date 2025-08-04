@@ -256,9 +256,7 @@ const Navbar: React.FC = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
-            <Link href="/pricing" className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200">
-              Pricing
-            </Link>
+
             
             {/* Services Dropdown */}
             <div 
@@ -367,15 +365,13 @@ const Navbar: React.FC = () => {
                       className="inline-flex items-center justify-center w-full px-3 py-2 text-sm font-medium text-white bg-blue-600 rounded-md hover:bg-blue-700 transition-colors duration-200"
                     >
                       Get Expert Help
-                    </Link>
+            </Link>
                   </div>
                 </div>
               )}
             </div>
 
-            <Link href="/portfolio" className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200">
-              Portfolio
-            </Link>
+
             <Link href="/about-us" className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200">
               About Us
             </Link>
@@ -406,9 +402,7 @@ const Navbar: React.FC = () => {
         {isMobileMenuOpen && (
           <div className="lg:hidden border-t border-gray-200 py-4 bg-white">
             <div className="px-4 space-y-4">
-              <Link href="/pricing" className="block text-gray-700 hover:text-blue-600 font-medium py-2">
-                Pricing
-              </Link>
+
               
               {/* Mobile Services Menu */}
               <div>
@@ -433,7 +427,7 @@ const Navbar: React.FC = () => {
                           className="block text-sm text-gray-600 hover:text-pink-600 py-1"
                         >
                           {item.title}
-                        </Link>
+              </Link>
                       ))}
                     </div>
                     <div>
@@ -445,7 +439,7 @@ const Navbar: React.FC = () => {
                           className="block text-sm text-gray-600 hover:text-pink-600 py-1"
                         >
                           {item.title}
-                        </Link>
+              </Link>
                       ))}
                     </div>
                   </div>
@@ -490,9 +484,7 @@ const Navbar: React.FC = () => {
                 )}
               </div>
 
-              <Link href="/portfolio" className="block text-gray-700 hover:text-blue-600 font-medium py-2">
-                Portfolio
-              </Link>
+
               <Link href="/about-us" className="block text-gray-700 hover:text-blue-600 font-medium py-2">
                 About Us
               </Link>
