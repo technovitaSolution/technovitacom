@@ -16,14 +16,14 @@ const MenuItem: React.FC<MenuItemProps> = ({ icon, title, description, href, bad
     href={href}
     className="flex items-start space-x-3 p-3 rounded-lg hover:bg-gray-50 transition-colors duration-200 group"
   >
-    <div className="flex-shrink-0 w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center group-hover:bg-blue-600 transition-colors duration-200">
-      <div className="text-blue-600 group-hover:text-white transition-colors duration-200">
+    <div className="flex-shrink-0 w-10 h-10 bg-pink-100 rounded-lg flex items-center justify-center group-hover:bg-pink-600 transition-colors duration-200">
+      <div className="text-pink-600 group-hover:text-white transition-colors duration-200">
         {icon}
       </div>
     </div>
     <div className="flex-1 min-w-0">
       <div className="flex items-center space-x-2">
-        <h4 className="text-sm font-semibold text-gray-900 group-hover:text-blue-600 transition-colors duration-200">
+        <h4 className="text-sm font-semibold text-gray-900 group-hover:text-pink-600 transition-colors duration-200">
           {title}
         </h4>
         {badge && (
@@ -44,53 +44,122 @@ const MenuItem: React.FC<MenuItemProps> = ({ icon, title, description, href, bad
 
 const Navbar: React.FC = () => {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const [isCalculatorsOpen, setIsCalculatorsOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const dropdownRef = useRef<HTMLDivElement>(null);
-  const timeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
+  const [isMobileCalculatorsOpen, setIsMobileCalculatorsOpen] = useState(false);
+  const servicesDropdownRef = useRef<HTMLDivElement>(null);
+  const calculatorsDropdownRef = useRef<HTMLDivElement>(null);
+  const servicesTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const calculatorsTimeoutRef = useRef<NodeJS.Timeout | null>(null);
 
-  const handleMouseEnter = () => {
-    if (timeoutRef.current) {
-      clearTimeout(timeoutRef.current);
+  const handleServicesMouseEnter = () => {
+    if (servicesTimeoutRef.current) {
+      clearTimeout(servicesTimeoutRef.current);
     }
     setIsServicesOpen(true);
+    setIsCalculatorsOpen(false);
   };
 
-  const handleMouseLeave = () => {
-    timeoutRef.current = setTimeout(() => {
+  const handleServicesMouseLeave = () => {
+    servicesTimeoutRef.current = setTimeout(() => {
       setIsServicesOpen(false);
+    }, 150);
+  };
+
+  const handleCalculatorsMouseEnter = () => {
+    if (calculatorsTimeoutRef.current) {
+      clearTimeout(calculatorsTimeoutRef.current);
+    }
+    setIsCalculatorsOpen(true);
+    setIsServicesOpen(false);
+  };
+
+  const handleCalculatorsMouseLeave = () => {
+    calculatorsTimeoutRef.current = setTimeout(() => {
+      setIsCalculatorsOpen(false);
     }, 150);
   };
 
   useEffect(() => {
     return () => {
-      if (timeoutRef.current) {
-        clearTimeout(timeoutRef.current);
+      if (servicesTimeoutRef.current) {
+        clearTimeout(servicesTimeoutRef.current);
+      }
+      if (calculatorsTimeoutRef.current) {
+        clearTimeout(calculatorsTimeoutRef.current);
       }
     };
   }, []);
 
-  const servicesMenuItems = [
-    // E-COMMERCE
-    {
-      icon: (
-        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
-        </svg>
-      ),
-      title: "E-commerce Store Setup",
-      description: "Complete online store creation and optimization on all platforms",
-      href: "/services/ecommerce-setup",
-      badge: "POPULAR" as const
-    },
+  // E-Commerce Core Services
+  const coreServicesMenuItems = [
     {
       icon: (
         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
         </svg>
       ),
-      title: "Catalogue Creation",
-      description: "Professional product catalogues and inventory management",
-      href: "/services/catalogue-creation"
+      title: "Catalogue Services",
+      description: "Professional product listing and attribute enrichment",
+      href: "/services/catalogue-services",
+      badge: "POPULAR" as const
+    },
+    {
+      icon: (
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+        </svg>
+      ),
+      title: "Account Management",
+      description: "Full-scale account management solutions for your stores",
+      href: "/services/account-management",
+      badge: "HOT" as const
+    },
+    {
+      icon: (
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
+        </svg>
+      ),
+      title: "Account Creation",
+      description: "End-to-end seller account setup on major platforms",
+      href: "/services/account-creation"
+    },
+    {
+      icon: (
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+        </svg>
+      ),
+      title: "Sales Boost",
+      description: "Data-driven strategies to increase visibility and sales",
+      href: "/services/sales-boost",
+      badge: "NEW" as const
+    }
+  ];
+
+  // Additional Services
+  const additionalServicesMenuItems = [
+    {
+      icon: (
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      ),
+      title: "Seller Registration",
+      description: "Simplified seller registration and verification process",
+      href: "/services/seller-registration"
+    },
+    {
+      icon: (
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+        </svg>
+      ),
+      title: "Onboarding Services",
+      description: "Dedicated guidance and platform-specific training",
+      href: "/services/onboarding-services"
     },
     {
       icon: (
@@ -99,103 +168,79 @@ const Navbar: React.FC = () => {
         </svg>
       ),
       title: "Content Writing",
-      description: "Engaging product descriptions and marketing content",
-      href: "/services/content-writing",
-      badge: "NEW" as const
+      description: "SEO-optimized product descriptions and brand pages",
+      href: "/services/content-writing"
     },
     {
       icon: (
         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192L5.636 18.364M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
         </svg>
       ),
-      title: "Brand Development",
-      description: "Build and nurture your preferred brand identity",
-      href: "/services/brand-development"
+      title: "Website Development",
+      description: "Custom eCommerce websites with marketplace integration",
+      href: "/services/website-development"
     }
   ];
 
-  const digitalMarketingMenuItems = [
+  // Seller Calculators Menu Items
+  const calculatorsMenuItems = [
     {
       icon: (
         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
         </svg>
       ),
-      title: "Digital Marketing",
-      description: "Comprehensive online marketing strategies and campaigns",
-      href: "/services/digital-marketing",
+      title: "Amazon Calculator",
+      description: "Calculate fees, profits and pricing for Amazon marketplace",
+      href: "https://sellerguide.technovitasolution.in/calculator/amazon",
       badge: "POPULAR" as const
     },
     {
       icon: (
         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
         </svg>
       ),
-      title: "SEO Optimization",
-      description: "Improve your online visibility and search rankings",
-      href: "/services/seo-optimization"
-    },
-    {
-      icon: (
-        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" />
-        </svg>
-      ),
-      title: "Social Media Management",
-      description: "Engage your audience across all social platforms",
-      href: "/services/social-media",
+      title: "Flipkart Calculator",
+      description: "Determine commission fees and profit margins for Flipkart",
+      href: "https://sellerguide.technovitasolution.in/calculator/flipkart",
       badge: "HOT" as const
-    }
-  ];
-
-  const advertisingMenuItems = [
-    {
-      icon: (
-        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
-        </svg>
-      ),
-      title: "Paid Advertising",
-      description: "Google Ads, Facebook Ads, and targeted campaigns",
-      href: "/services/paid-advertising"
     },
     {
       icon: (
         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
         </svg>
       ),
-      title: "Video Marketing",
-      description: "Engaging video content and promotional campaigns",
-      href: "/services/video-marketing",
+      title: "Myntra Calculator",
+      description: "Fashion marketplace fee calculator and profit analyzer",
+      href: "https://sellerguide.technovitasolution.in/calculator/myntra"
+    },
+    {
+      icon: (
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+        </svg>
+      ),
+      title: "Ajio Calculator",
+      description: "Calculate selling fees and revenues for Ajio platform",
+      href: "https://sellerguide.technovitasolution.in/calculator/ajio"
+    },
+    {
+      icon: (
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+        </svg>
+      ),
+      title: "Blinkit Calculator",
+      description: "Quick commerce fee calculator for instant delivery",
+      href: "https://sellerguide.technovitasolution.in/blinkit-seller-calculator-commissions",
       badge: "NEW" as const
     }
   ];
 
-  const businessGrowthMenuItems = [
-    {
-      icon: (
-        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-        </svg>
-      ),
-      title: "Business Strategy",
-      description: "Growth planning and market expansion strategies",
-      href: "/services/business-strategy"
-    },
-    {
-      icon: (
-        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-        </svg>
-      ),
-      title: "Performance Analytics",
-      description: "Track and optimize your business performance",
-      href: "/services/performance-analytics"
-    }
-  ];
+
 
   return (
     <nav className="bg-white border-b border-gray-200 sticky top-0 z-50">
@@ -218,8 +263,8 @@ const Navbar: React.FC = () => {
             {/* Services Dropdown */}
             <div 
               className="relative"
-              onMouseEnter={handleMouseEnter}
-              onMouseLeave={handleMouseLeave}
+              onMouseEnter={handleServicesMouseEnter}
+              onMouseLeave={handleServicesMouseLeave}
             >
               <button className="flex items-center space-x-1 text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200">
                 <span>Services</span>
@@ -228,67 +273,47 @@ const Navbar: React.FC = () => {
                 </svg>
               </button>
 
-              {/* Mega Menu */}
+              {/* Services Mega Menu */}
               {isServicesOpen && (
                 <div 
-                  ref={dropdownRef}
+                  ref={servicesDropdownRef}
                   className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-[900px] bg-white rounded-xl shadow-2xl border border-gray-200 p-6"
                   style={{ top: '100%' }}
                 >
-                  <div className="grid grid-cols-4 gap-6">
-                    {/* E-commerce Column */}
+                  <div className="grid grid-cols-2 gap-8">
+                    {/* Core E-Commerce Services */}
                     <div>
-                      <h3 className="text-sm font-semibold text-gray-900 mb-4 uppercase tracking-wide">E-commerce</h3>
+                      <h3 className="text-sm font-semibold text-pink-600 mb-4 uppercase tracking-wide">Core E-Commerce Services</h3>
                       <div className="space-y-1">
-                        {servicesMenuItems.map((item, index) => (
+                        {coreServicesMenuItems.map((item, index) => (
                           <MenuItem key={index} {...item} />
                         ))}
                       </div>
                     </div>
 
-                    {/* Digital Marketing Column */}
+                    {/* Additional Services */}
                     <div>
-                      <h3 className="text-sm font-semibold text-gray-900 mb-4 uppercase tracking-wide">Digital Marketing</h3>
+                      <h3 className="text-sm font-semibold text-pink-600 mb-4 uppercase tracking-wide">Additional Services</h3>
                       <div className="space-y-1">
-                        {digitalMarketingMenuItems.map((item, index) => (
-                          <MenuItem key={index} {...item} />
-                        ))}
-                      </div>
-                    </div>
-
-                    {/* Advertising Column */}
-                    <div>
-                      <h3 className="text-sm font-semibold text-gray-900 mb-4 uppercase tracking-wide">Advertising</h3>
-                      <div className="space-y-1">
-                        {advertisingMenuItems.map((item, index) => (
-                          <MenuItem key={index} {...item} />
-                        ))}
-                      </div>
-                    </div>
-
-                    {/* Business Growth Column */}
-                    <div>
-                      <h3 className="text-sm font-semibold text-gray-900 mb-4 uppercase tracking-wide">Business Growth</h3>
-                      <div className="space-y-1">
-                        {businessGrowthMenuItems.map((item, index) => (
+                        {additionalServicesMenuItems.map((item, index) => (
                           <MenuItem key={index} {...item} />
                         ))}
                       </div>
                       
                       {/* CTA Section */}
-                      <div className="mt-6 p-4 bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg border border-blue-100">
+                      <div className="mt-6 p-4 bg-gradient-to-r from-pink-50 to-purple-50 rounded-lg border border-pink-100">
                         <div className="flex items-center space-x-2 mb-2">
-                          <svg className="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <svg className="w-5 h-5 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                           </svg>
                           <h4 className="text-sm font-semibold text-gray-900">Free Consultation</h4>
                         </div>
                         <p className="text-xs text-gray-600 mb-3">Get expert advice for your project</p>
                         <Link 
-                          href="/contact"
-                          className="inline-flex items-center justify-center w-full px-3 py-2 text-sm font-medium text-white bg-blue-600 rounded-md hover:bg-blue-700 transition-colors duration-200"
+                          href="#seller-application"
+                          className="inline-flex items-center justify-center w-full px-3 py-2 text-sm font-medium text-white bg-pink-600 rounded-md hover:bg-pink-700 transition-colors duration-200"
                         >
-                          Book Now
+                          Get Started
                         </Link>
                       </div>
                     </div>
@@ -297,11 +322,62 @@ const Navbar: React.FC = () => {
               )}
             </div>
 
+            {/* Seller Calculators Dropdown */}
+            <div 
+              className="relative"
+              onMouseEnter={handleCalculatorsMouseEnter}
+              onMouseLeave={handleCalculatorsMouseLeave}
+            >
+              <button className="flex items-center space-x-1 text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200">
+                <span>Seller Calculators</span>
+                <svg className={`w-4 h-4 transition-transform duration-200 ${isCalculatorsOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+
+              {/* Calculators Menu */}
+              {isCalculatorsOpen && (
+                <div 
+                  ref={calculatorsDropdownRef}
+                  className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-[600px] bg-white rounded-xl shadow-2xl border border-gray-200 p-6"
+                  style={{ top: '100%' }}
+                >
+                  <div className="mb-4">
+                    <h3 className="text-lg font-bold text-gray-900 mb-2">Marketplace Fee Calculators</h3>
+                    <p className="text-sm text-gray-600">Calculate your selling fees and profit margins across different platforms</p>
+                  </div>
+                  
+                  <div className="grid grid-cols-1 gap-2">
+                    {calculatorsMenuItems.map((item, index) => (
+                      <MenuItem key={index} {...item} />
+                    ))}
+                  </div>
+                  
+                  {/* Calculator CTA */}
+                  <div className="mt-6 p-4 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg border border-blue-100">
+                    <div className="flex items-center space-x-2 mb-2">
+                      <svg className="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                      </svg>
+                      <h4 className="text-sm font-semibold text-gray-900">Need Help with Pricing?</h4>
+                    </div>
+                    <p className="text-xs text-gray-600 mb-3">Get personalized pricing strategies from our experts</p>
+                    <Link 
+                      href="#seller-application"
+                      className="inline-flex items-center justify-center w-full px-3 py-2 text-sm font-medium text-white bg-blue-600 rounded-md hover:bg-blue-700 transition-colors duration-200"
+                    >
+                      Get Expert Help
+                    </Link>
+                  </div>
+                </div>
+              )}
+            </div>
+
             <Link href="/portfolio" className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200">
               Portfolio
             </Link>
-            <Link href="/about" className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200">
-              About
+            <Link href="/about-us" className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200">
+              About Us
             </Link>
             <Link href="/contact" className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200">
               Contact
@@ -328,23 +404,111 @@ const Navbar: React.FC = () => {
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden border-t border-gray-200 py-4">
-            <div className="space-y-4">
-              <Link href="/pricing" className="block text-gray-700 hover:text-blue-600 font-medium">
+          <div className="lg:hidden border-t border-gray-200 py-4 bg-white">
+            <div className="px-4 space-y-4">
+              <Link href="/pricing" className="block text-gray-700 hover:text-blue-600 font-medium py-2">
                 Pricing
               </Link>
-              <Link href="/services" className="block text-gray-700 hover:text-blue-600 font-medium">
-                Services
-              </Link>
-              <Link href="/portfolio" className="block text-gray-700 hover:text-blue-600 font-medium">
+              
+              {/* Mobile Services Menu */}
+              <div>
+                <button 
+                  onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
+                  className="flex items-center justify-between w-full text-gray-700 hover:text-blue-600 font-medium py-2"
+                >
+                  <span>Services</span>
+                  <svg className={`w-4 h-4 transition-transform duration-200 ${isMobileServicesOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                
+                {isMobileServicesOpen && (
+                  <div className="mt-2 pl-4 space-y-3 border-l-2 border-pink-100">
+                    <div>
+                      <h4 className="text-sm font-semibold text-pink-600 mb-2">Core Services</h4>
+                      {coreServicesMenuItems.map((item, index) => (
+                        <Link 
+                          key={index}
+                          href={item.href}
+                          className="block text-sm text-gray-600 hover:text-pink-600 py-1"
+                        >
+                          {item.title}
+                        </Link>
+                      ))}
+                    </div>
+                    <div>
+                      <h4 className="text-sm font-semibold text-pink-600 mb-2">Additional Services</h4>
+                      {additionalServicesMenuItems.slice(0, 3).map((item, index) => (
+                        <Link 
+                          key={index}
+                          href={item.href}
+                          className="block text-sm text-gray-600 hover:text-pink-600 py-1"
+                        >
+                          {item.title}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+
+              {/* Mobile Calculators Menu */}
+              <div>
+                <button 
+                  onClick={() => setIsMobileCalculatorsOpen(!isMobileCalculatorsOpen)}
+                  className="flex items-center justify-between w-full text-gray-700 hover:text-blue-600 font-medium py-2"
+                >
+                  <span>Seller Calculators</span>
+                  <svg className={`w-4 h-4 transition-transform duration-200 ${isMobileCalculatorsOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                
+                {isMobileCalculatorsOpen && (
+                  <div className="mt-2 pl-4 space-y-2 border-l-2 border-blue-100">
+                    {calculatorsMenuItems.map((item, index) => (
+                      <a 
+                        key={index}
+                        href={item.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center space-x-2 text-sm text-gray-600 hover:text-blue-600 py-1"
+                      >
+                        <span>{item.title}</span>
+                        {item.badge && (
+                          <span className={`px-1.5 py-0.5 text-xs font-medium rounded-full ${
+                            item.badge === 'NEW' ? 'bg-green-100 text-green-800' :
+                            item.badge === 'POPULAR' ? 'bg-purple-100 text-purple-800' :
+                            'bg-red-100 text-red-800'
+                          }`}>
+                            {item.badge}
+                          </span>
+                        )}
+                      </a>
+                    ))}
+                  </div>
+                )}
+              </div>
+
+              <Link href="/portfolio" className="block text-gray-700 hover:text-blue-600 font-medium py-2">
                 Portfolio
               </Link>
-              <Link href="/about" className="block text-gray-700 hover:text-blue-600 font-medium">
-                About
+              <Link href="/about-us" className="block text-gray-700 hover:text-blue-600 font-medium py-2">
+                About Us
               </Link>
-              <Link href="/contact" className="block text-gray-700 hover:text-blue-600 font-medium">
+              <Link href="/contact" className="block text-gray-700 hover:text-blue-600 font-medium py-2">
                 Contact
               </Link>
+              
+              {/* Mobile CTA */}
+              <div className="mt-6 pt-4 border-t border-gray-200">
+                <Link 
+                  href="#seller-application"
+                  className="block w-full text-center px-4 py-2 bg-pink-600 text-white rounded-lg hover:bg-pink-700 transition-colors duration-200 font-medium"
+                >
+                  Get Free Consultation
+                </Link>
+              </div>
             </div>
           </div>
         )}
