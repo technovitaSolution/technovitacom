@@ -4,19 +4,12 @@ import { FormData } from '@/types/form';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-export async function POST(request: NextRequest) {
-  try {
-    const { formData }: { formData: FormData } = await request.json();
 
-    // Validate required fields
-    if (!formData.fullName || !formData.mobileNumber) {
-      return NextResponse.json(
-        { success: false, message: 'Missing required fields' },
-        { status: 400 }
-      );
-    }
 
-    // Format the email content
+
+
+// Handler for consultation form submissions
+async function handleConsultationFormSubmission(formData: FormData) {
     const emailContent = `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f9fafb;">
         <div style="background-color: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
@@ -41,12 +34,12 @@ export async function POST(request: NextRequest) {
           </div>
           ` : ''}
 
-          ${formData.interestedPlatforms.length > 0 ? `
+        ${formData.interestedPlatforms && formData.interestedPlatforms.length > 0 ? `
           <div style="border-left: 4px solid #3b82f6; padding-left: 20px; margin-bottom: 25px;">
             <h2 style="color: #374151; font-size: 20px; margin: 0 0 15px 0;">Platform Interest</h2>
             <p style="margin: 8px 0; color: #4b5563;"><strong>Interested Platforms:</strong></p>
             <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px;">
-              ${formData.interestedPlatforms.map(platform => 
+            ${formData.interestedPlatforms.map((platform: string) => 
                 `<span style="background-color: #dbeafe; color: #1e40af; padding: 4px 12px; border-radius: 20px; font-size: 14px;">${platform}</span>`
               ).join('')}
             </div>
@@ -76,9 +69,8 @@ export async function POST(request: NextRequest) {
       </div>
     `;
 
-    // Send email using Resend
     const emailResponse = await resend.emails.send({
-      from: 'TechnoVita Solutions <onboarding@resend.dev>', // Replace with your verified domain
+    from: 'TechnoVita Solutions <onboarding@resend.dev>',
       to: ['technovitasolution@gmail.com'],
       subject: `New Business Growth Consultation Request - ${formData.fullName}`,
       html: emailContent,
@@ -98,6 +90,22 @@ export async function POST(request: NextRequest) {
       message: 'Application submitted successfully',
       emailId: emailResponse.data?.id
     });
+}
+
+export async function POST(request: NextRequest) {
+  try {
+    // Handle JSON data from consultation form
+    const { formData }: { formData: FormData } = await request.json();
+
+    // Validate required fields for consultation form
+    if (!formData.fullName || !formData.mobileNumber) {
+      return NextResponse.json(
+        { success: false, message: 'Missing required fields' },
+        { status: 400 }
+      );
+    }
+
+    return await handleConsultationFormSubmission(formData);
 
   } catch (error) {
     console.error('API error:', error);
