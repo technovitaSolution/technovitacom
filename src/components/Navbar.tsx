@@ -2,6 +2,7 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
+import WhatsAppButton from './WhatsAppButton';
 
 interface MenuItemProps {
   icon: React.ReactNode;
@@ -11,7 +12,45 @@ interface MenuItemProps {
   badge?: 'NEW' | 'POPULAR' | 'AI' | 'HOT';
 }
 
-const MenuItem: React.FC<MenuItemProps> = ({ icon, title, description, href, badge }) => (
+const MenuItem: React.FC<MenuItemProps> = ({ icon, title, description, href, badge }) => {
+  const isExternal = href.startsWith('http');
+  
+  if (isExternal) {
+    return (
+      <a 
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-start space-x-3 p-3 rounded-lg hover:bg-gray-50 transition-colors duration-200 group"
+      >
+        <div className="flex-shrink-0 w-10 h-10 bg-pink-100 rounded-lg flex items-center justify-center group-hover:bg-pink-600 transition-colors duration-200">
+          <div className="text-pink-600 group-hover:text-white transition-colors duration-200">
+            {icon}
+          </div>
+        </div>
+        <div className="flex-1 min-w-0">
+          <div className="flex items-center space-x-2">
+            <h4 className="text-sm font-semibold text-gray-900 group-hover:text-pink-600 transition-colors duration-200">
+              {title}
+            </h4>
+            {badge && (
+              <span className={`px-2 py-0.5 text-xs font-medium rounded-full ${
+                badge === 'NEW' ? 'bg-green-100 text-green-800' :
+                badge === 'POPULAR' ? 'bg-purple-100 text-purple-800' :
+                badge === 'AI' ? 'bg-blue-100 text-blue-800' :
+                'bg-red-100 text-red-800'
+              }`}>
+                {badge}
+              </span>
+            )}
+          </div>
+          <p className="text-xs text-gray-600 mt-1 leading-relaxed">{description}</p>
+        </div>
+      </a>
+    );
+  }
+
+  return (
   <Link 
     href={href}
     className="flex items-start space-x-3 p-3 rounded-lg hover:bg-gray-50 transition-colors duration-200 group"
@@ -41,6 +80,7 @@ const MenuItem: React.FC<MenuItemProps> = ({ icon, title, description, href, bad
     </div>
   </Link>
 );
+};
 
 const Navbar: React.FC = () => {
   const [isServicesOpen, setIsServicesOpen] = useState(false);
@@ -129,31 +169,6 @@ const Navbar: React.FC = () => {
     {
       icon: (
         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-        </svg>
-      ),
-      title: "Sales Boost",
-      description: "Data-driven strategies to increase visibility and sales",
-      href: "/services/sales-boost",
-      badge: "NEW" as const
-    }
-  ];
-
-  // Additional Services
-  const additionalServicesMenuItems = [
-    {
-      icon: (
-        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>
-      ),
-      title: "Seller Registration",
-      description: "Simplified seller registration and verification process",
-      href: "/services/seller-registration"
-    },
-    {
-      icon: (
-        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
         </svg>
       ),
@@ -164,22 +179,92 @@ const Navbar: React.FC = () => {
     {
       icon: (
         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
         </svg>
       ),
-      title: "Content Writing",
-      description: "SEO-optimized product descriptions and brand pages",
-      href: "/services/content-writing"
+      title: "Sales Boost",
+      description: "Data-driven strategies to increase visibility and sales",
+      href: "/services/sales-boost",
+      badge: "NEW" as const
+    }
+  ];
+
+  // International Amazon Marketplace Services
+  const internationalAmazonMenuItems = [
+    {
+      icon: (
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      ),
+      title: "Amazon Canada Seller Services",
+      description: "Complete Amazon Canada marketplace management",
+      href: "/services/amazon-canada-seller-services"
     },
+    {
+      icon: (
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      ),
+      title: "Amazon USA Seller Services",
+      description: "Expert Amazon US marketplace solutions",
+      href: "/services/amazon-usa-seller-services"
+    },
+    {
+      icon: (
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      ),
+      title: "Amazon UK Seller Services",
+      description: "Professional Amazon UK marketplace management",
+      href: "/services/amazon-uk-seller-services"
+    },
+    {
+      icon: (
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      ),
+      title: "Amazon Australia Seller Services",
+      description: "Complete Amazon Australia marketplace solutions",
+      href: "/services/amazon-australia-seller-services"
+    },
+    {
+      icon: (
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      ),
+      title: "Amazon UAE Seller Services",
+      description: "Expert Amazon UAE marketplace management",
+      href: "/services/amazon-uae-seller-services"
+    }
+  ];
+
+  // Additional Services
+  const additionalServicesMenuItems = [
     {
       icon: (
         <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
         </svg>
       ),
-      title: "Website Development",
+      title: "Ecommerce Website Development",
       description: "Custom eCommerce websites with marketplace integration",
-      href: "/services/website-development"
+      href: "https://www.technovitasolution.in/website-development-services/"
+    },
+    {
+      icon: (
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
+        </svg>
+      ),
+      title: "Ecommerce PhotoShoot Studio",
+      description: "Professional product photography and model shoots",
+      href: "https://www.technovitasolution.in/technovita-studio-services/"
     }
   ];
 
@@ -275,15 +360,25 @@ const Navbar: React.FC = () => {
               {isServicesOpen && (
                 <div 
                   ref={servicesDropdownRef}
-                  className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-[900px] bg-white rounded-xl shadow-2xl border border-gray-200 p-6"
+                  className="absolute left-1/2 transform -translate-x-1/2 mt-2 w-[1200px] bg-white rounded-xl shadow-2xl border border-gray-200 p-6"
                   style={{ top: '100%' }}
                 >
-                  <div className="grid grid-cols-2 gap-8">
+                  <div className="grid grid-cols-3 gap-8">
                     {/* Core E-Commerce Services */}
                     <div>
                       <h3 className="text-sm font-semibold text-pink-600 mb-4 uppercase tracking-wide">Core E-Commerce Services</h3>
                       <div className="space-y-1">
                         {coreServicesMenuItems.map((item, index) => (
+                          <MenuItem key={index} {...item} />
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* International Amazon Marketplace Services */}
+                    <div>
+                      <h3 className="text-sm font-semibold text-pink-600 mb-4 uppercase tracking-wide">International Amazon Marketplace Services</h3>
+                      <div className="space-y-1">
+                        {internationalAmazonMenuItems.map((item, index) => (
                           <MenuItem key={index} {...item} />
                         ))}
                       </div>
@@ -298,21 +393,49 @@ const Navbar: React.FC = () => {
                         ))}
                       </div>
                       
-                      {/* CTA Section */}
-                      <div className="mt-6 p-4 bg-gradient-to-r from-pink-50 to-purple-50 rounded-lg border border-pink-100">
-                        <div className="flex items-center space-x-2 mb-2">
-                          <svg className="w-5 h-5 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                      {/* Enhanced CTA Section */}
+                      <div className="mt-6 p-6 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 rounded-xl border border-purple-200 shadow-lg">
+                        <div className="text-center mb-4">
+                          <div className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-r from-pink-500 to-purple-600 rounded-full mb-3">
+                            <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                           </svg>
-                          <h4 className="text-sm font-semibold text-gray-900">Free Consultation</h4>
+                          </div>
+                          <h4 className="text-lg font-bold text-gray-900 mb-2">Ready to Grow Your Business?</h4>
+                          <p className="text-sm text-gray-600 mb-4">Get expert e-commerce solutions tailored to your needs</p>
                         </div>
-                        <p className="text-xs text-gray-600 mb-3">Get expert advice for your project</p>
-                        <Link 
-                          href="#seller-application"
-                          className="inline-flex items-center justify-center w-full px-3 py-2 text-sm font-medium text-white bg-pink-600 rounded-md hover:bg-pink-700 transition-colors duration-200"
-                        >
-                          Get Started
-                        </Link>
+                        
+                        <div className="space-y-3">
+                          {/* Call Button */}
+                          <a 
+                            href="tel:+917451073504"
+                            className="flex items-center justify-center w-full px-4 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-200 shadow-md hover:shadow-lg transform hover:scale-105"
+                          >
+                            <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                            </svg>
+                            Call Now
+                          </a>
+                          
+                          {/* WhatsApp Button */}
+                          <div className="w-full">
+                            <WhatsAppButton 
+                              serviceName="E-commerce Services" 
+                              className="w-full justify-center bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-200"
+                            />
+                          </div>
+                        </div>
+                        
+                        <div className="mt-4 pt-4 border-t border-purple-200">
+                          <p className="text-xs text-center text-gray-500">
+                            <span className="inline-flex items-center">
+                              <svg className="w-4 h-4 mr-1 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                              </svg>
+                              Free consultation & quote
+                            </span>
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -355,17 +478,20 @@ const Navbar: React.FC = () => {
                   <div className="mt-6 p-4 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg border border-blue-100">
                     <div className="flex items-center space-x-2 mb-2">
                       <svg className="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                       </svg>
-                      <h4 className="text-sm font-semibold text-gray-900">Need Help with Pricing?</h4>
+                      <h4 className="text-sm font-semibold text-gray-900">Maximize Your Profits!</h4>
                     </div>
-                    <p className="text-xs text-gray-600 mb-3">Get personalized pricing strategies from our experts</p>
+                    <p className="text-xs text-gray-600 mb-3">Get personalized pricing strategies & profit optimization from our experts</p>
                     <Link 
-                      href="#seller-application"
-                      className="inline-flex items-center justify-center w-full px-3 py-2 text-sm font-medium text-white bg-blue-600 rounded-md hover:bg-blue-700 transition-colors duration-200"
+                      href="/contact"
+                      className="inline-flex items-center justify-center w-full px-3 py-2 text-sm font-medium text-white bg-gradient-to-r from-blue-600 to-indigo-600 rounded-md hover:from-blue-700 hover:to-indigo-700 transition-all duration-200 shadow-md hover:shadow-lg transform hover:scale-105"
                     >
-                      Get Expert Help
-            </Link>
+                      <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                      </svg>
+                      Get Expert Help Now
+                    </Link>
                   </div>
                 </div>
               )}
@@ -417,7 +543,7 @@ const Navbar: React.FC = () => {
                 </button>
                 
                 {isMobileServicesOpen && (
-                  <div className="mt-2 pl-4 space-y-3 border-l-2 border-pink-100">
+                  <div className="mt-2 pl-4 space-y-3 border-l-2 border-pink-100 max-h-96 overflow-y-auto">
                     <div>
                       <h4 className="text-sm font-semibold text-pink-600 mb-2">Core Services</h4>
                       {coreServicesMenuItems.map((item, index) => (
@@ -431,8 +557,8 @@ const Navbar: React.FC = () => {
                       ))}
                     </div>
                     <div>
-                      <h4 className="text-sm font-semibold text-pink-600 mb-2">Additional Services</h4>
-                      {additionalServicesMenuItems.slice(0, 3).map((item, index) => (
+                      <h4 className="text-sm font-semibold text-pink-600 mb-2">International Amazon Services</h4>
+                      {internationalAmazonMenuItems.map((item, index) => (
                         <Link 
                           key={index}
                           href={item.href}
@@ -440,6 +566,20 @@ const Navbar: React.FC = () => {
                         >
                           {item.title}
               </Link>
+                      ))}
+                    </div>
+                    <div>
+                      <h4 className="text-sm font-semibold text-pink-600 mb-2">Additional Services</h4>
+                      {additionalServicesMenuItems.map((item, index) => (
+                        <a 
+                          key={index}
+                          href={item.href}
+                          target={item.href.startsWith('http') ? '_blank' : '_self'}
+                          rel={item.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                          className="block text-sm text-gray-600 hover:text-pink-600 py-1"
+                        >
+                          {item.title}
+                        </a>
                       ))}
                     </div>
                   </div>
