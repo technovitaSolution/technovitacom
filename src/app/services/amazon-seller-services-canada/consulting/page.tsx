@@ -350,6 +350,384 @@ export default function AmazonConsultingCanada() {
         </div>
       </section>
 
+      {/* Detailed Consulting Guide */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-6">Complete Guide to Amazon Canada Business Consulting</h2>
+            <p className="text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
+              Understanding the complexities of the Amazon.ca marketplace is crucial for Canadian sellers. Here's everything you need to know about strategic consulting for Amazon Canada success.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+            <div className="space-y-8">
+              <div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Understanding the Amazon Canada Marketplace</h3>
+                <p className="text-gray-700 mb-4">
+                  Amazon.ca represents a unique opportunity for sellers, with over 15.9 million monthly visitors and significantly less competition than Amazon.com. However, success requires understanding Canadian consumer behavior, regulatory requirements, and marketplace dynamics.
+                </p>
+                <p className="text-gray-700 mb-4">
+                  Our consulting services help you navigate these complexities by providing data-driven insights into Canadian market trends, consumer preferences, and competitive landscapes. We analyze your specific products and business model to identify the most profitable opportunities.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Strategic Business Planning for Amazon.ca</h3>
+                <p className="text-gray-700 mb-4">
+                  Successful Amazon Canada businesses require comprehensive strategic planning that addresses:
+                </p>
+                <ul className="list-disc pl-6 space-y-2 text-gray-700">
+                  <li>Market entry strategies tailored to Canadian consumers</li>
+                  <li>Product portfolio optimization for the Canadian market</li>
+                  <li>Pricing strategies that account for currency fluctuations and local competition</li>
+                  <li>Supply chain optimization for Canadian fulfillment</li>
+                  <li>Brand positioning strategies for Canadian audiences</li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Canadian Compliance and Regulatory Guidance</h3>
+                <p className="text-gray-700 mb-4">
+                  Operating on Amazon.ca requires compliance with various Canadian regulations:
+                </p>
+                <ul className="list-disc pl-6 space-y-2 text-gray-700">
+                  <li>GST/HST registration and tax collection requirements</li>
+                  <li>Canadian product safety standards and certifications</li>
+                  <li>Bilingual labeling requirements for consumer products</li>
+                  <li>Import/export regulations and customs procedures</li>
+                  <li>Consumer protection laws and return policies</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="space-y-8">
+              <div className="bg-indigo-50 p-8 rounded-2xl">
+                <h3 className="text-2xl font-bold text-indigo-800 mb-4">Consulting Methodology</h3>
+                <p className="text-indigo-700 mb-4">
+                  Our proven consulting methodology ensures comprehensive analysis and actionable recommendations:
+                </p>
+                <div className="space-y-3">
+                  <div className="flex items-start">
+                    <span className="flex-shrink-0 w-6 h-6 bg-indigo-600 text-white rounded-full flex items-center justify-center text-sm font-bold mr-3 mt-0.5">1</span>
+                    <p className="text-indigo-700 text-sm">Business Assessment & Current State Analysis</p>
+                  </div>
+                  <div className="flex items-start">
+                    <span className="flex-shrink-0 w-6 h-6 bg-indigo-600 text-white rounded-full flex items-center justify-center text-sm font-bold mr-3 mt-0.5">2</span>
+                    <p className="text-indigo-700 text-sm">Canadian Market Research & Competitive Analysis</p>
+                  </div>
+                  <div className="flex items-start">
+                    <span className="flex-shrink-0 w-6 h-6 bg-indigo-600 text-white rounded-full flex items-center justify-center text-sm font-bold mr-3 mt-0.5">3</span>
+                    <p className="text-indigo-700 text-sm">Strategic Roadmap Development</p>
+                  </div>
+                  <div className="flex items-start">
+                    <span className="flex-shrink-0 w-6 h-6 bg-indigo-600 text-white rounded-full flex items-center justify-center text-sm font-bold mr-3 mt-0.5">4</span>
+                    <p className="text-indigo-700 text-sm">Implementation Planning & Resource Allocation</p>
+                  </div>
+                  <div className="flex items-start">
+                    <span className="flex-shrink-0 w-6 h-6 bg-indigo-600 text-white rounded-full flex items-center justify-center text-sm font-bold mr-3 mt-0.5">5</span>
+                    <p className="text-indigo-700 text-sm">Performance Monitoring & Optimization</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-purple-50 p-8 rounded-2xl">
+                <h3 className="text-2xl font-bold text-purple-800 mb-4">Key Performance Indicators</h3>
+                <p className="text-purple-700 mb-4">
+                  We track and optimize these critical metrics for Amazon Canada success:
+                </p>
+                <div className="space-y-3">
+                  <div className="flex items-start">
+                    <svg className="flex-shrink-0 w-5 h-5 text-purple-600 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <p className="text-purple-700 text-sm">Revenue growth and market share expansion</p>
+                  </div>
+                  <div className="flex items-start">
+                    <svg className="flex-shrink-0 w-5 h-5 text-purple-600 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <p className="text-purple-700 text-sm">Profit margin optimization and cost reduction</p>
+                  </div>
+                  <div className="flex items-start">
+                    <svg className="flex-shrink-0 w-5 h-5 text-purple-600 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <p className="text-purple-700 text-sm">Customer acquisition and retention rates</p>
+                  </div>
+                  <div className="flex items-start">
+                    <svg className="flex-shrink-0 w-5 h-5 text-purple-600 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <p className="text-purple-700 text-sm">Operational efficiency and automation metrics</p>
+                  </div>
+                  <div className="flex items-start">
+                    <svg className="flex-shrink-0 w-5 h-5 text-purple-600 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <p className="text-purple-700 text-sm">Brand recognition and customer satisfaction</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Industry-Specific Consulting */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-6">Industry-Specific Amazon Canada Consulting</h2>
+            <p className="text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
+              Every industry has unique challenges and opportunities on Amazon.ca. Our specialized consultants provide targeted strategies for your specific market sector.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+            <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100">
+              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4 mx-auto">
+                <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2 text-center">Electronics & Tech</h3>
+              <p className="text-gray-600 text-sm text-center">Compliance, warranties, and tech-savvy Canadian consumers</p>
+            </div>
+
+            <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100">
+              <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4 mx-auto">
+                <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2 text-center">Health & Beauty</h3>
+              <p className="text-gray-600 text-sm text-center">Health Canada regulations and natural product preferences</p>
+            </div>
+
+            <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100">
+              <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4 mx-auto">
+                <svg className="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2 text-center">Fashion & Apparel</h3>
+              <p className="text-gray-600 text-sm text-center">Seasonal trends and Canadian fashion preferences</p>
+            </div>
+
+            <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100">
+              <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4 mx-auto">
+                <svg className="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2H5a2 2 0 00-2-2v2z" />
+                </svg>
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2 text-center">Home & Garden</h3>
+              <p className="text-gray-600 text-sm text-center">Climate considerations and Canadian home improvement trends</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Success Case Studies */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-6">Amazon Canada Consulting Success Stories</h2>
+            <p className="text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
+              See how our strategic consulting has transformed Canadian businesses on Amazon.ca.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            <div className="bg-white p-8 rounded-2xl shadow-lg">
+              <div className="text-center mb-6">
+                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900">Tech Startup</h3>
+                <p className="text-gray-600">Vancouver, BC</p>
+              </div>
+              <p className="text-gray-700 text-sm mb-4">
+                "Technovita's consulting helped us understand the Canadian market dynamics. Their strategic guidance led to a 300% revenue increase in our first year on Amazon.ca."
+              </p>
+              <div className="text-center">
+                <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">
+                  300% Revenue Growth
+                </span>
+              </div>
+            </div>
+
+            <div className="bg-white p-8 rounded-2xl shadow-lg">
+              <div className="text-center mb-6">
+                <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900">Beauty Brand</h3>
+                <p className="text-gray-600">Toronto, ON</p>
+              </div>
+              <p className="text-gray-700 text-sm mb-4">
+                "The market analysis and competitive positioning strategy helped us identify untapped opportunities. We now dominate three product categories on Amazon.ca."
+              </p>
+              <div className="text-center">
+                <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
+                  Market Leader in 3 Categories
+                </span>
+              </div>
+            </div>
+
+            <div className="bg-white p-8 rounded-2xl shadow-lg">
+              <div className="text-center mb-6">
+                <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <svg className="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
+                  </svg>
+                </div>
+                <h3 className="text-xl font-bold text-gray-900">Home Goods Company</h3>
+                <p className="text-gray-600">Calgary, AB</p>
+              </div>
+              <p className="text-gray-700 text-sm mb-4">
+                "Their operational efficiency recommendations reduced our costs by 40% while improving customer satisfaction. ROI was immediate and substantial."
+              </p>
+              <div className="text-center">
+                <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-purple-100 text-purple-800">
+                  40% Cost Reduction
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Advanced Consulting Topics */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-6">Advanced Amazon Canada Consulting Topics</h2>
+            <p className="text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
+              Deep-dive consulting services for complex Amazon Canada challenges and advanced growth strategies.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div className="space-y-8">
+              <div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">International Expansion Strategy</h3>
+                <p className="text-gray-700 mb-4">
+                  For businesses looking to expand beyond Amazon.ca, we provide comprehensive international expansion consulting:
+                </p>
+                <ul className="list-disc pl-6 space-y-2 text-gray-700 text-sm">
+                  <li>Cross-border logistics and fulfillment optimization</li>
+                  <li>Multi-marketplace inventory management strategies</li>
+                  <li>Currency hedging and international pricing models</li>
+                  <li>Global brand consistency and localization balance</li>
+                  <li>International tax optimization and compliance</li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Advanced Analytics and Business Intelligence</h3>
+                <p className="text-gray-700 mb-4">
+                  Leverage data-driven insights for competitive advantage:
+                </p>
+                <ul className="list-disc pl-6 space-y-2 text-gray-700 text-sm">
+                  <li>Predictive analytics for demand forecasting</li>
+                  <li>Customer lifetime value optimization</li>
+                  <li>Competitive intelligence and market monitoring</li>
+                  <li>Price optimization algorithms and dynamic pricing</li>
+                  <li>Performance attribution and ROI analysis</li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 className="text-2xl font-bold text-gray-900 mb-4">Automation and Technology Integration</h3>
+                <p className="text-gray-700 mb-4">
+                  Streamline operations with cutting-edge technology solutions:
+                </p>
+                <ul className="list-disc pl-6 space-y-2 text-gray-700 text-sm">
+                  <li>Amazon API integration and automation tools</li>
+                  <li>Inventory management system optimization</li>
+                  <li>Customer service chatbots and automation</li>
+                  <li>Repricing tools and bid management systems</li>
+                  <li>Business intelligence dashboard implementation</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="space-y-8">
+              <div className="bg-gradient-to-br from-indigo-50 to-purple-50 p-8 rounded-2xl border border-indigo-100">
+                <h3 className="text-2xl font-bold text-indigo-800 mb-4">Enterprise-Level Consulting</h3>
+                <p className="text-indigo-700 mb-4">
+                  For large-scale operations requiring comprehensive strategic support:
+                </p>
+                <div className="space-y-3">
+                  <div className="flex items-start">
+                    <svg className="flex-shrink-0 w-5 h-5 text-indigo-600 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <p className="text-indigo-700 text-sm">Dedicated account management team</p>
+                  </div>
+                  <div className="flex items-start">
+                    <svg className="flex-shrink-0 w-5 h-5 text-indigo-600 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <p className="text-indigo-700 text-sm">Custom KPI dashboards and reporting</p>
+                  </div>
+                  <div className="flex items-start">
+                    <svg className="flex-shrink-0 w-5 h-5 text-indigo-600 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <p className="text-indigo-700 text-sm">Quarterly business reviews and strategy updates</p>
+                  </div>
+                  <div className="flex items-start">
+                    <svg className="flex-shrink-0 w-5 h-5 text-indigo-600 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <p className="text-indigo-700 text-sm">Direct access to Amazon Canada contacts</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-2xl border border-green-100">
+                <h3 className="text-2xl font-bold text-green-800 mb-4">Crisis Management & Recovery</h3>
+                <p className="text-green-700 mb-4">
+                  Specialized consulting for businesses facing challenges:
+                </p>
+                <div className="space-y-3">
+                  <div className="flex items-start">
+                    <svg className="flex-shrink-0 w-5 h-5 text-green-600 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <p className="text-green-700 text-sm">Account health recovery strategies</p>
+                  </div>
+                  <div className="flex items-start">
+                    <svg className="flex-shrink-0 w-5 h-5 text-green-600 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <p className="text-green-700 text-sm">Reputation management and review recovery</p>
+                  </div>
+                  <div className="flex items-start">
+                    <svg className="flex-shrink-0 w-5 h-5 text-green-600 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <p className="text-green-700 text-sm">Supply chain disruption mitigation</p>
+                  </div>
+                  <div className="flex items-start">
+                    <svg className="flex-shrink-0 w-5 h-5 text-green-600 mr-3 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                    <p className="text-green-700 text-sm">Competitive response strategies</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* WhatsApp CTA */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
