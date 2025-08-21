@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 
 const FloatingButtons: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const phoneNumber = '+917451073504';
+  const phoneNumber = '+917042163504';
   const whatsappMessage = encodeURIComponent('I want to know more about technovitasolution.com and about its services');
 
   useEffect(() => {
@@ -21,7 +21,7 @@ const FloatingButtons: React.FC = () => {
   };
 
   const handleWhatsApp = () => {
-    window.open(`https://wa.me/917451073504?text=${whatsappMessage}`, '_blank');
+    window.open(`https://wa.me/917042163504?text=${whatsappMessage}`, '_blank');
   };
 
   if (!isVisible) return null;

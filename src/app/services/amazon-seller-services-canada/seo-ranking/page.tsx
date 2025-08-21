@@ -396,7 +396,7 @@ export default function AmazonSEORankingCanada() {
               Don't let poor rankings limit your success. Get professional SEO optimization that drives organic traffic and sustainable growth.
             </p>
             <div className="text-lg font-semibold mb-4">
-              📞 <strong>Call Now:</strong> +91 7451073504<br/>
+              📞 <strong>Call Now:</strong> +91 7042163504<br/>
               📧 <strong>Email:</strong> info@technovitasolution.com
             </div>
             <p className="text-green-100">

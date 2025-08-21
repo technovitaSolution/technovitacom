@@ -357,7 +357,7 @@ export default function AmazonSuspensionAppealCanada() {
               Don't let a suspension end your Amazon.ca business. Our proven appeal process and 95% success rate give you the best chance of reinstatement.
             </p>
             <div className="text-lg font-semibold mb-4">
-              📞 <strong>Emergency Hotline:</strong> +91 7451073504<br/>
+              📞 <strong>Emergency Hotline:</strong> +91 7042163504<br/>
               📧 <strong>Email:</strong> info@technovitasolution.com
             </div>
             <p className="text-rose-100">

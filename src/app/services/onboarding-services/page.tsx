@@ -295,7 +295,7 @@ export default function OnboardingServices() {
           </p>
           <WhatsAppButton serviceName="Onboarding Services" className="mb-4" />
           <div className="text-blue-200 text-sm">
-            <p>📞 Call us: +91 7451073504 | 📧 Email: info@technovitasolution.com</p>
+            <p>📞 Call us: +91 7042163504 | 📧 Email: info@technovitasolution.com</p>
           </div>
         </div>
       </div>

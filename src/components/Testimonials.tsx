@@ -136,7 +136,7 @@ const Testimonials: React.FC = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
-                href="https://wa.me/917451073504?text=I%20want%20to%20know%20more%20about%20technovitasolution.com%20and%20about%20its%27%20services"
+                href="https://wa.me/917042163504?text=I%20want%20to%20know%20more%20about%20technovitasolution.com%20and%20about%20its%27%20services"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-pink-600 bg-white rounded-lg hover:bg-gray-50 transition-colors duration-200"
@@ -147,7 +147,7 @@ const Testimonials: React.FC = () => {
                 Get Free Consultation
               </a>
               <a 
-                href="tel:+917451073504"
+                href="tel:+917042163504"
                 className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white border-2 border-white/30 rounded-lg hover:bg-white/10 transition-colors duration-200"
               >
                 <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">

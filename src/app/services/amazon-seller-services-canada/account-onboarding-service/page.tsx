@@ -444,7 +444,7 @@ export default function AmazonCanadaOnboardingService() {
               Don't let complexity hold you back from accessing the lucrative Canadian market. Our professional onboarding service ensures you launch with confidence and compliance.
               </p>
               <div className="text-lg font-semibold mb-4">
-                📞 <strong>Call Now:</strong> +91 7451073504<br/>
+                📞 <strong>Call Now:</strong> +91 7042163504<br/>
                 📧 <strong>Email:</strong> info@technovitasolution.com
               </div>
             <p className="text-green-100">

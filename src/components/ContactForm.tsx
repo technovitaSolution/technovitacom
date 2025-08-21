@@ -228,7 +228,7 @@ const ContactForm: React.FC<ContactFormProps> = ({
             transition={{ delay: 0.6 }}
           >
             <motion.a
-              href={`tel:+917451073504`}
+              href={`tel:+917042163504`}
               className="inline-flex items-center justify-center px-6 py-3 bg-white bg-opacity-20 backdrop-blur-sm text-white font-semibold rounded-xl hover:bg-opacity-30 transition-all duration-300"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -241,7 +241,7 @@ const ContactForm: React.FC<ContactFormProps> = ({
             
             {showWhatsApp && (
               <motion.a
-                href={`https://wa.me/917451073504?text=${encodeURIComponent(`Hi, I just submitted a form for ${serviceName}. Looking forward to hearing from you!`)}`}
+                href={`https://wa.me/917042163504?text=${encodeURIComponent(`Hi, I just submitted a form for ${serviceName}. Looking forward to hearing from you!`)}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-6 py-3 bg-green-600 text-white font-semibold rounded-xl hover:bg-green-700 transition-all duration-300"

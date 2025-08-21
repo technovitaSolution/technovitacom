@@ -170,10 +170,10 @@ export async function POST(request: NextRequest) {
 
           <div style="text-align: center; margin: 25px 0;">
             <p style="color: #4b5563; margin: 0 0 20px 0;">Need immediate assistance?</p>
-            <a href="tel:+917451073504" style="display: inline-block; background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%); color: white; padding: 12px 25px; text-decoration: none; border-radius: 8px; font-weight: 600; margin: 0 10px; font-size: 14px;">
-              📞 Call +91 7451073504
+            <a href="tel:+917042163504" style="display: inline-block; background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%); color: white; padding: 12px 25px; text-decoration: none; border-radius: 8px; font-weight: 600; margin: 0 10px; font-size: 14px;">
+              📞 Call +91 7042163504
             </a>
-            <a href="https://wa.me/917451073504" style="display: inline-block; background: linear-gradient(135deg, #10b981 0%, #059669 100%); color: white; padding: 12px 25px; text-decoration: none; border-radius: 8px; font-weight: 600; margin: 0 10px; font-size: 14px;">
+            <a href="https://wa.me/917042163504" style="display: inline-block; background: linear-gradient(135deg, #10b981 0%, #059669 100%); color: white; padding: 12px 25px; text-decoration: none; border-radius: 8px; font-weight: 600; margin: 0 10px; font-size: 14px;">
               💬 WhatsApp
             </a>
           </div>

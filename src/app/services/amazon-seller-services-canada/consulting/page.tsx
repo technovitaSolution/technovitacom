@@ -773,7 +773,7 @@ export default function AmazonConsultingCanada() {
               Don't navigate the complex Amazon.ca marketplace alone. Get expert strategic guidance and proven methodologies to build a thriving Canadian business.
             </p>
             <div className="text-lg font-semibold mb-4">
-              📞 <strong>Call Now:</strong> +91 7451073504<br/>
+              📞 <strong>Call Now:</strong> +91 7042163504<br/>
               📧 <strong>Email:</strong> info@technovitasolution.com
             </div>
             <p className="text-indigo-100">

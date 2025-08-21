@@ -395,7 +395,7 @@ export default function AmazonPPCManagementCanada() {
               Don't let ineffective PPC campaigns drain your budget. Get expert management that drives profitable growth and sustainable success.
             </p>
             <div className="text-lg font-semibold mb-4">
-              📞 <strong>Call Now:</strong> +91 7451073504<br/>
+              📞 <strong>Call Now:</strong> +91 7042163504<br/>
               📧 <strong>Email:</strong> info@technovitasolution.com
             </div>
             <p className="text-pink-100">

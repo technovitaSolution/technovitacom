@@ -395,7 +395,7 @@ export default function AmazonListingOptimizationCanada() {
               Don't let poor listings hold back your success. Get professional optimization that drives real results on Amazon.ca.
             </p>
             <div className="text-lg font-semibold mb-4">
-              📞 <strong>Call Now:</strong> +91 7451073504<br/>
+              📞 <strong>Call Now:</strong> +91 7042163504<br/>
               📧 <strong>Email:</strong> info@technovitasolution.com
             </div>
             <p className="text-cyan-100">

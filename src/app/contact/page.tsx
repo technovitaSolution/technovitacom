@@ -128,10 +128,10 @@ export default async function ContactPage({ searchParams }: { searchParams: Prom
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 mb-1">Phone Number</h3>
                     <a 
-                      href="tel:+917451073504"
+                      href="tel:+917042163504"
                       className="text-green-600 hover:text-green-700 font-medium text-lg transition-colors duration-200"
                     >
-                      +91 7451073504
+                      +91 7042163504
                     </a>
                     <p className="text-sm text-gray-500 mt-1">Available 24/7 for urgent queries</p>
                   </div>
@@ -414,7 +414,7 @@ export default async function ContactPage({ searchParams }: { searchParams: Prom
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="tel:+917451073504"
+              href="tel:+917042163504"
               className="inline-flex items-center px-8 py-4 bg-white text-pink-600 font-semibold rounded-lg hover:bg-gray-100 transition-colors duration-300 shadow-lg hover:shadow-xl"
             >
               <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
