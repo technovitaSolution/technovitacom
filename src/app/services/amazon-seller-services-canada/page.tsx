@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     siteName: 'Technovita Solution',
     images: [
       {
-        url: '/Images/AccManagement/amazonaccount.png',
+        url: '/Images/amazon-canada/amazon-canada-seller-services.webp',
         width: 1200,
         height: 630,
         alt: 'Amazon Seller Services Canada',
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Amazon Seller Services Canada | Professional Amazon.ca Management',
     description: 'Expert Amazon seller services in Canada. Professional Amazon.ca account setup, listing optimization, PPC management, SEO ranking, and consulting services.',
-    images: ['/Images/AccManagement/amazonaccount.png'],
+    images: ['/Images/amazon-canada/amazon-canada-seller-services.webp'],
   }
 };
 
@@ -121,7 +121,13 @@ export default function AmazonSellerServicesCanada() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in-up">
-              <div className="inline-flex items-center px-4 py-2 bg-white bg-opacity-20 backdrop-blur-sm rounded-full text-sm font-medium mb-6 animate-bounce-subtle">
+              <div 
+                className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium mb-6 animate-bounce-subtle text-blue-800 shadow-lg border border-white border-opacity-30"
+                style={{
+                  background: 'rgba(255, 255, 255, 0.9)',
+                  backdropFilter: 'blur(10px)'
+                }}
+              >
                 <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
@@ -151,7 +157,7 @@ export default function AmazonSellerServicesCanada() {
             <div className="relative animate-fade-in-right">
               <div className="absolute -inset-4 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-lg blur opacity-30 animate-pulse"></div>
               <Image
-                src="/Images/AccManagement/amazonaccount.png"
+                src="/Images/amazon-canada/amazon-canada-seller-services.webp"
                 alt="Amazon Seller Services Canada - Professional Support"
                 width={600}
                 height={400}
