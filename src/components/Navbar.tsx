@@ -10,9 +10,10 @@ interface MenuItemProps {
   description: string;
   href: string;
   badge?: 'NEW' | 'POPULAR' | 'AI' | 'HOT';
+  onClose?: () => void;
 }
 
-const MenuItem: React.FC<MenuItemProps> = ({ icon, title, description, href, badge }) => {
+const MenuItem: React.FC<MenuItemProps> = ({ icon, title, description, href, badge, onClose }) => {
   const isExternal = href.startsWith('http');
   
   if (isExternal) {
@@ -21,6 +22,7 @@ const MenuItem: React.FC<MenuItemProps> = ({ icon, title, description, href, bad
         href={href}
         target="_blank"
         rel="noopener noreferrer"
+        onClick={onClose}
         className="flex items-start space-x-3 p-3 rounded-lg hover:bg-gray-50 transition-colors duration-200 group"
       >
         <div className="flex-shrink-0 w-10 h-10 bg-pink-100 rounded-lg flex items-center justify-center group-hover:bg-pink-600 transition-colors duration-200">
@@ -53,6 +55,7 @@ const MenuItem: React.FC<MenuItemProps> = ({ icon, title, description, href, bad
   return (
   <Link 
     href={href}
+    onClick={onClose}
     className="flex items-start space-x-3 p-3 rounded-lg hover:bg-gray-50 transition-colors duration-200 group"
   >
     <div className="flex-shrink-0 w-10 h-10 bg-pink-100 rounded-lg flex items-center justify-center group-hover:bg-pink-600 transition-colors duration-200">
@@ -370,7 +373,7 @@ const Navbar: React.FC = () => {
                       <h3 className="text-sm font-semibold text-pink-600 mb-4 uppercase tracking-wide">Core E-Commerce Services</h3>
                       <div className="space-y-1">
                         {coreServicesMenuItems.map((item, index) => (
-                          <MenuItem key={index} {...item} />
+                          <MenuItem key={index} {...item} onClose={() => setIsServicesOpen(false)} />
                         ))}
                       </div>
                     </div>
@@ -380,7 +383,7 @@ const Navbar: React.FC = () => {
                       <h3 className="text-sm font-semibold text-pink-600 mb-4 uppercase tracking-wide">International Amazon Marketplace Services</h3>
                       <div className="space-y-1">
                         {internationalAmazonMenuItems.map((item, index) => (
-                          <MenuItem key={index} {...item} />
+                          <MenuItem key={index} {...item} onClose={() => setIsServicesOpen(false)} />
                         ))}
                       </div>
                     </div>
@@ -390,7 +393,7 @@ const Navbar: React.FC = () => {
                       <h3 className="text-sm font-semibold text-pink-600 mb-4 uppercase tracking-wide">Additional Services</h3>
                       <div className="space-y-1">
                         {additionalServicesMenuItems.map((item, index) => (
-                          <MenuItem key={index} {...item} />
+                          <MenuItem key={index} {...item} onClose={() => setIsServicesOpen(false)} />
                         ))}
                       </div>
                       
@@ -410,6 +413,7 @@ const Navbar: React.FC = () => {
                           {/* Call Button */}
                           <a 
                             href="tel:+917042163504"
+                            onClick={() => setIsServicesOpen(false)}
                             className="flex items-center justify-center w-full px-4 py-3 bg-gradient-to-r from-blue-600 to-blue-700 text-white font-semibold rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-200 shadow-md hover:shadow-lg transform hover:scale-105"
                           >
                             <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -420,10 +424,12 @@ const Navbar: React.FC = () => {
                           
                           {/* WhatsApp Button */}
                           <div className="w-full">
-                            <WhatsAppButton 
-                              serviceName="E-commerce Services" 
-                              className="w-full justify-center bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-200"
-                            />
+                            <div onClick={() => setIsServicesOpen(false)}>
+                              <WhatsAppButton 
+                                serviceName="E-commerce Services" 
+                                className="w-full justify-center bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-200"
+                              />
+                            </div>
                           </div>
                         </div>
                         
@@ -471,7 +477,7 @@ const Navbar: React.FC = () => {
                   
                   <div className="grid grid-cols-1 gap-2">
                     {calculatorsMenuItems.map((item, index) => (
-                      <MenuItem key={index} {...item} />
+                      <MenuItem key={index} {...item} onClose={() => setIsCalculatorsOpen(false)} />
                     ))}
                   </div>
                   
@@ -486,6 +492,7 @@ const Navbar: React.FC = () => {
                     <p className="text-xs text-gray-600 mb-3">Get personalized pricing strategies & profit optimization from our experts</p>
                     <Link 
                       href="/contact"
+                      onClick={() => setIsCalculatorsOpen(false)}
                       className="inline-flex items-center justify-center w-full px-3 py-2 text-sm font-medium text-white bg-gradient-to-r from-blue-600 to-indigo-600 rounded-md hover:from-blue-700 hover:to-indigo-700 transition-all duration-200 shadow-md hover:shadow-lg transform hover:scale-105"
                     >
                       <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
