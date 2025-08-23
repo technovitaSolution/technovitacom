@@ -124,22 +124,6 @@ const ServicesPage: React.FC = () => {
             </a>
           </div>
 
-          {/* Account Creation */}
-          <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
-            <div className="flex items-center justify-between mb-4">
-              <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
-                <svg className="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
-                </svg>
-              </div>
-            </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-3">Account Creation</h3>
-            <p className="text-gray-600 mb-4">End-to-end seller account setup on major platforms with expert guidance.</p>
-            <a href="/services/account-creation" className="text-pink-600 hover:text-pink-700 font-semibold">
-              Learn More →
-            </a>
-          </div>
-
           {/* Onboarding Services */}
           <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
             <div className="flex items-center justify-between mb-4">
@@ -152,23 +136,6 @@ const ServicesPage: React.FC = () => {
             <h3 className="text-xl font-bold text-gray-900 mb-3">Onboarding Services</h3>
             <p className="text-gray-600 mb-4">Dedicated guidance and platform-specific training for new sellers.</p>
             <a href="/services/onboarding-services" className="text-pink-600 hover:text-pink-700 font-semibold">
-              Learn More →
-            </a>
-          </div>
-
-          {/* Sales Boost */}
-          <div className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow duration-300">
-            <div className="flex items-center justify-between mb-4">
-              <div className="w-12 h-12 bg-yellow-100 rounded-lg flex items-center justify-center">
-                <svg className="w-6 h-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-                </svg>
-              </div>
-              <span className="bg-green-100 text-green-800 text-xs font-bold px-3 py-1 rounded-full">NEW</span>
-            </div>
-            <h3 className="text-xl font-bold text-gray-900 mb-3">Sales Boost</h3>
-            <p className="text-gray-600 mb-4">Data-driven strategies to increase visibility and sales across platforms.</p>
-            <a href="/services/sales-boost" className="text-pink-600 hover:text-pink-700 font-semibold">
               Learn More →
             </a>
           </div>
