@@ -34,18 +34,10 @@ const TermsOfService: React.FC = () => {
       {/* Header */}
       <div className="bg-white border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div className="flex items-center space-x-3 mb-6">
-            <Image 
-              src="/logo.webp" 
-              alt="Technovita Solution Logo" 
-              width={40} 
-              height={40} 
-              className="rounded-lg"
-              priority
-            />
+          <div className="text-center mb-6">
             <h1 className="text-3xl font-bold text-gray-900">Terms of Service</h1>
           </div>
-          <p className="text-lg text-gray-600">
+          <p className="text-lg text-gray-600 text-center">
             Last updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
           </p>
         </div>
