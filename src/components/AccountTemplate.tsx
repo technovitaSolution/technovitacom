@@ -286,69 +286,69 @@ const AccountTemplate: React.FC<AccountTemplateProps> = ({
             </div>
           </div>
 
-          {/* Related Articles */}
+          {/* Related Services */}
           <div className="mb-12">
             <h2 className="text-3xl font-bold text-center text-gray-900 mb-8">
-              Read 📚 our other Articles to know more about online selling-
+              Explore 🚀 our other E-commerce Services
             </h2>
             <ul className="space-y-4">
               <li>
                 <h4 className="text-xl font-semibold">
                   <a
-                    href="http://blog.technovitasolution.com/how-to-register-as-seller-on-ajio/"
+                    href="/how-to-get-onboarded-on-ajio"
                     className="text-pink-600 hover:text-pink-700 no-underline"
                   >
-                    How to register on ajio as a seller?
+                    Ajio Seller Onboarding Services
                   </a>
                 </h4>
               </li>
               <li>
                 <h4 className="text-xl font-semibold">
                   <a
-                    href="http://blog.technovitasolution.com/how-to-create-a-seller-account-on-flipkart/"
+                    href="/how-to-get-onboarded-on-myntra"
                     className="text-pink-600 hover:text-pink-700 no-underline"
                   >
-                    How to create a seller account on flipkart
+                    Myntra Seller Onboarding Services
                   </a>
                 </h4>
               </li>
               <li>
                 <h4 className="text-xl font-semibold">
                   <a
-                    href="http://blog.technovitasolution.com/paytm-sales-boost-services/"
+                    href="/how-to-get-onboarded-on-nykaa"
                     className="text-pink-600 hover:text-pink-700 no-underline"
                   >
-                    How to increase sales on paytm seller account?
+                    Nykaa Seller Onboarding Services
                   </a>
                 </h4>
               </li>
               <li>
                 <h4 className="text-xl font-semibold">
                   <a
-                    href="http://blog.technovitasolution.com/amazon-product-cataloging-services/"
+                    href="/services/onboarding-services"
                     className="text-pink-600 hover:text-pink-700 no-underline"
                   >
-                    How to list product on amazon?
+                    Complete Onboarding Services Overview
                   </a>
                 </h4>
               </li>
               <li>
                 <h4 className="text-xl font-semibold">
                   <a
-                    href="http://blog.technovitasolution.com/steps-to-become-a-seller-on-amazon/"
+                    href="/services/catalogue-services"
                     className="text-pink-600 hover:text-pink-700 no-underline"
                   >
-                    How to become a seller on amazon?
+                    Product Catalogue Services
                   </a>
                 </h4>
               </li>
               <li>
                 <h4 className="text-xl font-semibold">
                   <a
-                    href="http://blog.technovitasolution.com/how-to-increase-sales-on-amazon/"
+                    href="/services/account-management"
                     className="text-pink-600 hover:text-pink-700 no-underline"
                   >
-                    How to increase sales on amazon?
+                    Account Management Services
                   </a>
                 </h4>
               </li>
