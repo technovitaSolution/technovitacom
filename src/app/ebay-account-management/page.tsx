@@ -38,8 +38,10 @@ export default function EbayAccountManagement() {
     <AccountTemplate
       accountManagementService="Ebay Account Management Services"
       accServiceName="Ebay"
-      imgUrl="/Images/AccManagement/ebayaccount.png"
-      imgAlt="ebay Account Management service"
+      imgUrl="/Images/account-management/account-managment-featured-image/ebay-account-management.webp"
+      imgAlt="eBay Account Management Services - Professional E-commerce Support"
+      articleImgUrl="/Images/account-management/article/ebayaccount.webp"
+      articleImgAlt="eBay Account Management Services - Professional Support"
     />
   );
 }

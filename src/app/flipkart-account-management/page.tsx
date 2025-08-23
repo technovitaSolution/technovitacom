@@ -38,8 +38,10 @@ export default function FlipkartAccountManagement() {
     <AccountTemplate
       accountManagementService="Flipkart Account Management Services"
       accServiceName="Flipkart"
-      imgUrl="/Images/AccManagement/flipkartaccount.png"
-      imgAlt="flipkart Account Management service"
+      imgUrl="/Images/account-management/account-managment-featured-image/Flipkart Account Management by Technovita.webp"
+      imgAlt="Flipkart Account Management Services - Professional E-commerce Support"
+      articleImgUrl="/Images/account-management/article/flipkartaccount.webp"
+      articleImgAlt="Flipkart Account Management Services - Professional Support"
     />
   );
 }

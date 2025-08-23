@@ -38,8 +38,10 @@ export default function NykaaAccountManagement() {
     <AccountTemplate
       accountManagementService="Nykaa Account Management Services"
       accServiceName="Nykaa"
-      imgUrl="/Images/AccManagement/nykaaaccount.png"
-      imgAlt="nykaa Account Management service"
+      imgUrl="/Images/account-management/account-managment-featured-image/nykaa-account-management.webp"
+      imgAlt="Nykaa Account Management Services - Professional E-commerce Support"
+      articleImgUrl="/Images/account-management/article/nykaaaccount.webp"
+      articleImgAlt="Nykaa Account Management Services - Professional Support"
     />
   );
 }

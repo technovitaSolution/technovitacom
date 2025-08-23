@@ -38,8 +38,10 @@ export default function MeeshoAccountManagement() {
     <AccountTemplate
       accountManagementService="Meesho Account Management Services"
       accServiceName="Meesho"
-      imgUrl="/Images/AccManagement/meeshoaccount.png"
-      imgAlt="meesho Account Management service"
+      imgUrl="/Images/account-management/account-managment-featured-image/meesho-account-management.webp"
+      imgAlt="Meesho Account Management Services - Professional E-commerce Support"
+      articleImgUrl="/Images/account-management/article/meeshoaccount.webp"
+      articleImgAlt="Meesho Account Management Services - Professional Support"
     />
   );
 }

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     siteName: 'Technovita Solution',
     images: [
       {
-        url: '/Images/reconciliationBackground.jpg',
+        url: '/Images/onboarding/onboarding-service.webp',
         width: 1200,
         height: 630,
         alt: 'Onboarding Services - Technovita Solution',
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Onboarding Services | Technovita Solution',
     description: 'Professional onboarding services for Ajio, Myntra, and Nykaa platforms.',
-    images: ['/Images/reconciliationBackground.jpg'],
+    images: ['/Images/onboarding/onboarding-service.webp'],
   }
 };
 
@@ -39,21 +39,21 @@ const onboardingServices = [
   {
     title: 'Ajio Onboarding Services',
     description: 'Complete Ajio seller registration and onboarding support. Get expert guidance through Reliance\'s strict approval process with professional presentation and documentation.',
-    image: '/Images/Onboarding/ajioSellerPortal.png',
+    image: '/Images/onboarding/onboarding-featured-images/ajio-seller-onboarding.webp',
     link: '/how-to-get-onboarded-on-ajio',
     features: ['Seller Portal Registration', 'Document Preparation', 'Category Selection', 'Brand Presentation', 'Approval Support']
   },
   {
     title: 'Myntra Onboarding Services',
     description: 'Professional Myntra seller onboarding with complete presentation creation, sample submission, and quality check support for fashion marketplace success.',
-    image: '/Images/reconciliationBackground.jpg',
+    image: '/Images/onboarding/onboarding-featured-images/myntra-seller-onboarding.webp',
     link: '/how-to-get-onboarded-on-myntra',
     features: ['Business Presentation', 'Category Manager Contact', 'Sample Quality Check', 'Contract Negotiation', 'Portal Access Setup']
   },
   {
     title: 'Nykaa Onboarding Services',
     description: 'Expert Nykaa seller registration and onboarding services for beauty and wellness brands with comprehensive documentation and approval guidance.',
-    image: '/Images/Onboarding/nykaaOnboarding.png',
+    image: '/Images/onboarding/onboarding-featured-images/nykaa-seller-onboarding.webp',
     link: '/how-to-get-onboarded-on-nykaa',
     features: ['Beauty Brand Setup', 'Seller Portal Registration', 'Document Verification', 'Product Category Setup', 'Brand Approval Process']
   }
@@ -73,7 +73,7 @@ export default function OnboardingServices() {
           </p>
           <div className="relative w-full max-w-4xl mx-auto h-64 md:h-80 lg:h-96 rounded-lg overflow-hidden shadow-lg">
             <Image
-              src="/Images/reconciliationBackground.jpg"
+              src="/Images/onboarding/onboarding-service.webp"
               alt="Onboarding Services - Professional E-commerce Support"
               fill
               className="object-cover"

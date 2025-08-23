@@ -38,8 +38,10 @@ export default function ShopeeAccountManagement() {
     <AccountTemplate
       accountManagementService="Shopee Account Management Services"
       accServiceName="Shopee"
-      imgUrl="/Images/AccManagement/shopeeaccount.png"
-      imgAlt="shopee Account Management service"
+      imgUrl="/Images/account-management/account-managment-featured-image/shopee-account-management.webp"
+      imgAlt="Shopee Account Management Services - Professional E-commerce Support"
+      articleImgUrl="/Images/account-management/article/shopeeaccount.webp"
+      articleImgAlt="Shopee Account Management Services - Professional Support"
     />
   );
 }

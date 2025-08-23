@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     siteName: 'Technovita Solution',
     images: [
       {
-        url: '/Images/Onboarding/ajioSellerPortal.png',
+        url: '/Images/onboarding/onboarding-featured-images/ajio-seller-onboarding.webp',
         width: 1200,
         height: 630,
         alt: 'Ajio Seller Portal Registration Guide',
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'How to Get Onboarded on Ajio | Ajio Seller Registration Guide 2024',
     description: 'Complete guide on how to get onboarded on Ajio. Learn the step-by-step Ajio seller registration process, requirements, and tips to increase approval chances.',
-    images: ['/Images/Onboarding/ajioSellerPortal.png'],
+    images: ['/Images/onboarding/onboarding-featured-images/ajio-seller-onboarding.webp'],
   }
 };
 
@@ -61,7 +61,7 @@ export default function AjioOnboarding() {
             </div>
             <div className="relative">
               <Image
-                src="/Images/reconciliationBackground.jpg"
+                src="/Images/onboarding/onboarding-featured-images/ajio-seller-onboarding.webp"
                 alt="Ajio Onboarding Service - Professional Support"
                 width={600}
                 height={400}
@@ -106,7 +106,7 @@ export default function AjioOnboarding() {
 
             <div className="relative w-full max-w-4xl mx-auto mb-8">
               <Image
-                src="/Images/Onboarding/ajioSellerPortal.png"
+                src="/Images/onboarding/ajioSellerPortal.webp"
                 alt="How to sell products on Ajio - Seller Portal"
                 width={800}
                 height={500}

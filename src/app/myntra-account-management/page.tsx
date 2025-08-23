@@ -38,8 +38,10 @@ export default function MyntraAccountManagement() {
     <AccountTemplate
       accountManagementService="Myntra Account Management Services"
       accServiceName="Myntra"
-      imgUrl="/Images/AccManagement/myntraaccount.png"
-      imgAlt="myntra Account Management service"
+      imgUrl="/Images/account-management/account-managment-featured-image/Myntra Account Management Solutions Graphic.webp"
+      imgAlt="Myntra Account Management Services - Professional E-commerce Support"
+      articleImgUrl="/Images/account-management/article/myntraaccount.webp"
+      articleImgAlt="Myntra Account Management Services - Professional Support"
     />
   );
 }

@@ -7,13 +7,17 @@ interface AccountTemplateProps {
   accServiceName: string;
   imgUrl: string;
   imgAlt: string;
+  articleImgUrl: string;
+  articleImgAlt: string;
 }
 
 const AccountTemplate: React.FC<AccountTemplateProps> = ({
   accountManagementService,
   accServiceName,
   imgUrl,
-  imgAlt
+  imgAlt,
+  articleImgUrl,
+  articleImgAlt
 }) => {
   return (
     <div className="min-h-screen bg-gray-50">
@@ -26,8 +30,8 @@ const AccountTemplate: React.FC<AccountTemplateProps> = ({
             </h1>
             <div className="relative w-full max-w-4xl mx-auto h-64 md:h-80 lg:h-96 rounded-lg overflow-hidden shadow-lg">
               <Image
-                src="/Images/accountMangement.jpg"
-                alt="Account Management Services"
+                src={imgUrl}
+                alt={imgAlt}
                 fill
                 className="object-cover"
                 priority
@@ -79,8 +83,8 @@ const AccountTemplate: React.FC<AccountTemplateProps> = ({
           <div className="flex justify-center items-center mb-12">
             <div className="relative w-full max-w-4xl h-64 md:h-80 lg:h-96 rounded-lg overflow-hidden shadow-lg">
               <Image
-                src={imgUrl}
-                alt={imgAlt}
+                src={articleImgUrl}
+                alt={articleImgAlt}
                 fill
                 className="object-cover"
                 loading="lazy"

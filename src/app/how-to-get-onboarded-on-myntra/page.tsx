@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     siteName: 'Technovita Solution',
     images: [
       {
-        url: '/Images/reconciliationBackground.jpg',
+        url: '/Images/onboarding/onboarding-featured-images/myntra-seller-onboarding.webp',
         width: 1200,
         height: 630,
         alt: 'Myntra Seller Onboarding Guide',
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'How to Get Onboarded on Myntra | Myntra Seller Registration Guide 2024',
     description: 'Complete guide on how to get onboarded on Myntra. Learn the step-by-step Myntra seller registration process, requirements, and tips for successful approval.',
-    images: ['/Images/reconciliationBackground.jpg'],
+    images: ['/Images/onboarding/onboarding-featured-images/myntra-seller-onboarding.webp'],
   }
 };
 
@@ -61,7 +61,7 @@ export default function MyntraOnboarding() {
             </div>
             <div className="relative">
               <Image
-                src="/Images/reconciliationBackground.jpg"
+                src="/Images/onboarding/onboarding-featured-images/myntra-seller-onboarding.webp"
                 alt="Myntra Onboarding Service - Professional Support"
                 width={600}
                 height={400}

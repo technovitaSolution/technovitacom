@@ -38,8 +38,10 @@ export default function AjioAccountManagement() {
     <AccountTemplate
       accountManagementService="Ajio Account Management Services"
       accServiceName="AJIO"
-      imgUrl="/Images/AccManagement/ajioaccount.png"
-      imgAlt="ajio Account Management service"
+      imgUrl="/Images/account-management/account-managment-featured-image/AJIO Account Management Promotion.webp"
+      imgAlt="Ajio Account Management Services - Professional E-commerce Support"
+      articleImgUrl="/Images/account-management/article/ajioaccount.webp"
+      articleImgAlt="Ajio Account Management Services - Professional Support"
     />
   );
 }

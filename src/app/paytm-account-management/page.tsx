@@ -38,8 +38,10 @@ export default function PaytmAccountManagement() {
     <AccountTemplate
       accountManagementService="Paytm Account Management Services"
       accServiceName="Paytm"
-      imgUrl="/Images/AccManagement/paytmaccount.png"
-      imgAlt="paytm Account Management service"
+      imgUrl="/Images/account-management/account-managment-featured-image/paytm-account-management.webp"
+      imgAlt="Paytm Account Management Services - Professional E-commerce Support"
+      articleImgUrl="/Images/account-management/article/paytmaccount.webp"
+      articleImgAlt="Paytm Account Management Services - Professional Support"
     />
   );
 }

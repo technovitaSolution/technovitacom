@@ -38,8 +38,10 @@ export default function AmazonAccountManagement() {
     <AccountTemplate
       accountManagementService="Amazon Account Management Services"
       accServiceName="AMAZON"
-      imgUrl="/Images/AccManagement/amazonaccount.png"
-      imgAlt="amazon Account Management service"
+      imgUrl="/Images/account-management/account-managment-featured-image/amazon-account-managemnt.webp"
+      imgAlt="Amazon Account Management Services - Professional E-commerce Support"
+      articleImgUrl="/Images/account-management/article/amazonaccount.webp"
+      articleImgAlt="Amazon Account Management Services - Professional Support"
     />
   );
 }
