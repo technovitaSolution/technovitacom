@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     siteName: 'Technovita Solution',
     images: [
       {
-        url: '/Images/accountMangement.jpg',
+        url: '/Images/account-management/account-management-services.webp',
         width: 1200,
         height: 630,
         alt: 'Account Management Services - Technovita Solution',
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Account Management Services | Technovita Solution',
     description: 'Comprehensive account management services for all major e-commerce platforms.',
-    images: ['/Images/accountMangement.jpg'],
+    images: ['/Images/account-management/account-management-services.webp'],
   }
 };
 
@@ -39,63 +39,63 @@ const accountManagementServices = [
   {
     title: 'Amazon Account Management Services',
     description: 'Professional Amazon seller account management including account setup, product listing, inventory management, and sales optimization.',
-    image: '/Images/AccManagement/amazonaccount.png',
+    image: '/Images/account-management/account-managment-featured-image/amazon-account-managemnt.webp',
     link: '/amazon-account-management',
     features: ['Account Setup & Verification', 'Product Listing Optimization', 'Inventory Management', 'PPC Campaign Management', 'Performance Analytics']
   },
   {
     title: 'Flipkart Account Management Services',
     description: 'Complete Flipkart seller account management services to maximize your sales and growth on India\'s largest e-commerce platform.',
-    image: '/Images/AccManagement/flipkartaccount.png',
+    image: '/Images/account-management/account-managment-featured-image/Flipkart Account Management by Technovita.webp',
     link: '/flipkart-account-management',
     features: ['Seller Account Setup', 'Category Approval', 'Product Cataloging', 'Order Management', 'Marketing Support']
   },
   {
     title: 'Meesho Account Management Services',
     description: 'Expert Meesho seller account management to help you succeed in the social commerce marketplace with professional support.',
-    image: '/Images/AccManagement/meeshoaccount.png',
+    image: '/Images/account-management/account-managment-featured-image/meesho-account-management.webp',
     link: '/meesho-account-management',
     features: ['Account Registration', 'Product Upload', 'Price Management', 'Order Processing', 'Customer Support']
   },
   {
     title: 'Paytm Account Management Services',
     description: 'Comprehensive Paytm marketplace account management services for seamless selling and business growth on Paytm Mall.',
-    image: '/Images/AccManagement/paytmaccount.png',
+    image: '/Images/account-management/account-managment-featured-image/paytm-account-management.webp',
     link: '/paytm-account-management',
     features: ['Seller Onboarding', 'Product Management', 'Payment Processing', 'Marketing Campaigns', 'Analytics Tracking']
   },
   {
     title: 'eBay Account Management Services',
     description: 'Professional eBay seller account management services for international and domestic marketplace success.',
-    image: '/Images/AccManagement/ebayaccount.png',
+    image: '/Images/account-management/account-managment-featured-image/ebay-account-management.webp',
     link: '/ebay-account-management',
     features: ['Global Account Setup', 'Listing Optimization', 'International Shipping', 'Buyer Communication', 'Dispute Resolution']
   },
   {
     title: 'Myntra Account Management Services',
     description: 'Specialized Myntra seller account management for fashion and lifestyle brands looking to excel in the fashion marketplace.',
-    image: '/Images/AccManagement/myntraaccount.png',
+    image: '/Images/account-management/account-managment-featured-image/Myntra Account Management Solutions Graphic.webp',
     link: '/myntra-account-management',
     features: ['Brand Registration', 'Fashion Cataloging', 'Size Chart Management', 'Style Guide Creation', 'Trend Analysis']
   },
   {
     title: 'Nykaa Account Management Services',
     description: 'Expert Nykaa seller account management for beauty and wellness brands to maximize visibility and sales.',
-    image: '/Images/AccManagement/nykaaaccount.png',
+    image: '/Images/account-management/account-managment-featured-image/nykaa-account-management.webp',
     link: '/nykaa-account-management',
     features: ['Beauty Brand Setup', 'Product Categorization', 'Content Creation', 'Promotional Campaigns', 'Customer Reviews Management']
   },
   {
     title: 'Shopee Account Management Services',
     description: 'Professional Shopee seller account management for Southeast Asian market expansion and growth.',
-    image: '/Images/AccManagement/shopeeaccount.png',
+    image: '/Images/account-management/account-managment-featured-image/shopee-account-management.webp',
     link: '/shopee-account-management',
     features: ['Regional Account Setup', 'Multi-language Support', 'Local Marketing', 'Cross-border Selling', 'Regional Compliance']
   },
   {
     title: 'Ajio Account Management Services',
     description: 'Comprehensive Ajio seller account management services for fashion and lifestyle brands on Reliance\'s marketplace.',
-    image: '/Images/AccManagement/ajioaccount.png',
+    image: '/Images/account-management/account-managment-featured-image/AJIO Account Management Promotion.webp',
     link: '/ajio-account-management',
     features: ['Fashion Brand Onboarding', 'Trend-based Cataloging', 'Seasonal Campaigns', 'Brand Store Management', 'Performance Optimization']
   }
@@ -113,12 +113,12 @@ export default function AccountManagementServices() {
           <p className="text-xl text-pink-100 max-w-3xl mx-auto mb-8">
             Professional e-commerce account management services for all major platforms. Let our experts handle your seller accounts while you focus on growing your business.
           </p>
-          <div className="relative w-full max-w-4xl mx-auto h-64 md:h-80 lg:h-96 rounded-lg overflow-hidden shadow-lg">
+          <div className="relative w-full max-w-4xl mx-auto h-80 md:h-96 lg:h-[500px] rounded-lg overflow-hidden shadow-lg bg-white p-6 flex items-center justify-center">
             <Image
-              src="/Images/accountMangement.jpg"
+              src="/Images/account-management/account-management-services.webp"
               alt="Account Management Services - Professional E-commerce Support"
               fill
-              className="object-cover"
+              className="object-contain p-4"
               priority
             />
           </div>
