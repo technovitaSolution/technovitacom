@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const About: React.FC = () => {
   const values = [
@@ -9,8 +10,8 @@ const About: React.FC = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
         </svg>
       ),
-      title: "Innovation",
-      description: "We embrace cutting-edge technologies and creative solutions to solve complex business challenges."
+      title: "Expert E-commerce Solutions",
+      description: "Specialized in Amazon, Flipkart, Myntra, Ajio, Nykaa onboarding and account management services."
     },
     {
       icon: (
@@ -18,8 +19,8 @@ const About: React.FC = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
       ),
-      title: "Quality",
-      description: "Every project undergoes rigorous testing and quality assurance to ensure exceptional results."
+      title: "Proven Success Track Record",
+      description: "300% average sales increase for our clients across all major e-commerce platforms."
     },
     {
       icon: (
@@ -27,8 +28,8 @@ const About: React.FC = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
       ),
-      title: "Reliability",
-      description: "We deliver projects on time and provide ongoing support to ensure your success."
+      title: "24/7 Professional Support",
+      description: "Round-the-clock account management and customer support for seamless business operations."
     },
     {
       icon: (
@@ -36,76 +37,103 @@ const About: React.FC = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
         </svg>
       ),
-      title: "Collaboration",
-      description: "We work closely with our clients as trusted partners throughout the entire project lifecycle."
+      title: "End-to-End Partnership",
+      description: "From onboarding to scaling, we partner with you throughout your e-commerce journey."
     }
   ];
 
   const achievements = [
-    { number: "50+", label: "Successful Projects" },
-    { number: "25+", label: "Happy Clients" },
-    { number: "5+", label: "Years of Excellence" },
-    { number: "15+", label: "Team Members" }
+    { number: "200+", label: "Brands Launched" },
+    { number: "9+", label: "Platforms Supported" },
+    { number: "300%", label: "Average Sales Increase" },
+    { number: "98%", label: "Client Satisfaction" }
+  ];
+
+  const platforms = [
+    { name: "Amazon", color: "bg-yellow-500" },
+    { name: "Flipkart", color: "bg-blue-500" },
+    { name: "Myntra", color: "bg-pink-500" },
+    { name: "Ajio", color: "bg-orange-500" },
+    { name: "Nykaa", color: "bg-purple-500" },
+    { name: "Meesho", color: "bg-green-500" }
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-gradient-to-br from-gray-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header Section */}
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center justify-center mb-6">
+            <span className="bg-pink-500 text-white text-sm font-bold px-6 py-2 rounded-full uppercase tracking-wide">
+              LEADING E-COMMERCE SOLUTIONS PROVIDER
+            </span>
+          </div>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            About <span className="text-pink-500">Technovita Solution</span>
+          </h2>
+          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
+            The <strong>Best E-commerce Solution Company</strong> specializing in Amazon, Flipkart, Myntra, Ajio, Nykaa onboarding and account management services. 
+            We help businesses scale their online presence across all major e-commerce platforms.
+          </p>
+        </div>
+
         {/* Main About Content */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-20">
           <div className="space-y-6">
-            <div>
-              <h2 className="text-4xl font-bold text-gray-900 mb-4">
-                About TechnoVita Solutions
-              </h2>
-              <p className="text-xl text-gray-600 leading-relaxed">
-                Empowering businesses through innovative technology solutions since 2020.
-              </p>
-            </div>
-            
-            <div className="space-y-4 text-gray-600 leading-relaxed">
-              <p>
-                TechnoVita Solutions is a leading technology company dedicated to helping businesses 
-                navigate the digital landscape and achieve sustainable growth through innovative solutions. 
-                Our team of experienced professionals combines technical expertise with business acumen 
-                to deliver exceptional results.
+            <div className="space-y-4 text-gray-700 leading-relaxed">
+              <p className="text-lg">
+                <strong>Technovita Solution</strong> is India's premier e-commerce solutions provider, dedicated to helping businesses 
+                achieve remarkable growth across all major online marketplaces. With over 5 years of expertise, 
+                we have established ourselves as the <strong>best company for Ajio, Myntra, Nykaa, Flipkart, and Amazon onboarding</strong>.
               </p>
               
-              <p>
-                We specialize in web development, mobile applications, cloud solutions, cybersecurity, 
-                data analytics, and IT consulting. Our client-centric approach ensures that every 
-                solution is tailored to meet specific business needs and objectives.
+              <p className="text-lg">
+                Our comprehensive services include professional seller account setup, product listing optimization, 
+                inventory management, PPC campaign management, and 24/7 account monitoring. We specialize in 
+                platform-specific strategies that maximize your visibility and sales potential.
               </p>
               
-              <p>
-                With a proven track record of successful projects across various industries, we have 
-                established ourselves as a trusted partner for businesses looking to leverage technology 
-                for competitive advantage.
+              <p className="text-lg">
+                Whether you're a startup looking to establish your online presence or an established brand 
+                seeking to expand across multiple platforms, our expert team provides end-to-end solutions 
+                tailored to your unique business requirements.
               </p>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
+            {/* Platform Badges */}
+            <div className="pt-4">
+              <h4 className="text-lg font-semibold text-gray-900 mb-4">Platforms We Specialize In:</h4>
+              <div className="flex flex-wrap gap-3">
+                {platforms.map((platform, index) => (
+                  <div key={index} className={`${platform.color} text-white px-4 py-2 rounded-full text-sm font-semibold`}>
+                    {platform.name}
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="flex flex-col sm:flex-row gap-4 pt-6">
               <Link 
-                href="/about"
-                className="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors duration-200"
+                href="/services/account-management"
+                className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-white bg-pink-600 rounded-lg hover:bg-pink-700 transition-colors duration-200 shadow-lg hover:shadow-xl"
               >
-                Learn More About Us
+                View Our Services
               </Link>
               <Link 
-                href="/team"
-                className="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-blue-600 border-2 border-blue-600 rounded-lg hover:bg-blue-50 transition-colors duration-200"
+                href="/contact"
+                className="inline-flex items-center justify-center px-8 py-4 text-base font-semibold text-pink-600 border-2 border-pink-600 rounded-lg hover:bg-pink-50 transition-colors duration-200"
               >
-                Meet Our Team
+                Get Free Consultation
               </Link>
             </div>
           </div>
 
-          {/* Visual/Stats Section */}
+          {/* Stats Section */}
           <div className="relative">
             <div className="grid grid-cols-2 gap-6">
               {achievements.map((achievement, index) => (
-                <div key={index} className="text-center p-6 bg-gray-50 rounded-xl">
-                  <div className="text-3xl lg:text-4xl font-bold text-blue-600 mb-2">
+                <div key={index} className="text-center p-8 bg-white rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-shadow duration-300">
+                  <div className="text-4xl lg:text-5xl font-bold text-pink-500 mb-3">
                     {achievement.number}
                   </div>
                   <div className="text-sm text-gray-600 font-medium">
@@ -116,7 +144,7 @@ const About: React.FC = () => {
             </div>
 
             {/* Decorative Elements */}
-            <div className="absolute -top-4 -right-4 w-24 h-24 bg-blue-100 rounded-full opacity-50"></div>
+            <div className="absolute -top-4 -right-4 w-24 h-24 bg-pink-100 rounded-full opacity-50"></div>
             <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-purple-100 rounded-full opacity-50"></div>
           </div>
         </div>
@@ -124,28 +152,49 @@ const About: React.FC = () => {
         {/* Our Values */}
         <div className="mb-20">
           <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold text-gray-900 mb-4">Our Core Values</h3>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              The principles that guide everything we do and shape our approach to technology and client relationships.
+            <h3 className="text-3xl font-bold text-gray-900 mb-4">Why Choose Technovita Solution?</h3>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              As the <strong>best e-commerce solution company</strong>, we provide comprehensive services for Amazon, Flipkart, Myntra, Ajio, and Nykaa onboarding 
+              with proven strategies that drive exceptional results.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((value, index) => (
-              <div key={index} className="text-center group">
-                <div className="flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mx-auto mb-4 group-hover:bg-blue-600 transition-colors duration-300">
-                  <div className="text-blue-600 group-hover:text-white transition-colors duration-300">
+              <div key={index} className="text-center group bg-white p-8 rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <div className="flex items-center justify-center w-16 h-16 bg-pink-100 rounded-full mx-auto mb-6 group-hover:bg-pink-500 transition-colors duration-300">
+                  <div className="text-pink-500 group-hover:text-white transition-colors duration-300">
                     {value.icon}
                   </div>
                 </div>
-                <h4 className="text-lg font-semibold text-gray-900 mb-2">{value.title}</h4>
-                <p className="text-gray-600 text-sm leading-relaxed">{value.description}</p>
+                <h4 className="text-xl font-semibold text-gray-900 mb-3">{value.title}</h4>
+                <p className="text-gray-600 leading-relaxed">{value.description}</p>
               </div>
             ))}
           </div>
         </div>
 
-
+        {/* CTA Section */}
+        <div className="bg-gradient-to-r from-pink-500 to-purple-600 rounded-2xl text-white p-8 lg:p-12 text-center">
+          <h3 className="text-3xl font-bold mb-4">Ready to Scale Your E-commerce Business?</h3>
+          <p className="text-xl text-pink-100 mb-8 max-w-2xl mx-auto">
+            Join 200+ successful brands who trust Technovita Solution for their Amazon, Flipkart, Myntra, Ajio, and Nykaa onboarding needs.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link 
+              href="/contact"
+              className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-pink-600 bg-white rounded-lg hover:bg-gray-50 transition-colors duration-200"
+            >
+              Start Your Journey Today
+            </Link>
+            <Link 
+              href="tel:+917042163504"
+              className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white border-2 border-white/30 rounded-lg hover:bg-white/10 transition-colors duration-200"
+            >
+              Call Now: +91 7042163504
+            </Link>
+          </div>
+        </div>
       </div>
     </section>
   );

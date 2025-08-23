@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 interface SocialLinkProps {
   href: string;
@@ -10,7 +11,7 @@ interface SocialLinkProps {
 const SocialLink: React.FC<SocialLinkProps> = ({ href, ariaLabel, children }) => (
   <Link 
     href={href} 
-    className="text-gray-400 hover:text-blue-600 transition-colors duration-200"
+    className="text-gray-400 hover:text-pink-600 transition-colors duration-200"
     aria-label={ariaLabel}
     target="_blank"
     rel="noopener noreferrer"
@@ -21,25 +22,29 @@ const SocialLink: React.FC<SocialLinkProps> = ({ href, ariaLabel, children }) =>
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-50 border-t border-gray-200">
+    <footer className="bg-gradient-to-br from-gray-900 to-gray-800 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
           {/* Company Info Section */}
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">T</span>
-              </div>
-              <h3 className="text-xl font-bold text-gray-900">Technovita Solution</h3>
+              <Image 
+                src="/logo.webp" 
+                alt="Technovita Solution Logo" 
+                width={32} 
+                height={32} 
+                className="rounded-lg"
+                priority
+              />
+              <h3 className="text-xl font-bold text-white">Technovita Solution</h3>
             </div>
             
-            <p className="text-gray-600 text-sm leading-relaxed max-w-sm">
-              We are an online-medium where we build, create and nurture your idea in a genre of preferred brands! 
-              Our team of passionate content writers, digital marketers, designers, and advertising experts 
-              strive to give the best possible e-commerce growth results.
+            <p className="text-gray-300 text-sm leading-relaxed max-w-sm">
+              India's premier e-commerce solutions provider specializing in Amazon, Flipkart, Myntra, Ajio, and Nykaa onboarding and account management services. 
+              We help businesses scale their online presence across all major e-commerce platforms.
             </p>
             
-            <div className="flex items-center space-x-2 text-blue-600">
+            <div className="flex items-center space-x-2 text-pink-400">
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
               </svg>
@@ -70,97 +75,96 @@ const Footer: React.FC = () => {
 
           {/* Navigation Section */}
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold text-gray-900 mb-4">Navigation</h4>
+            <h4 className="text-lg font-semibold text-white mb-4">Quick Links</h4>
             <nav className="space-y-3">
-              <Link href="/" className="flex items-center text-gray-600 hover:text-blue-600 transition-colors duration-200">
+              <Link href="/" className="flex items-center text-gray-300 hover:text-pink-400 transition-colors duration-200">
                 <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
                 Home
               </Link>
               
-              <Link href="/services" className="flex items-center text-gray-600 hover:text-blue-600 transition-colors duration-200">
+              <Link href="/services/account-management" className="flex items-center text-gray-300 hover:text-pink-400 transition-colors duration-200">
                 <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
-                Services
+                Account Management
               </Link>
               
-              <Link href="/about" className="flex items-center text-gray-600 hover:text-blue-600 transition-colors duration-200">
+              <Link href="/services/onboarding-services" className="flex items-center text-gray-300 hover:text-pink-400 transition-colors duration-200">
                 <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
-                About Us
+                Onboarding Services
               </Link>
               
-              <Link href="/portfolio" className="flex items-center text-gray-600 hover:text-blue-600 transition-colors duration-200">
+              <Link href="/services/catalogue-services" className="flex items-center text-gray-300 hover:text-pink-400 transition-colors duration-200">
                 <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
-                Portfolio
+                Catalogue Services
               </Link>
               
-              <Link href="/testimonials" className="flex items-center text-gray-600 hover:text-blue-600 transition-colors duration-200">
+              <Link href="/how-to-get-onboarded-on-ajio" className="flex items-center text-gray-300 hover:text-pink-400 transition-colors duration-200">
                 <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
-                Testimonials
+                Ajio Onboarding
               </Link>
               
-              <Link href="/contact" className="flex items-center text-gray-600 hover:text-blue-600 transition-colors duration-200">
+              <Link href="/how-to-get-onboarded-on-myntra" className="flex items-center text-gray-300 hover:text-pink-400 transition-colors duration-200">
                 <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
-                Contact
+                Myntra Onboarding
+              </Link>
+              
+              <Link href="/how-to-get-onboarded-on-nykaa" className="flex items-center text-gray-300 hover:text-pink-400 transition-colors duration-200">
+                <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+                Nykaa Onboarding
+              </Link>
+              
+              <Link href="/contact" className="flex items-center text-gray-300 hover:text-pink-400 transition-colors duration-200">
+                <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+                Contact Us
               </Link>
             </nav>
           </div>
 
           {/* Contact Info Section */}
           <div className="space-y-4">
-            <h4 className="text-lg font-semibold text-gray-900 mb-4">Contact Us</h4>
+            <h4 className="text-lg font-semibold text-white mb-4">Contact Us</h4>
             
             <div className="space-y-3">
               <div className="flex items-start space-x-3">
-                <div className="flex-shrink-0 w-5 h-5 text-blue-600 mt-0.5">
-                  <svg fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
-                  </svg>
-                </div>
-                <div>
-                  <p className="text-sm font-medium text-gray-900">Our Location</p>
-                  <p className="text-sm text-gray-600">
-                    Block F, Sector 3<br />
-                    Noida, Delhi 201301, India
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-3">
-                <div className="flex-shrink-0 w-5 h-5 text-blue-600 mt-0.5">
+                <div className="flex-shrink-0 w-5 h-5 text-pink-400 mt-0.5">
                   <svg fill="currentColor" viewBox="0 0 20 20">
                     <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                   </svg>
                 </div>
                 <div>
-                  <p className="text-sm font-medium text-gray-900">Phone</p>
-                  <Link href="tel:+911234567890" className="text-sm text-gray-600 hover:text-blue-600 transition-colors">
-                    +91 12345 67890
+                  <p className="text-sm font-medium text-white">Phone</p>
+                  <Link href="tel:+917042163504" className="text-sm text-gray-300 hover:text-pink-400 transition-colors">
+                    +91 7042163504
                   </Link>
                 </div>
               </div>
 
               <div className="flex items-start space-x-3">
-                <div className="flex-shrink-0 w-5 h-5 text-blue-600 mt-0.5">
+                <div className="flex-shrink-0 w-5 h-5 text-pink-400 mt-0.5">
                   <svg fill="currentColor" viewBox="0 0 20 20">
                     <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                     <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                   </svg>
                 </div>
                 <div>
-                  <p className="text-sm font-medium text-gray-900">Email</p>
-                  <Link href="mailto:contact@technovitasolution.com" className="text-sm text-gray-600 hover:text-blue-600 transition-colors">
-                    contact@technovitasolution.com
+                  <p className="text-sm font-medium text-white">Email</p>
+                  <Link href="mailto:info@technovitasolution.com" className="text-sm text-gray-300 hover:text-pink-400 transition-colors">
+                    info@technovitasolution.com
                   </Link>
                 </div>
               </div>
@@ -169,20 +173,20 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className="mt-8 pt-8 border-t border-gray-200">
+        <div className="mt-8 pt-8 border-t border-gray-700">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-sm text-gray-500">
+            <p className="text-sm text-gray-400">
               © 2025 Technovita Solution. All rights reserved.
             </p>
             
             <div className="flex flex-wrap justify-center md:justify-end space-x-6">
-              <Link href="/privacy-policy" className="text-sm text-gray-500 hover:text-blue-600 transition-colors duration-200">
+              <Link href="/privacy-policy" className="text-sm text-gray-400 hover:text-pink-400 transition-colors duration-200">
                 Privacy Policy
               </Link>
-              <Link href="/terms-of-service" className="text-sm text-gray-500 hover:text-blue-600 transition-colors duration-200">
+              <Link href="/terms-of-service" className="text-sm text-gray-400 hover:text-pink-400 transition-colors duration-200">
                 Terms of Service
               </Link>
-              <Link href="/cookie-policy" className="text-sm text-gray-500 hover:text-blue-600 transition-colors duration-200">
+              <Link href="/cookie-policy" className="text-sm text-gray-400 hover:text-pink-400 transition-colors duration-200">
                 Cookie Policy
               </Link>
             </div>
