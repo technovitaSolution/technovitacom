@@ -1,6 +1,6 @@
 import React from 'react';
 import { Metadata } from 'next';
-import Image from 'next/image';
+
 
 export const metadata: Metadata = {
   title: 'Terms of Service - Technovita Solution | Service Terms & Conditions',

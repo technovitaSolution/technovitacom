@@ -104,7 +104,7 @@ export default function AmazonSuspensionAppealCanada() {
             subtitle="Don't let a suspension destroy your business! Our Amazon.ca suspension appeal experts will analyze your case, write a compelling Plan of Action, and fight to get your account reinstated quickly."
             ctaText="Start My Appeal Process"
             serviceName="Amazon Canada Suspension Appeal"
-            backgroundColor="bg-gradient-to-br from-red-600 via-rose-600 to-pink-700"
+            
             accentColor="from-yellow-400 to-orange-400"
             showWhatsApp={true}
             formId="amazon-canada-suspension-top"
@@ -340,7 +340,7 @@ export default function AmazonSuspensionAppealCanada() {
             subtitle="Get immediate help from our Amazon Canada suspension appeal experts. We'll analyze your case, create a compelling Plan of Action, and work tirelessly to get your account reinstated as quickly as possible."
             ctaText="Start My Emergency Appeal"
             serviceName="Amazon Canada Emergency Suspension Appeal"
-            backgroundColor="bg-gradient-to-br from-red-600 via-rose-600 to-pink-700"
+            
             accentColor="from-yellow-400 to-orange-400"
             showWhatsApp={true}
             formId="amazon-canada-suspension-final"

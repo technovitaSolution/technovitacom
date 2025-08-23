@@ -91,7 +91,6 @@ export default function AmazonCanadaOnboardingService() {
             subtitle="Skip the complexity and get your Amazon.ca seller account set up professionally. Our certified experts handle everything from documentation to compliance, getting you ready to sell in just 7-14 days!"
             ctaText="Get My Onboarding Started"
             serviceName="Amazon Canada Onboarding Service"
-            backgroundColor="bg-gradient-to-br from-green-600 via-emerald-600 to-teal-700"
             accentColor="from-yellow-400 to-orange-400"
             showWhatsApp={true}
             formId="amazon-canada-onboarding-top"
@@ -427,7 +426,6 @@ export default function AmazonCanadaOnboardingService() {
             subtitle="Ready to get your Amazon.ca seller account set up professionally? Our experts will handle everything from registration to compliance, ensuring you're ready to succeed in the Canadian marketplace."
             ctaText="Start My Professional Onboarding"
             serviceName="Amazon Canada Professional Onboarding"
-            backgroundColor="bg-gradient-to-br from-green-600 via-emerald-600 to-teal-700"
             accentColor="from-yellow-400 to-orange-400"
             showWhatsApp={true}
             formId="amazon-canada-onboarding-final"

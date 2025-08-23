@@ -91,7 +91,7 @@ export default function AmazonListingOptimizationCanada() {
             subtitle="Ready to boost your Amazon.ca rankings and sales? Our listing optimization experts will transform your product listings with proven SEO strategies and conversion-focused content that drives results."
             ctaText="Get My Listings Optimized"
             serviceName="Amazon Canada Listing Optimization"
-            backgroundColor="bg-gradient-to-br from-blue-600 via-cyan-600 to-teal-700"
+            
             accentColor="from-yellow-400 to-orange-400"
             showWhatsApp={true}
             formId="amazon-canada-listing-top"
@@ -378,7 +378,7 @@ export default function AmazonListingOptimizationCanada() {
             subtitle="Transform your Amazon.ca product listings with expert optimization. Our team will enhance your titles, descriptions, images, and keywords to maximize visibility and conversions on the Canadian marketplace."
             ctaText="Optimize My Listings Now"
             serviceName="Amazon Canada Professional Listing Optimization"
-            backgroundColor="bg-gradient-to-br from-blue-600 via-cyan-600 to-teal-700"
+            
             accentColor="from-yellow-400 to-orange-400"
             showWhatsApp={true}
             formId="amazon-canada-listing-final"

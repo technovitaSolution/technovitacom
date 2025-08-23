@@ -91,7 +91,7 @@ export default function AmazonSEORankingCanada() {
             subtitle="Ready to rank higher on Amazon.ca and get more organic traffic? Our SEO experts will optimize your listings for maximum search visibility and help you dominate the Canadian marketplace rankings."
             ctaText="Boost My Rankings Now"
             serviceName="Amazon Canada SEO Ranking"
-            backgroundColor="bg-gradient-to-br from-emerald-600 via-green-600 to-lime-700"
+            
             accentColor="from-yellow-400 to-orange-400"
             showWhatsApp={true}
             formId="amazon-canada-seo-top"
@@ -379,7 +379,7 @@ export default function AmazonSEORankingCanada() {
             subtitle="Transform your Amazon.ca search visibility with expert SEO optimization. Our specialists will boost your keyword rankings, increase organic traffic, and help you dominate the Canadian marketplace search results."
             ctaText="Boost My Rankings Now"
             serviceName="Amazon Canada Professional SEO Ranking"
-            backgroundColor="bg-gradient-to-br from-emerald-600 via-green-600 to-lime-700"
+            
             accentColor="from-yellow-400 to-orange-400"
             showWhatsApp={true}
             formId="amazon-canada-seo-final"

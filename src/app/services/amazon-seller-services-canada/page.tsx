@@ -482,7 +482,7 @@ export default function AmazonSellerServicesCanada() {
             subtitle="Ready to dominate the Amazon.ca marketplace? Get expert guidance from Canada's leading Amazon seller service providers. Our specialists will create a customized strategy for your business success."
             ctaText="Get My Free Amazon Strategy"
             serviceName="Amazon Seller Services Canada"
-            backgroundColor="bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-700"
+            
             accentColor="from-yellow-400 to-orange-400"
             showWhatsApp={true}
             formId="amazon-canada-contact"

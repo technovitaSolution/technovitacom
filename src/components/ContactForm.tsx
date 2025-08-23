@@ -8,7 +8,6 @@ interface ContactFormProps {
   subtitle?: string;
   ctaText?: string;
   serviceName?: string;
-  backgroundColor?: string;
   accentColor?: string;
   showWhatsApp?: boolean;
   formId?: string;
@@ -27,7 +26,7 @@ const ContactForm: React.FC<ContactFormProps> = ({
   subtitle = "Ready to grow your business? Contact our expert team for personalized solutions.",
   ctaText = "Send Message",
   serviceName = "General Inquiry",
-  backgroundColor = "bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-700",
+
   accentColor = "from-yellow-400 to-orange-400",
   showWhatsApp = true,
   formId = "general-contact"

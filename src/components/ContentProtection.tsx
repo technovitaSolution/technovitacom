@@ -11,11 +11,11 @@ export function withContentProtection<P extends object>(
   WrappedComponent: React.ComponentType<P>,
   config?: ProtectionConfig
 ) {
-  const WithContentProtection = forwardRef<any, P>((props, ref) => {
+  const WithContentProtection = (props: P) => {
     useContentProtection(config);
     
-    return <WrappedComponent {...props} ref={ref} />;
-  });
+    return <WrappedComponent {...props} />;
+  };
   
   WithContentProtection.displayName = `withContentProtection(${WrappedComponent.displayName || WrappedComponent.name})`;
   
@@ -58,7 +58,7 @@ export const ContentProtectionProvider: React.FC<{
   config?: ProtectionConfig;
   enableGlobalProtection?: boolean;
 }> = ({ children, config, enableGlobalProtection = true }) => {
-  const { removeProtection } = useContentProtection(
+  useContentProtection(
     enableGlobalProtection ? config : undefined
   );
   
@@ -111,6 +111,7 @@ export const ProtectedImage = forwardRef<
       ref={finalRef}
       className={`content-protected ${className}`}
       draggable={false}
+      alt={props.alt || "Protected content"}
       {...props}
     />
   );

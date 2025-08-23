@@ -19,7 +19,7 @@ const VideoTestimonialCard: React.FC<VideoTestimonialProps> = ({
     {/* YouTube Video Embed */}
     <div className="aspect-video">
       <iframe
-        src={`https://www.youtube.com/embed/${videoId}`}
+        src={`https://www.youtube.com/embed/${videoId}?rel=0&modestbranding=1&showinfo=0&controls=1&disablekb=1&fs=1&iv_load_policy=3&cc_load_policy=0&autoplay=0&mute=0&loop=0&playlist=${videoId}`}
         title={`${clientName} testimonial`}
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -59,17 +59,31 @@ const VideoTestimonialCard: React.FC<VideoTestimonialProps> = ({
 const Testimonials: React.FC = () => {
   const videoTestimonials: VideoTestimonialProps[] = [
     {
+      videoId: "piYVKoZGVww",
+      clientName: "Mohit - Founder of Oddgrab",
+      metric: "Successfully Onboarded on Myntra",
+      testimonial: "Technovita's Myntra onboarding service was exceptional! They handled everything from product photography to listing optimization perfectly. Our brand presence on Myntra has never been stronger. Highly recommend their professional approach.",
+      rating: 5
+    },
+    {
+      videoId: "GxjBEfcQliQ",
+      clientName: "Sayali - Founder of Luxerra",
+      metric: "Successfully Onboarded on Myntra & Ajio",
+      testimonial: "Outstanding service! Technovita helped us launch Luxerra on both Myntra and Ajio with incredible attention to detail. Their product listing services and catalog management expertise made the entire process smooth and successful.",
+      rating: 5
+    },
+    {
       videoId: "0KtKwVq39Y4",
       clientName: "Yagvendra",
-      metric: "Increased Sales by 300%",
-      testimonial: "After onboarding with their help, our orders tripled in just 2 months!",
+      metric: "Successfully Onboarded on Myntra & Ajio",
+      testimonial: "Technovita's onboarding services on both Myntra and Ajio were outstanding! Our sales increased by 300% after their expert product listing and catalog management. The team's attention to detail is remarkable.",
       rating: 5
     },
     {
       videoId: "eoCYSK0p-A8",
       clientName: "Sneha",
-      metric: "From Zero to 200 Orders/Day",
-      testimonial: "Their product photography and listing services made all the difference.",
+      metric: "Successfully Onboarded on Myntra & Ajio",
+      testimonial: "From zero to 200 orders per day! Technovita's expertise in marketplace onboarding on Myntra and Ajio transformed our business. Their product photography and listing optimization services are top-notch.",
       rating: 5
     }
   ];

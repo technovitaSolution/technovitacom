@@ -91,7 +91,7 @@ export default function AmazonPPCManagementCanada() {
             subtitle="Ready to scale your Amazon.ca business with profitable PPC campaigns? Our certified Amazon advertising experts will optimize your campaigns, reduce ACOS, and maximize your return on ad spend."
             ctaText="Get My PPC Audit"
             serviceName="Amazon Canada PPC Management"
-            backgroundColor="bg-gradient-to-br from-red-600 via-pink-600 to-purple-700"
+            
             accentColor="from-yellow-400 to-orange-400"
             showWhatsApp={true}
             formId="amazon-canada-ppc-top"
@@ -378,7 +378,7 @@ export default function AmazonPPCManagementCanada() {
             subtitle="Transform your Amazon.ca advertising performance with expert PPC management. Our certified specialists will optimize your campaigns, reduce ACOS, and scale your business profitably on the Canadian marketplace."
             ctaText="Start My PPC Optimization"
             serviceName="Amazon Canada Professional PPC Management"
-            backgroundColor="bg-gradient-to-br from-red-600 via-pink-600 to-purple-700"
+            
             accentColor="from-yellow-400 to-orange-400"
             showWhatsApp={true}
             formId="amazon-canada-ppc-final"

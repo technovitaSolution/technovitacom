@@ -91,7 +91,7 @@ export default function AmazonConsultingCanada() {
             subtitle="Ready to take your Amazon.ca business to the next level? Our certified Amazon consultants will analyze your business and create a customized growth strategy for the Canadian marketplace."
             ctaText="Book My Strategy Session"
             serviceName="Amazon Canada Consulting Services"
-            backgroundColor="bg-gradient-to-br from-indigo-600 via-purple-600 to-blue-700"
+            
             accentColor="from-yellow-400 to-orange-400"
             showWhatsApp={true}
             formId="amazon-canada-consulting-top"
@@ -756,7 +756,7 @@ export default function AmazonConsultingCanada() {
             subtitle="Get expert strategic guidance from certified Amazon consultants. We'll analyze your business, identify growth opportunities, and create a customized roadmap for success on Amazon.ca."
             ctaText="Schedule My Strategy Session"
             serviceName="Amazon Canada Strategic Consulting"
-            backgroundColor="bg-gradient-to-br from-indigo-600 via-purple-600 to-blue-700"
+            
             accentColor="from-yellow-400 to-orange-400"
             showWhatsApp={true}
             formId="amazon-canada-consulting-final"
