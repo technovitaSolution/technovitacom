@@ -3,6 +3,8 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import WhatsAppButton from '@/components/WhatsAppButton';
+import Testimonials from '@/components/Testimonials';
+import MultiStepForm from '@/components/MultiStepForm';
 
 export const metadata: Metadata = {
   title: 'How to Get Onboarded on Nykaa | Nykaa Seller Registration Guide 2024',
@@ -330,34 +332,15 @@ export default function NykaaOnboarding() {
             </div>
           </section>
 
-          {/* Reviews Section */}
-          <section className="bg-white rounded-xl shadow-lg p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-gray-900 mb-8">
-              <strong>Reviews</strong> ⭐️(4.5/5 based on 50+ Ratings)
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
-                <h4 className="text-xl font-semibold text-gray-900 mb-2">Surendra Singh ⭐️⭐️⭐️⭐️</h4>
-                <p className="text-gray-700">
-                  Great Service! I took their advertisement of products on Nykaa services. Best thing is they were on time and provided best services.
-                </p>
-              </div>
-              
-              <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
-                <h4 className="text-xl font-semibold text-gray-900 mb-2">Hardik Patel ⭐️⭐️⭐️⭐️⭐️</h4>
-                <p className="text-gray-700">
-                  I took their Nykaa account management services, they are very professional in their work. I will highly recommend them to you.
-                </p>
-              </div>
-              
-              <div className="bg-gray-50 p-6 rounded-lg shadow-sm">
-                <h4 className="text-xl font-semibold text-gray-900 mb-2">Anurag Singh ⭐️⭐️⭐️⭐️</h4>
-                <p className="text-gray-700">
-                  I am a seller on Nykaa. Initially my sales were not that much but after taking their account management services my sales increased by 400%(4x). They added good keywords on my Nykaa seller account regarding my products. Thanks Technovita solution.
-                </p>
-              </div>
-            </div>
-          </section>
+          {/* Testimonials Section */}
+          <div className="mb-12">
+            <Testimonials />
+          </div>
+
+          {/* Multi-Step Form Section */}
+          <div className="mb-12">
+            <MultiStepForm />
+          </div>
 
           {/* Account Management Services */}
           <section className="bg-white rounded-xl shadow-lg p-8 mb-12">

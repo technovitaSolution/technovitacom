@@ -3,6 +3,8 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import WhatsAppButton from '@/components/WhatsAppButton';
+import Testimonials from '@/components/Testimonials';
+import MultiStepForm from '@/components/MultiStepForm';
 
 export const metadata: Metadata = {
   title: 'How to Get Onboarded on Ajio | Ajio Seller Registration Guide 2024',
@@ -398,6 +400,16 @@ export default function AjioOnboarding() {
               </Link>
             </div>
           </section>
+
+          {/* Testimonials Section */}
+          <div className="mb-12">
+            <Testimonials />
+          </div>
+
+          {/* Multi-Step Form Section */}
+          <div className="mb-12">
+            <MultiStepForm />
+          </div>
 
           {/* CTA Section */}
           <div className="bg-gradient-to-r from-orange-500 to-red-600 rounded-xl text-white p-8 text-center">
