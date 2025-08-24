@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Technovita Solution - E-commerce Growth & Digital Marketing Experts",
-  description: "Transform your business with our comprehensive e-commerce solutions. We specialize in digital marketing, content creation, catalogue management, and brand development to accelerate your online growth.",
+  description: "Leading e-commerce solutions provider specializing in account management, catalogue services, and onboarding across Amazon (India,USA, UK, Canada, Australia, UAE), Flipkart, Myntra, Ajio, Nykaa, eBay, Meesho, Paytm, and Shopee. Expert marketplace management and sales optimization services.",
   keywords: ["e-commerce solutions", "digital marketing", "online business growth", "catalogue creation", "brand development", "content writing", "advertising experts", "e-commerce management"],
   authors: [{ name: "Technovita Solution" }],
   creator: "Technovita Solution",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     url: "https://technovitasolution.com",
     siteName: "Technovita Solution",
     title: "Technovita Solution - E-commerce Growth & Digital Marketing Experts",
-    description: "Transform your business with our comprehensive e-commerce solutions. We specialize in digital marketing, content creation, catalogue management, and brand development.",
+    description: "Leading e-commerce solutions provider specializing in account management, catalogue services, and onboarding across Amazon (USA, UK, Canada, Australia, UAE), Flipkart, Myntra, Ajio, Nykaa, eBay, Meesho, Paytm, and Shopee. Expert marketplace management and sales optimization services.",
     images: [
       {
         url: "/og-image.jpg",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Technovita Solution - E-commerce Growth & Digital Marketing Experts",
-    description: "Transform your business with our comprehensive e-commerce solutions. We specialize in digital marketing, content creation, catalogue management, and brand development.",
+    description: "Leading e-commerce solutions provider specializing in account management, catalogue services, and onboarding across Amazon (India,USA, UK, Canada, Australia, UAE), Flipkart, Myntra, Ajio, Nykaa, eBay, Meesho, Paytm, and Shopee. Expert marketplace management and sales optimization services.",
     images: ["/og-image.jpg"],
   },
   viewport: "width=device-width, initial-scale=1",

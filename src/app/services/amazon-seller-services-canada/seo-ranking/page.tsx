@@ -5,15 +5,45 @@ import WhatsAppButton from '@/components/WhatsAppButton';
 import ContactForm from '@/components/ContactForm';
 
 export const metadata: Metadata = {
-  title: 'Amazon Canada SEO Ranking Services | Professional Amazon.ca Search Optimization 2024',
-  description: 'Expert Amazon Canada SEO ranking services. Professional Amazon.ca search optimization, keyword ranking improvement, organic traffic boost, and visibility enhancement. Dominate Canadian marketplace search results.',
-  keywords: 'amazon canada seo ranking, amazon.ca search optimization, amazon seo services canada, amazon ranking improvement canada, amazon keyword ranking canada, amazon organic ranking canada, amazon search visibility',
+  title: 'Amazon Canada SEO Ranking Services | Expert Amazon.ca Search Optimization & Keyword Ranking - Technovita Solution',
+  description: 'Professional Amazon Canada SEO ranking services. Expert Amazon.ca search optimization, keyword ranking improvement, organic traffic boost, search visibility enhancement, and competitor analysis. Dominate Canadian marketplace search results with Technovita Solution.',
+  keywords: [
+    'amazon canada seo ranking',
+    'amazon.ca search optimization',
+    'amazon seo services canada',
+    'amazon ranking improvement canada',
+    'amazon keyword ranking canada',
+    'amazon organic ranking canada',
+    'amazon search visibility',
+    'amazon.ca seo ranking',
+    'amazon canada search optimization',
+    'amazon keyword optimization canada',
+    'amazon organic traffic canada',
+    'amazon search ranking canada',
+    'amazon.ca keyword ranking',
+    'amazon canada seo expert',
+    'amazon search visibility canada',
+    'amazon ranking optimization',
+    'amazon.ca organic ranking',
+    'amazon canada search results',
+    'amazon keyword research canada',
+    'amazon seo specialist canada',
+    'amazon.ca search optimization',
+    'amazon canada ranking expert',
+    'amazon organic search canada',
+    'amazon.ca seo services',
+    'amazon search ranking expert'
+  ],
+  authors: [{ name: "Technovita Solution" }],
+  creator: "Technovita Solution",
+  publisher: "Technovita Solution",
+  robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
   alternates: {
     canonical: 'https://technovitasolution.com/services/amazon-seller-services-canada/seo-ranking'
   },
   openGraph: {
-    title: 'Amazon Canada SEO Ranking Services | Professional Amazon.ca Search Optimization',
-    description: 'Expert Amazon Canada SEO ranking services. Professional Amazon.ca search optimization, keyword ranking improvement, organic traffic boost, and visibility enhancement.',
+    title: 'Amazon Canada SEO Ranking Services | Expert Amazon.ca Search Optimization & Keyword Ranking - Technovita Solution',
+    description: 'Professional Amazon Canada SEO ranking services. Expert Amazon.ca search optimization, keyword ranking improvement, organic traffic boost, search visibility enhancement, and competitor analysis. Dominate Canadian marketplace search results with Technovita Solution.',
     url: 'https://technovitasolution.com/services/amazon-seller-services-canada/seo-ranking',
     siteName: 'Technovita Solution',
     images: [
@@ -21,7 +51,7 @@ export const metadata: Metadata = {
         url: '/Images/account-management/account-management-services.webp',
         width: 1200,
         height: 630,
-        alt: 'Amazon Canada SEO Ranking Services',
+        alt: 'Amazon Canada SEO Ranking Services - Expert Amazon.ca Search Optimization & Keyword Ranking',
       },
     ],
     locale: 'en_US',
@@ -29,15 +59,95 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Amazon Canada SEO Ranking Services | Professional Amazon.ca Search Optimization',
-    description: 'Expert Amazon Canada SEO ranking services. Professional Amazon.ca search optimization, keyword ranking improvement, organic traffic boost, and visibility enhancement.',
+    title: 'Amazon Canada SEO Ranking Services | Expert Amazon.ca Search Optimization & Keyword Ranking - Technovita Solution',
+    description: 'Professional Amazon Canada SEO ranking services. Expert Amazon.ca search optimization, keyword ranking improvement, organic traffic boost, search visibility enhancement, and competitor analysis. Dominate Canadian marketplace search results with Technovita Solution.',
     images: ['/Images/account-management/account-management-services.webp'],
-  }
+  },
+
 };
 
 export default function AmazonSEORankingCanada() {
   return (
     <div className="min-h-screen bg-gray-50">
+      {/* Structured Data for Service */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Amazon Canada SEO Ranking Services",
+            "description": "Professional Amazon Canada SEO ranking services. Expert Amazon.ca search optimization, keyword ranking improvement, organic traffic boost, search visibility enhancement, and competitor analysis.",
+            "provider": {
+              "@type": "Organization",
+              "name": "Technovita Solution",
+              "url": "https://technovitasolution.com"
+            },
+            "serviceType": "E-commerce SEO Optimization",
+
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Amazon Canada SEO Services",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Amazon.ca Search Optimization",
+                    "description": "Professional Amazon.ca search optimization and visibility enhancement"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Amazon.ca Keyword Ranking",
+                    "description": "Advanced keyword ranking improvement for Amazon Canada"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Amazon.ca Organic Traffic Boost",
+                    "description": "Organic traffic optimization and growth strategies"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Amazon.ca Search Visibility",
+                    "description": "Search visibility enhancement and optimization"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Amazon.ca Competitor Analysis",
+                    "description": "Comprehensive competitor analysis and optimization strategies"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Amazon.ca SEO Audit",
+                    "description": "Complete SEO audit and optimization recommendations"
+                  }
+                }
+              ]
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.9",
+              "reviewCount": "220"
+            }
+          })
+        }}
+      />
+      
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-emerald-600 via-green-600 to-lime-700 text-white py-20 lg:py-28 overflow-hidden">
         {/* Animated Background Elements */}

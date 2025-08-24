@@ -5,15 +5,45 @@ import WhatsAppButton from '@/components/WhatsAppButton';
 import ContactForm from '@/components/ContactForm';
 
 export const metadata: Metadata = {
-  title: 'Amazon Canada Consulting Services | Expert Amazon.ca Business Strategy 2024',
-  description: 'Professional Amazon Canada consulting services. Expert Amazon.ca business strategy, growth planning, market analysis, and performance optimization. Strategic guidance from certified Amazon consultants.',
-  keywords: 'amazon canada consulting services, amazon.ca business strategy, amazon canada expert consultation, amazon growth consulting canada, amazon business advisor canada, amazon strategy consultant',
+  title: 'Amazon Canada Consulting Services | Expert Amazon.ca Business Strategy & Growth Planning - Technovita Solution',
+  description: 'Professional Amazon Canada consulting services. Expert Amazon.ca business strategy, growth planning, market analysis, performance optimization, and strategic guidance. Certified Amazon consultants at Technovita Solution.',
+  keywords: [
+    'amazon canada consulting services',
+    'amazon.ca business strategy',
+    'amazon canada expert consultation',
+    'amazon growth consulting canada',
+    'amazon business advisor canada',
+    'amazon strategy consultant',
+    'amazon.ca consulting services',
+    'amazon canada business strategy',
+    'amazon growth planning canada',
+    'amazon market analysis canada',
+    'amazon business consultant canada',
+    'amazon.ca expert consultation',
+    'amazon strategic planning canada',
+    'amazon business optimization',
+    'amazon canada business advisor',
+    'amazon.ca growth strategy',
+    'amazon performance optimization',
+    'amazon canada market analysis',
+    'amazon business strategy expert',
+    'amazon.ca business consultant',
+    'amazon consulting expert canada',
+    'amazon strategic guidance',
+    'amazon canada business planning',
+    'amazon.ca strategy consultant',
+    'amazon business growth expert'
+  ],
+  authors: [{ name: "Technovita Solution" }],
+  creator: "Technovita Solution",
+  publisher: "Technovita Solution",
+  robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
   alternates: {
     canonical: 'https://technovitasolution.com/services/amazon-seller-services-canada/consulting'
   },
   openGraph: {
-    title: 'Amazon Canada Consulting Services | Expert Amazon.ca Business Strategy',
-    description: 'Professional Amazon Canada consulting services. Expert Amazon.ca business strategy, growth planning, market analysis, and performance optimization from certified consultants.',
+    title: 'Amazon Canada Consulting Services | Expert Amazon.ca Business Strategy & Growth Planning - Technovita Solution',
+    description: 'Professional Amazon Canada consulting services. Expert Amazon.ca business strategy, growth planning, market analysis, performance optimization, and strategic guidance. Certified Amazon consultants at Technovita Solution.',
     url: 'https://technovitasolution.com/services/amazon-seller-services-canada/consulting',
     siteName: 'Technovita Solution',
     images: [
@@ -21,7 +51,7 @@ export const metadata: Metadata = {
         url: '/Images/account-management/account-management-services.webp',
         width: 1200,
         height: 630,
-        alt: 'Amazon Canada Consulting Services',
+        alt: 'Amazon Canada Consulting Services - Expert Amazon.ca Business Strategy & Growth Planning',
       },
     ],
     locale: 'en_US',
@@ -29,15 +59,95 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Amazon Canada Consulting Services | Expert Amazon.ca Business Strategy',
-    description: 'Professional Amazon Canada consulting services. Expert Amazon.ca business strategy, growth planning, market analysis, and performance optimization from certified consultants.',
+    title: 'Amazon Canada Consulting Services | Expert Amazon.ca Business Strategy & Growth Planning - Technovita Solution',
+    description: 'Professional Amazon Canada consulting services. Expert Amazon.ca business strategy, growth planning, market analysis, performance optimization, and strategic guidance. Certified Amazon consultants at Technovita Solution.',
     images: ['/Images/account-management/account-management-services.webp'],
-  }
+  },
+
 };
 
 export default function AmazonConsultingCanada() {
   return (
     <div className="min-h-screen bg-gray-50">
+      {/* Structured Data for Service */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Amazon Canada Consulting Services",
+            "description": "Professional Amazon Canada consulting services. Expert Amazon.ca business strategy, growth planning, market analysis, performance optimization, and strategic guidance.",
+            "provider": {
+              "@type": "Organization",
+              "name": "Technovita Solution",
+              "url": "https://technovitasolution.com"
+            },
+            "serviceType": "E-commerce Business Consulting",
+
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Amazon Canada Consulting Services",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Amazon.ca Business Strategy",
+                    "description": "Comprehensive Amazon.ca business strategy development and planning"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Amazon.ca Growth Planning",
+                    "description": "Strategic growth planning and market expansion strategies"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Amazon.ca Market Analysis",
+                    "description": "In-depth market analysis and competitive intelligence"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Amazon.ca Performance Optimization",
+                    "description": "Business performance optimization and efficiency improvement"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Amazon.ca Strategic Guidance",
+                    "description": "Expert strategic guidance and business advisory services"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Amazon.ca Business Planning",
+                    "description": "Comprehensive business planning and roadmap development"
+                  }
+                }
+              ]
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.9",
+              "reviewCount": "300"
+            }
+          })
+        }}
+      />
+      
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-indigo-600 via-purple-600 to-blue-700 text-white py-20 lg:py-28 overflow-hidden">
         {/* Animated Background Elements */}

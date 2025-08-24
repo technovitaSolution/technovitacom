@@ -5,15 +5,45 @@ import WhatsAppButton from '@/components/WhatsAppButton';
 import ContactForm from '@/components/ContactForm';
 
 export const metadata: Metadata = {
-  title: 'Amazon Canada Suspension Appeal Services | Expert Amazon.ca Account Reinstatement 2024',
-  description: 'Professional Amazon Canada suspension appeal services. Expert Amazon.ca account reinstatement, suspension recovery, plan of action (POA) writing, and policy compliance assistance. 95% success rate in account recovery.',
-  keywords: 'amazon canada suspension appeal, amazon.ca account reinstatement, amazon suspension recovery canada, amazon account suspended canada, plan of action amazon canada, amazon policy violation canada, amazon seller suspension help canada',
+  title: 'Amazon Canada Suspension Appeal Services | Expert Amazon.ca Account Reinstatement & Recovery - Technovita Solution',
+  description: 'Professional Amazon Canada suspension appeal services. Expert Amazon.ca account reinstatement, suspension recovery, plan of action (POA) writing, policy compliance assistance, and emergency account recovery. 95% success rate with Technovita Solution.',
+  keywords: [
+    'amazon canada suspension appeal',
+    'amazon.ca account reinstatement',
+    'amazon suspension recovery canada',
+    'amazon account suspended canada',
+    'plan of action amazon canada',
+    'amazon policy violation canada',
+    'amazon seller suspension help canada',
+    'amazon.ca suspension appeal',
+    'amazon canada account recovery',
+    'amazon seller reinstatement canada',
+    'amazon account appeal canada',
+    'amazon.ca account recovery',
+    'amazon suspension help canada',
+    'amazon poa writing canada',
+    'amazon policy compliance canada',
+    'amazon account reinstatement expert',
+    'amazon.ca suspension recovery',
+    'amazon canada emergency appeal',
+    'amazon seller account recovery',
+    'amazon suspension appeal expert',
+    'amazon.ca account reinstatement',
+    'amazon canada suspension specialist',
+    'amazon account recovery services',
+    'amazon.ca suspension appeal expert',
+    'amazon seller account reinstatement'
+  ],
+  authors: [{ name: "Technovita Solution" }],
+  creator: "Technovita Solution",
+  publisher: "Technovita Solution",
+  robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
   alternates: {
     canonical: 'https://technovitasolution.com/services/amazon-seller-services-canada/suspension-appeal'
   },
   openGraph: {
-    title: 'Amazon Canada Suspension Appeal Services | Expert Amazon.ca Account Reinstatement',
-    description: 'Professional Amazon Canada suspension appeal services. Expert Amazon.ca account reinstatement, suspension recovery, plan of action (POA) writing, and policy compliance assistance.',
+    title: 'Amazon Canada Suspension Appeal Services | Expert Amazon.ca Account Reinstatement & Recovery - Technovita Solution',
+    description: 'Professional Amazon Canada suspension appeal services. Expert Amazon.ca account reinstatement, suspension recovery, plan of action (POA) writing, policy compliance assistance, and emergency account recovery. 95% success rate with Technovita Solution.',
     url: 'https://technovitasolution.com/services/amazon-seller-services-canada/suspension-appeal',
     siteName: 'Technovita Solution',
     images: [
@@ -21,7 +51,7 @@ export const metadata: Metadata = {
         url: '/Images/account-management/account-management-services.webp',
         width: 1200,
         height: 630,
-        alt: 'Amazon Canada Suspension Appeal Services',
+        alt: 'Amazon Canada Suspension Appeal Services - Expert Amazon.ca Account Reinstatement & Recovery',
       },
     ],
     locale: 'en_US',
@@ -29,15 +59,95 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Amazon Canada Suspension Appeal Services | Expert Amazon.ca Account Reinstatement',
-    description: 'Professional Amazon Canada suspension appeal services. Expert Amazon.ca account reinstatement, suspension recovery, plan of action (POA) writing, and policy compliance assistance.',
+    title: 'Amazon Canada Suspension Appeal Services | Expert Amazon.ca Account Reinstatement & Recovery - Technovita Solution',
+    description: 'Professional Amazon Canada suspension appeal services. Expert Amazon.ca account reinstatement, suspension recovery, plan of action (POA) writing, policy compliance assistance, and emergency account recovery. 95% success rate with Technovita Solution.',
     images: ['/Images/account-management/account-management-services.webp'],
-  }
+  },
+
 };
 
 export default function AmazonSuspensionAppealCanada() {
   return (
     <div className="min-h-screen bg-gray-50">
+      {/* Structured Data for Service */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Amazon Canada Suspension Appeal Services",
+            "description": "Professional Amazon Canada suspension appeal services. Expert Amazon.ca account reinstatement, suspension recovery, plan of action (POA) writing, policy compliance assistance, and emergency account recovery.",
+            "provider": {
+              "@type": "Organization",
+              "name": "Technovita Solution",
+              "url": "https://technovitasolution.com"
+            },
+            "serviceType": "E-commerce Account Recovery",
+
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Amazon Canada Suspension Appeal Services",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Amazon.ca Account Reinstatement",
+                    "description": "Professional Amazon.ca account reinstatement and recovery services"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Amazon.ca Plan of Action Writing",
+                    "description": "Expert Plan of Action (POA) writing for Amazon Canada suspensions"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Amazon.ca Policy Compliance",
+                    "description": "Policy compliance assistance and violation resolution"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Amazon.ca Emergency Appeal",
+                    "description": "24-hour emergency appeal services for suspended accounts"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Amazon.ca Suspension Recovery",
+                    "description": "Comprehensive suspension recovery and account restoration"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Amazon.ca Appeal Support",
+                    "description": "Ongoing appeal support and communication with Amazon"
+                  }
+                }
+              ]
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.9",
+              "reviewCount": "95"
+            }
+          })
+        }}
+      />
+      
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-red-600 via-rose-600 to-pink-700 text-white py-20 lg:py-28 overflow-hidden">
         <div className="absolute inset-0 opacity-10">

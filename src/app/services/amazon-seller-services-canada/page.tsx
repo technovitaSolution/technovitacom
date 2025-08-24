@@ -7,15 +7,45 @@ import ContactForm from '@/components/ContactForm';
 import './animations.css';
 
 export const metadata: Metadata = {
-  title: 'Amazon Seller Services Canada | #1 Amazon.ca Experts - Technovita Solution',
-  description: 'Leading Amazon seller services in Canada. Expert Amazon.ca account setup, listing optimization, PPC management, SEO ranking & consulting. 500+ Canadian sellers trust us!',
-  keywords: 'amazon seller services canada, amazon seller services in canada, amazon canada services, amazon.ca management, amazon account setup canada, amazon listing optimization canada, amazon ppc management canada, amazon consulting canada, amazon seo services canada',
+  title: 'Amazon Seller Services Canada | Expert Amazon.ca Management & Consulting - Technovita Solution',
+  description: 'Leading Amazon seller services in Canada. Expert Amazon.ca account setup, listing optimization, PPC management, SEO ranking, suspension appeal & consulting. 500+ Canadian sellers trust Technovita Solution for marketplace success.',
+  keywords: [
+    'amazon seller services canada',
+    'amazon seller services in canada', 
+    'amazon canada services',
+    'amazon.ca management',
+    'amazon account setup canada',
+    'amazon listing optimization canada',
+    'amazon ppc management canada',
+    'amazon consulting canada',
+    'amazon seo services canada',
+    'amazon seller account canada',
+    'amazon.ca seller services',
+    'amazon canada seller account',
+    'amazon marketplace canada',
+    'amazon seller onboarding canada',
+    'amazon product listing canada',
+    'amazon advertising canada',
+    'amazon suspension appeal canada',
+    'amazon account reinstatement canada',
+    'amazon seller consulting canada',
+    'amazon canada experts',
+    'amazon.ca optimization',
+    'amazon seller support canada',
+    'amazon marketplace management canada',
+    'amazon seller account management canada',
+    'amazon canada business services'
+  ],
+  authors: [{ name: "Technovita Solution" }],
+  creator: "Technovita Solution",
+  publisher: "Technovita Solution",
+  robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
   alternates: {
     canonical: 'https://technovitasolution.com/services/amazon-seller-services-canada'
   },
   openGraph: {
-    title: 'Amazon Seller Services Canada | Professional Amazon.ca Management',
-    description: 'Expert Amazon seller services in Canada. Professional Amazon.ca account setup, listing optimization, PPC management, SEO ranking, and consulting services.',
+    title: 'Amazon Seller Services Canada | Expert Amazon.ca Management & Consulting - Technovita Solution',
+    description: 'Leading Amazon seller services in Canada. Expert Amazon.ca account setup, listing optimization, PPC management, SEO ranking, suspension appeal & consulting. 500+ Canadian sellers trust Technovita Solution for marketplace success.',
     url: 'https://technovitasolution.com/services/amazon-seller-services-canada',
     siteName: 'Technovita Solution',
     images: [
@@ -23,7 +53,7 @@ export const metadata: Metadata = {
         url: '/Images/amazon-canada/amazon-canada-seller-services.webp',
         width: 1200,
         height: 630,
-        alt: 'Amazon Seller Services Canada',
+        alt: 'Amazon Seller Services Canada - Expert Amazon.ca Management & Consulting',
       },
     ],
     locale: 'en_US',
@@ -31,10 +61,11 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Amazon Seller Services Canada | Professional Amazon.ca Management',
-    description: 'Expert Amazon seller services in Canada. Professional Amazon.ca account setup, listing optimization, PPC management, SEO ranking, and consulting services.',
+    title: 'Amazon Seller Services Canada | Expert Amazon.ca Management & Consulting - Technovita Solution',
+    description: 'Leading Amazon seller services in Canada. Expert Amazon.ca account setup, listing optimization, PPC management, SEO ranking, suspension appeal & consulting. 500+ Canadian sellers trust Technovita Solution for marketplace success.',
     images: ['/Images/amazon-canada/amazon-canada-seller-services.webp'],
-  }
+  },
+
 };
 
 const amazonCanadaServices = [
@@ -109,6 +140,85 @@ const amazonCanadaServices = [
 export default function AmazonSellerServicesCanada() {
   return (
     <div className="min-h-screen bg-gray-50">
+      {/* Structured Data for Service */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Amazon Seller Services Canada",
+            "description": "Leading Amazon seller services in Canada. Expert Amazon.ca account setup, listing optimization, PPC management, SEO ranking, suspension appeal & consulting.",
+            "provider": {
+              "@type": "Organization",
+              "name": "Technovita Solution",
+              "url": "https://technovitasolution.com"
+            },
+            "serviceType": "E-commerce Marketplace Management",
+
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Amazon Canada Services",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Amazon.ca Seller Account Onboarding",
+                    "description": "Complete Amazon.ca seller account setup and onboarding with professional guidance"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Amazon.ca Listing Optimization",
+                    "description": "Professional Amazon.ca product listing creation and optimization"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Amazon.ca PPC Management",
+                    "description": "Expert Amazon.ca PPC management and advertising campaigns"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Amazon.ca SEO & Ranking",
+                    "description": "Advanced Amazon.ca SEO strategies and keyword ranking services"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Amazon.ca Suspension Appeal",
+                    "description": "Professional Amazon.ca account suspension appeal and reinstatement services"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Amazon.ca Consulting & Strategy",
+                    "description": "Strategic Amazon.ca consulting and business growth sessions"
+                  }
+                }
+              ]
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.9",
+              "reviewCount": "500"
+            }
+          })
+        }}
+      />
+      
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-700 text-white py-20 lg:py-28 overflow-hidden">
         {/* Animated Background Elements */}

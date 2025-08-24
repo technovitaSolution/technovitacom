@@ -5,15 +5,45 @@ import WhatsAppButton from '@/components/WhatsAppButton';
 import ContactForm from '@/components/ContactForm';
 
 export const metadata: Metadata = {
-  title: 'Amazon Canada Listing Optimization | Professional Amazon.ca Product Listing Services 2024',
-  description: 'Expert Amazon Canada listing optimization services. Professional Amazon.ca product listing creation, SEO optimization, keyword research, and conversion optimization. Boost your rankings and sales.',
-  keywords: 'amazon canada listing optimization, amazon.ca product listing services, amazon canada seo optimization, amazon listing creation canada, amazon product optimization canada, amazon keyword research canada',
+  title: 'Amazon Canada Listing Optimization | Expert Amazon.ca Product Listing & SEO Services - Technovita Solution',
+  description: 'Professional Amazon Canada listing optimization services. Expert Amazon.ca product listing creation, SEO optimization, keyword research, A+ content, and conversion optimization. Boost rankings and sales with Technovita Solution.',
+  keywords: [
+    'amazon canada listing optimization',
+    'amazon.ca product listing services',
+    'amazon canada seo optimization',
+    'amazon listing creation canada',
+    'amazon product optimization canada',
+    'amazon keyword research canada',
+    'amazon.ca listing optimization',
+    'amazon canada product listing',
+    'amazon listing seo canada',
+    'amazon.ca seo services',
+    'amazon product listing canada',
+    'amazon listing optimization services',
+    'amazon canada keyword optimization',
+    'amazon.ca product optimization',
+    'amazon listing creation services',
+    'amazon canada a+ content',
+    'amazon.ca enhanced content',
+    'amazon product description canada',
+    'amazon listing title optimization',
+    'amazon canada conversion optimization',
+    'amazon.ca listing management',
+    'amazon product listing services',
+    'amazon canada seo expert',
+    'amazon.ca listing specialist',
+    'amazon listing optimization expert'
+  ],
+  authors: [{ name: "Technovita Solution" }],
+  creator: "Technovita Solution",
+  publisher: "Technovita Solution",
+  robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
   alternates: {
     canonical: 'https://technovitasolution.com/services/amazon-seller-services-canada/listing-optimization'
   },
   openGraph: {
-    title: 'Amazon Canada Listing Optimization | Professional Amazon.ca Product Listing Services',
-    description: 'Expert Amazon Canada listing optimization services. Professional Amazon.ca product listing creation, SEO optimization, keyword research, and conversion optimization.',
+    title: 'Amazon Canada Listing Optimization | Expert Amazon.ca Product Listing & SEO Services - Technovita Solution',
+    description: 'Professional Amazon Canada listing optimization services. Expert Amazon.ca product listing creation, SEO optimization, keyword research, A+ content, and conversion optimization. Boost rankings and sales with Technovita Solution.',
     url: 'https://technovitasolution.com/services/amazon-seller-services-canada/listing-optimization',
     siteName: 'Technovita Solution',
     images: [
@@ -21,7 +51,7 @@ export const metadata: Metadata = {
         url: '/Images/account-management/account-management-services.webp',
         width: 1200,
         height: 630,
-        alt: 'Amazon Canada Listing Optimization Services',
+        alt: 'Amazon Canada Listing Optimization - Expert Amazon.ca Product Listing & SEO Services',
       },
     ],
     locale: 'en_US',
@@ -29,15 +59,95 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Amazon Canada Listing Optimization | Professional Amazon.ca Product Listing Services',
-    description: 'Expert Amazon Canada listing optimization services. Professional Amazon.ca product listing creation, SEO optimization, keyword research, and conversion optimization.',
+    title: 'Amazon Canada Listing Optimization | Expert Amazon.ca Product Listing & SEO Services - Technovita Solution',
+    description: 'Professional Amazon Canada listing optimization services. Expert Amazon.ca product listing creation, SEO optimization, keyword research, A+ content, and conversion optimization. Boost rankings and sales with Technovita Solution.',
     images: ['/Images/account-management/account-management-services.webp'],
-  }
+  },
+
 };
 
 export default function AmazonListingOptimizationCanada() {
   return (
     <div className="min-h-screen bg-gray-50">
+      {/* Structured Data for Service */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Amazon Canada Listing Optimization",
+            "description": "Professional Amazon Canada listing optimization services. Expert Amazon.ca product listing creation, SEO optimization, keyword research, A+ content, and conversion optimization.",
+            "provider": {
+              "@type": "Organization",
+              "name": "Technovita Solution",
+              "url": "https://technovitasolution.com"
+            },
+            "serviceType": "E-commerce Listing Optimization",
+
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Amazon Canada Listing Services",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Amazon.ca Product Listing Creation",
+                    "description": "Professional Amazon.ca product listing creation and setup"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Amazon.ca SEO Optimization",
+                    "description": "Advanced SEO optimization for Amazon.ca product listings"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Amazon.ca Keyword Research",
+                    "description": "Comprehensive keyword research and optimization for Amazon Canada"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Amazon.ca A+ Content Creation",
+                    "description": "Professional A+ content and enhanced brand content creation"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Amazon.ca Conversion Optimization",
+                    "description": "Conversion-focused optimization for Amazon.ca product listings"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Amazon.ca Title & Description Optimization",
+                    "description": "Professional title and description optimization for maximum visibility"
+                  }
+                }
+              ]
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.8",
+              "reviewCount": "200"
+            }
+          })
+        }}
+      />
+      
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-blue-600 via-cyan-600 to-teal-700 text-white py-20 lg:py-28 overflow-hidden">
         {/* Animated Background Elements */}

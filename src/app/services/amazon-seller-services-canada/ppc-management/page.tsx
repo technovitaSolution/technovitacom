@@ -5,15 +5,45 @@ import WhatsAppButton from '@/components/WhatsAppButton';
 import ContactForm from '@/components/ContactForm';
 
 export const metadata: Metadata = {
-  title: 'Amazon Canada PPC Management | Professional Amazon.ca Advertising Services 2024',
-  description: 'Expert Amazon Canada PPC management services. Professional Amazon.ca advertising campaigns, sponsored ads optimization, ACOS reduction, and ROI maximization. Certified Amazon advertising specialists.',
-  keywords: 'amazon canada ppc management, amazon.ca advertising services, amazon ppc canada, sponsored ads canada, amazon advertising management canada, amazon ppc optimization canada, acos reduction canada',
+  title: 'Amazon Canada PPC Management | Expert Amazon.ca Advertising & Campaign Optimization - Technovita Solution',
+  description: 'Professional Amazon Canada PPC management services. Expert Amazon.ca advertising campaigns, sponsored ads optimization, ACOS reduction, bid management, and ROI maximization. Certified Amazon advertising specialists at Technovita Solution.',
+  keywords: [
+    'amazon canada ppc management',
+    'amazon.ca advertising services',
+    'amazon ppc canada',
+    'sponsored ads canada',
+    'amazon advertising management canada',
+    'amazon ppc optimization canada',
+    'acos reduction canada',
+    'amazon.ca ppc management',
+    'amazon canada advertising',
+    'amazon sponsored ads canada',
+    'amazon ppc campaigns canada',
+    'amazon advertising optimization',
+    'amazon canada acos optimization',
+    'amazon.ca campaign management',
+    'amazon ppc specialist canada',
+    'amazon advertising expert canada',
+    'amazon sponsored products canada',
+    'amazon ppc bid management',
+    'amazon canada roi optimization',
+    'amazon.ca advertising specialist',
+    'amazon ppc management services',
+    'amazon canada advertising expert',
+    'amazon.ca ppc optimization',
+    'amazon advertising campaigns canada',
+    'amazon ppc management expert'
+  ],
+  authors: [{ name: "Technovita Solution" }],
+  creator: "Technovita Solution",
+  publisher: "Technovita Solution",
+  robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
   alternates: {
     canonical: 'https://technovitasolution.com/services/amazon-seller-services-canada/ppc-management'
   },
   openGraph: {
-    title: 'Amazon Canada PPC Management | Professional Amazon.ca Advertising Services',
-    description: 'Expert Amazon Canada PPC management services. Professional Amazon.ca advertising campaigns, sponsored ads optimization, ACOS reduction, and ROI maximization.',
+    title: 'Amazon Canada PPC Management | Expert Amazon.ca Advertising & Campaign Optimization - Technovita Solution',
+    description: 'Professional Amazon Canada PPC management services. Expert Amazon.ca advertising campaigns, sponsored ads optimization, ACOS reduction, bid management, and ROI maximization. Certified Amazon advertising specialists at Technovita Solution.',
     url: 'https://technovitasolution.com/services/amazon-seller-services-canada/ppc-management',
     siteName: 'Technovita Solution',
     images: [
@@ -21,7 +51,7 @@ export const metadata: Metadata = {
         url: '/Images/account-management/account-management-services.webp',
         width: 1200,
         height: 630,
-        alt: 'Amazon Canada PPC Management Services',
+        alt: 'Amazon Canada PPC Management - Expert Amazon.ca Advertising & Campaign Optimization',
       },
     ],
     locale: 'en_US',
@@ -29,15 +59,95 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Amazon Canada PPC Management | Professional Amazon.ca Advertising Services',
-    description: 'Expert Amazon Canada PPC management services. Professional Amazon.ca advertising campaigns, sponsored ads optimization, ACOS reduction, and ROI maximization.',
+    title: 'Amazon Canada PPC Management | Expert Amazon.ca Advertising & Campaign Optimization - Technovita Solution',
+    description: 'Professional Amazon Canada PPC management services. Expert Amazon.ca advertising campaigns, sponsored ads optimization, ACOS reduction, bid management, and ROI maximization. Certified Amazon advertising specialists at Technovita Solution.',
     images: ['/Images/account-management/account-management-services.webp'],
-  }
+  },
+
 };
 
 export default function AmazonPPCManagementCanada() {
   return (
     <div className="min-h-screen bg-gray-50">
+      {/* Structured Data for Service */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Amazon Canada PPC Management",
+            "description": "Professional Amazon Canada PPC management services. Expert Amazon.ca advertising campaigns, sponsored ads optimization, ACOS reduction, bid management, and ROI maximization.",
+            "provider": {
+              "@type": "Organization",
+              "name": "Technovita Solution",
+              "url": "https://technovitasolution.com"
+            },
+            "serviceType": "E-commerce Advertising Management",
+
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Amazon Canada PPC Services",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Amazon.ca Sponsored Products",
+                    "description": "Professional Amazon.ca sponsored products campaign management"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Amazon.ca ACOS Optimization",
+                    "description": "Advanced ACOS reduction and optimization strategies"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Amazon.ca Bid Management",
+                    "description": "Strategic bid management and optimization for Amazon Canada"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Amazon.ca Keyword Research",
+                    "description": "Comprehensive keyword research and targeting for PPC campaigns"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Amazon.ca ROI Optimization",
+                    "description": "Return on investment optimization for Amazon advertising campaigns"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Amazon.ca Campaign Analysis",
+                    "description": "Detailed campaign analysis and performance optimization"
+                  }
+                }
+              ]
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.9",
+              "reviewCount": "180"
+            }
+          })
+        }}
+      />
+      
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-red-600 via-pink-600 to-purple-700 text-white py-20 lg:py-28 overflow-hidden">
         {/* Animated Background Elements */}

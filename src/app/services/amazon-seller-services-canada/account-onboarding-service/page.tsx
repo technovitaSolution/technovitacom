@@ -5,15 +5,45 @@ import WhatsAppButton from '@/components/WhatsAppButton';
 import ContactForm from '@/components/ContactForm';
 
 export const metadata: Metadata = {
-  title: 'Amazon Canada Account Onboarding Service | Professional Amazon.ca Setup 2024',
-  description: 'Expert Amazon Canada account onboarding service. Complete Amazon.ca seller account setup, documentation, verification, tax registration, and compliance. Get onboarded fast with Technovita Solution.',
-  keywords: 'amazon canada onboarding service, amazon canada account setup service, amazon.ca onboarding, amazon canada seller onboarding, professional amazon canada setup, amazon.ca account registration service, technovita solution onboarding',
+  title: 'Amazon Canada Account Onboarding Service | Expert Amazon.ca Setup & Registration - Technovita Solution',
+  description: 'Professional Amazon Canada account onboarding service. Complete Amazon.ca seller account setup, documentation, verification, tax registration, GST/HST compliance, and bank integration. Get onboarded in 7-14 days with Technovita Solution.',
+  keywords: [
+    'amazon canada onboarding service',
+    'amazon canada account setup service',
+    'amazon.ca onboarding',
+    'amazon canada seller onboarding',
+    'professional amazon canada setup',
+    'amazon.ca account registration service',
+    'amazon seller account canada',
+    'amazon.ca seller setup',
+    'amazon canada account creation',
+    'amazon seller onboarding canada',
+    'amazon.ca registration service',
+    'amazon canada business account',
+    'amazon seller account setup canada',
+    'amazon.ca seller account creation',
+    'amazon canada tax registration',
+    'amazon.ca gst hst setup',
+    'amazon seller verification canada',
+    'amazon canada bank integration',
+    'amazon.ca compliance setup',
+    'amazon seller account management canada',
+    'amazon canada expert onboarding',
+    'amazon.ca professional setup',
+    'amazon seller services canada',
+    'amazon canada marketplace setup',
+    'amazon.ca business onboarding'
+  ],
+  authors: [{ name: "Technovita Solution" }],
+  creator: "Technovita Solution",
+  publisher: "Technovita Solution",
+  robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
   alternates: {
     canonical: 'https://technovitasolution.com/services/amazon-seller-services-canada/account-onboarding-service'
   },
   openGraph: {
-    title: 'Amazon Canada Account Onboarding Service | Professional Setup',
-    description: 'Expert Amazon Canada account onboarding service. Complete Amazon.ca seller account setup, documentation, verification, tax registration, and compliance assistance.',
+    title: 'Amazon Canada Account Onboarding Service | Expert Amazon.ca Setup & Registration - Technovita Solution',
+    description: 'Professional Amazon Canada account onboarding service. Complete Amazon.ca seller account setup, documentation, verification, tax registration, GST/HST compliance, and bank integration. Get onboarded in 7-14 days with Technovita Solution.',
     url: 'https://technovitasolution.com/services/amazon-seller-services-canada/account-onboarding-service',
     siteName: 'Technovita Solution',
     images: [
@@ -21,7 +51,7 @@ export const metadata: Metadata = {
         url: '/Images/account-management/account-management-services.webp',
         width: 1200,
         height: 630,
-        alt: 'Amazon Canada Account Onboarding Service',
+        alt: 'Amazon Canada Account Onboarding Service - Expert Amazon.ca Setup & Registration',
       },
     ],
     locale: 'en_US',
@@ -29,15 +59,93 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Amazon Canada Account Onboarding Service | Professional Setup',
-    description: 'Expert Amazon Canada account onboarding service. Complete Amazon.ca seller account setup, documentation, verification, tax registration, and compliance assistance.',
+    title: 'Amazon Canada Account Onboarding Service | Expert Amazon.ca Setup & Registration - Technovita Solution',
+    description: 'Professional Amazon Canada account onboarding service. Complete Amazon.ca seller account setup, documentation, verification, tax registration, GST/HST compliance, and bank integration. Get onboarded in 7-14 days with Technovita Solution.',
     images: ['/Images/account-management/account-management-services.webp'],
-  }
+  },
+
 };
 
 export default function AmazonCanadaOnboardingService() {
   return (
     <div className="min-h-screen bg-gray-50">
+      {/* Structured Data for Service */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "Amazon Canada Account Onboarding Service",
+            "description": "Professional Amazon Canada account onboarding service. Complete Amazon.ca seller account setup, documentation, verification, tax registration, GST/HST compliance, and bank integration.",
+            "provider": {
+              "@type": "Organization",
+              "name": "Technovita Solution",
+              "url": "https://technovitasolution.com"
+            },
+            "serviceType": "E-commerce Account Setup",
+
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "CAD",
+              "description": "Free consultation for Amazon Canada account onboarding service"
+            },
+            "hasOfferCatalog": {
+              "@type": "OfferCatalog",
+              "name": "Amazon Canada Onboarding Services",
+              "itemListElement": [
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Amazon.ca Account Registration",
+                    "description": "Complete Amazon.ca seller account registration and setup"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Tax Registration Setup",
+                    "description": "GST/HST registration and tax compliance setup for Amazon Canada"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Bank Account Integration",
+                    "description": "Canadian bank account integration and verification"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Documentation Assistance",
+                    "description": "Complete documentation preparation and submission"
+                  }
+                },
+                {
+                  "@type": "Offer",
+                  "itemOffered": {
+                    "@type": "Service",
+                    "name": "Account Verification",
+                    "description": "Amazon.ca account verification and approval process"
+                  }
+                }
+              ]
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "4.9",
+              "reviewCount": "150"
+            }
+          })
+        }}
+      />
+      
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-green-600 via-emerald-600 to-teal-700 text-white py-20 lg:py-28 overflow-hidden">
         {/* Animated Background Elements */}
