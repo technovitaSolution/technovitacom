@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Metadata } from 'next';
 import WhatsAppButton from '@/components/WhatsAppButton';
+import { ContentProtectionProvider } from '@/components/ContentProtection';
 
 export const metadata: Metadata = {
   title: 'Meesho Catalogue Services | Product Listing & Cataloging | Technovita Solution',
@@ -36,6 +37,7 @@ export const metadata: Metadata = {
 
 export default function MeeshoCatalogueServices() {
   return (
+    <ContentProtectionProvider>
     <div className="min-h-screen bg-white">
       {/* Header Section */}
       <div className="bg-gradient-to-r from-pink-50 to-purple-50 py-16">
@@ -365,5 +367,6 @@ export default function MeeshoCatalogueServices() {
         </div>
       </div>
     </div>
+    </ContentProtectionProvider>
   );
 }

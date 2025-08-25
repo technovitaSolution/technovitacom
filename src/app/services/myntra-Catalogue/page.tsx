@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Metadata } from 'next';
 import WhatsAppButton from '@/components/WhatsAppButton';
-
+import { ContentProtectionProvider } from '@/components/ContentProtection';
 export const metadata: Metadata = {
   title: 'Myntra Catalogue Services | Product Listing & Cataloging | Technovita Solution',
   description: 'Professional Myntra product listing and cataloging services by Technovita Solution. Expert Myntra catalogue management, account creation, product optimization, and boost services for successful sellers.',
@@ -27,6 +27,7 @@ export const metadata: Metadata = {
 
 export default function MyntraCatalogueServices() {
   return (
+    <ContentProtectionProvider>
     <div className="min-h-screen bg-white">
       {/* Header Section */}
       <div className="bg-gradient-to-r from-purple-50 to-pink-50 py-16">
@@ -319,5 +320,6 @@ export default function MyntraCatalogueServices() {
         </div>
       </div>
     </div>
+    </ContentProtectionProvider>
   );
 }

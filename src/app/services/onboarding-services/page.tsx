@@ -3,7 +3,7 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import WhatsAppButton from '@/components/WhatsAppButton';
-
+import { ContentProtectionProvider } from '@/components/ContentProtection';
 export const metadata: Metadata = {
   title: 'Onboarding Services | Technovita Solution - Professional E-commerce Onboarding',
   description: 'Professional onboarding services for Ajio, Myntra, and Nykaa platforms. Expert guidance for seller registration and platform-specific training.',
@@ -61,6 +61,7 @@ const onboardingServices = [
 
 export default function OnboardingServices() {
   return (
+    <ContentProtectionProvider>
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
       <div className="bg-gradient-to-br from-blue-600 to-purple-700 text-white py-16">
@@ -300,5 +301,6 @@ export default function OnboardingServices() {
         </div>
       </div>
     </div>
+    </ContentProtectionProvider>
   );
 }

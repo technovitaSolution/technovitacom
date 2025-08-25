@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Metadata } from 'next';
 import WhatsAppButton from '@/components/WhatsAppButton';
-
+import { ContentProtectionProvider } from '@/components/ContentProtection';
 export const metadata: Metadata = {
   title: 'Nykaa Catalogue Services | Product Listing & Cataloging | Technovita Solution',
   description: 'Professional Nykaa product listing and cataloging services by Technovita Solution. Expert Nykaa catalogue management, account creation, product optimization, and boost services for successful sellers.',
@@ -27,6 +27,7 @@ export const metadata: Metadata = {
 
 export default function NykaaCatalogueServices() {
   return (
+    <ContentProtectionProvider>
     <div className="min-h-screen bg-white">
       {/* Header Section */}
       <div className="bg-gradient-to-r from-rose-50 to-pink-50 py-16">
@@ -319,5 +320,6 @@ export default function NykaaCatalogueServices() {
         </div>
       </div>
     </div>
+    </ContentProtectionProvider>
   );
 }

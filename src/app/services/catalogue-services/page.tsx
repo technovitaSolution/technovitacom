@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
+import { ContentProtectionProvider } from '@/components/ContentProtection';
 
 export const metadata: Metadata = {
   title: 'E-Commerce Catalogue Services | Professional Product Listing | Technovita Solution',
@@ -128,6 +129,7 @@ export default function CatalogueServicesPage() {
   ];
 
   return (
+    <ContentProtectionProvider>
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <div className="bg-gradient-to-br from-pink-50 via-purple-50 to-indigo-100 py-20">
@@ -346,5 +348,6 @@ export default function CatalogueServicesPage() {
         </div>
       </div>
     </div>
+    </ContentProtectionProvider>
   );
 }

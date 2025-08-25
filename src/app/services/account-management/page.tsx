@@ -3,6 +3,7 @@ import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import WhatsAppButton from '@/components/WhatsAppButton';
+import { ContentProtectionProvider } from '@/components/ContentProtection';
 
 export const metadata: Metadata = {
   title: 'Account Management Services | Technovita Solution - Professional E-commerce Management',
@@ -103,6 +104,7 @@ const accountManagementServices = [
 
 export default function AccountManagementServices() {
   return (
+    <ContentProtectionProvider>
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
       <div className="bg-gradient-to-br from-pink-600 to-purple-700 text-white py-16">
@@ -282,6 +284,7 @@ export default function AccountManagementServices() {
         </div>
       </div>
     </div>
+    </ContentProtectionProvider>
   );
 }
 

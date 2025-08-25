@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Metadata } from 'next';
 import WhatsAppButton from '@/components/WhatsAppButton';
+import { ContentProtectionProvider } from '@/components/ContentProtection';
 
 export const metadata: Metadata = {
   title: 'Ajio Catalogue Services | Product Listing & Cataloging | Technovita Solution',
@@ -27,6 +28,7 @@ export const metadata: Metadata = {
 
 export default function AjioCatalogueServices() {
   return (
+    <ContentProtectionProvider>
     <div className="min-h-screen bg-white">
       {/* Header Section */}
       <div className="bg-gradient-to-r from-indigo-50 to-purple-50 py-16">
@@ -296,5 +298,6 @@ export default function AjioCatalogueServices() {
         </div>
       </div>
     </div>
+    </ContentProtectionProvider>
   );
 }
