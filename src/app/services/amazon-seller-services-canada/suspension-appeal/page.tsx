@@ -138,11 +138,6 @@ export default function AmazonSuspensionAppealCanada() {
                   }
                 }
               ]
-            },
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "4.9",
-              "reviewCount": "95"
             }
           })
         }}

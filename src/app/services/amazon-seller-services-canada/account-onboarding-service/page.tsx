@@ -136,11 +136,6 @@ export default function AmazonCanadaOnboardingService() {
                   }
                 }
               ]
-            },
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "4.9",
-              "reviewCount": "150"
             }
           })
         }}

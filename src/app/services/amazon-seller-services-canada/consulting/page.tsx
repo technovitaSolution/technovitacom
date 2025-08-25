@@ -138,11 +138,6 @@ export default function AmazonConsultingCanada() {
                   }
                 }
               ]
-            },
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "4.9",
-              "reviewCount": "300"
             }
           })
         }}

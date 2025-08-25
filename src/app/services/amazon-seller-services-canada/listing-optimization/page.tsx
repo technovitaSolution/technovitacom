@@ -138,11 +138,6 @@ export default function AmazonListingOptimizationCanada() {
                   }
                 }
               ]
-            },
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "4.8",
-              "reviewCount": "200"
             }
           })
         }}

@@ -138,11 +138,6 @@ export default function AmazonSEORankingCanada() {
                   }
                 }
               ]
-            },
-            "aggregateRating": {
-              "@type": "AggregateRating",
-              "ratingValue": "4.9",
-              "reviewCount": "220"
             }
           })
         }}
