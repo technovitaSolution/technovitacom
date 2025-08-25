@@ -5,6 +5,7 @@ import Link from 'next/link';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import ContactForm from '@/components/ContactForm';
 import './animations.css';
+import { ContentProtectionProvider } from '@/components/ContentProtection';
 
 export const metadata: Metadata = {
   title: 'Amazon Seller Services Canada | Expert Amazon.ca Management & Consulting - Technovita Solution',
@@ -139,7 +140,8 @@ const amazonCanadaServices = [
 
 export default function AmazonSellerServicesCanada() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <ContentProtectionProvider>
+      <div className="min-h-screen bg-gray-50">
       {/* Structured Data for Service */}
       <script
         type="application/ld+json"
@@ -594,6 +596,7 @@ export default function AmazonSellerServicesCanada() {
           />
         </div>
       </section>
-    </div>
+      </div>
+    </ContentProtectionProvider>
   );
 }

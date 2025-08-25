@@ -3,6 +3,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import ContactForm from '@/components/ContactForm';
+import { ContentProtectionProvider } from '@/components/ContentProtection';
 
 export const metadata: Metadata = {
   title: 'Amazon Canada Consulting Services | Expert Amazon.ca Business Strategy & Growth Planning - Technovita Solution',
@@ -68,7 +69,8 @@ export const metadata: Metadata = {
 
 export default function AmazonConsultingCanada() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <ContentProtectionProvider>
+      <div className="min-h-screen bg-gray-50">
       {/* Structured Data for Service */}
       <script
         type="application/ld+json"
@@ -887,6 +889,7 @@ export default function AmazonConsultingCanada() {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </ContentProtectionProvider>
   );
 }

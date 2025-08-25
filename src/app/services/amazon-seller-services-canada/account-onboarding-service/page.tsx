@@ -3,6 +3,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import ContactForm from '@/components/ContactForm';
+import { ContentProtectionProvider } from '@/components/ContentProtection';
 
 export const metadata: Metadata = {
   title: 'Amazon Canada Account Onboarding Service | Expert Amazon.ca Setup & Registration - Technovita Solution',
@@ -68,7 +69,8 @@ export const metadata: Metadata = {
 
 export default function AmazonCanadaOnboardingService() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <ContentProtectionProvider>
+      <div className="min-h-screen bg-gray-50">
       {/* Structured Data for Service */}
       <script
         type="application/ld+json"
@@ -554,6 +556,7 @@ export default function AmazonCanadaOnboardingService() {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </ContentProtectionProvider>
   );
 }
