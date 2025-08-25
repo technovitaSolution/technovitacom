@@ -1,6 +1,7 @@
 import React from 'react';
 import { Metadata } from 'next';
 import AccountTemplate from '@/components/AccountTemplate';
+import { ContentProtectionProvider } from '@/components/ContentProtection';
 
 export const metadata: Metadata = {
   title: 'Amazon Account Management Services | Technovita Solution',
@@ -35,14 +36,16 @@ export const metadata: Metadata = {
 
 export default function AmazonAccountManagement() {
   return (
-    <AccountTemplate
-      accountManagementService="Amazon Account Management Services"
-      accServiceName="AMAZON"
-      imgUrl="/Images/account-management/account-managment-featured-image/amazon-account-managemnt.webp"
-      imgAlt="Amazon Account Management Services - Professional E-commerce Support"
-      articleImgUrl="/Images/account-management/article/amazonaccount.webp"
-      articleImgAlt="Amazon Account Management Services - Professional Support"
-    />
+    <ContentProtectionProvider>
+      <AccountTemplate
+        accountManagementService="Amazon Account Management Services"
+        accServiceName="AMAZON"
+        imgUrl="/Images/account-management/account-managment-featured-image/amazon-account-managemnt.webp"
+        imgAlt="Amazon Account Management Services - Professional E-commerce Support"
+        articleImgUrl="/Images/account-management/article/amazonaccount.webp"
+        articleImgAlt="Amazon Account Management Services - Professional Support"
+      />
+    </ContentProtectionProvider>
   );
 }
 

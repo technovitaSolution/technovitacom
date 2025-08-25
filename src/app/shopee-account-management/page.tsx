@@ -1,6 +1,7 @@
 import React from 'react';
 import { Metadata } from 'next';
 import AccountTemplate from '@/components/AccountTemplate';
+import { ContentProtectionProvider } from '@/components/ContentProtection';
 
 export const metadata: Metadata = {
   title: 'Shopee Account Management Services | Technovita Solution',
@@ -35,14 +36,16 @@ export const metadata: Metadata = {
 
 export default function ShopeeAccountManagement() {
   return (
-    <AccountTemplate
-      accountManagementService="Shopee Account Management Services"
-      accServiceName="Shopee"
-      imgUrl="/Images/account-management/account-managment-featured-image/shopee-account-management.webp"
-      imgAlt="Shopee Account Management Services - Professional E-commerce Support"
-      articleImgUrl="/Images/account-management/article/shopeeaccount.webp"
-      articleImgAlt="Shopee Account Management Services - Professional Support"
-    />
+    <ContentProtectionProvider>
+      <AccountTemplate
+        accountManagementService="Shopee Account Management Services"
+        accServiceName="Shopee"
+        imgUrl="/Images/account-management/account-managment-featured-image/shopee-account-management.webp"
+        imgAlt="Shopee Account Management Services - Professional E-commerce Support"
+        articleImgUrl="/Images/account-management/article/shopeeaccount.webp"
+        articleImgAlt="Shopee Account Management Services - Professional Support"
+      />
+    </ContentProtectionProvider>
   );
 }
 

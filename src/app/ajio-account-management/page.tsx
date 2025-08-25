@@ -1,6 +1,7 @@
 import React from 'react';
 import { Metadata } from 'next';
 import AccountTemplate from '@/components/AccountTemplate';
+import { ContentProtectionProvider } from '@/components/ContentProtection';
 
 export const metadata: Metadata = {
   title: 'Ajio Account Management Services | Technovita Solution',
@@ -35,14 +36,16 @@ export const metadata: Metadata = {
 
 export default function AjioAccountManagement() {
   return (
-    <AccountTemplate
-      accountManagementService="Ajio Account Management Services"
-      accServiceName="AJIO"
-      imgUrl="/Images/account-management/account-managment-featured-image/AJIO Account Management Promotion.webp"
-      imgAlt="Ajio Account Management Services - Professional E-commerce Support"
-      articleImgUrl="/Images/account-management/article/ajioaccount.webp"
-      articleImgAlt="Ajio Account Management Services - Professional Support"
-    />
+    <ContentProtectionProvider>
+      <AccountTemplate
+        accountManagementService="Ajio Account Management Services"
+        accServiceName="AJIO"
+        imgUrl="/Images/account-management/account-managment-featured-image/AJIO Account Management Promotion.webp"
+        imgAlt="Ajio Account Management Services - Professional E-commerce Support"
+        articleImgUrl="/Images/account-management/article/ajioaccount.webp"
+        articleImgAlt="Ajio Account Management Services - Professional Support"
+      />
+    </ContentProtectionProvider>
   );
 }
 

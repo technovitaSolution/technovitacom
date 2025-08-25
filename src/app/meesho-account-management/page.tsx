@@ -1,6 +1,7 @@
 import React from 'react';
 import { Metadata } from 'next';
 import AccountTemplate from '@/components/AccountTemplate';
+import { ContentProtectionProvider } from '@/components/ContentProtection';
 
 export const metadata: Metadata = {
   title: 'Meesho Account Management Services | Technovita Solution',
@@ -35,14 +36,16 @@ export const metadata: Metadata = {
 
 export default function MeeshoAccountManagement() {
   return (
-    <AccountTemplate
-      accountManagementService="Meesho Account Management Services"
-      accServiceName="Meesho"
-      imgUrl="/Images/account-management/account-managment-featured-image/meesho-account-management.webp"
-      imgAlt="Meesho Account Management Services - Professional E-commerce Support"
-      articleImgUrl="/Images/account-management/article/meeshoaccount.webp"
-      articleImgAlt="Meesho Account Management Services - Professional Support"
-    />
+    <ContentProtectionProvider>
+      <AccountTemplate
+        accountManagementService="Meesho Account Management Services"
+        accServiceName="Meesho"
+        imgUrl="/Images/account-management/account-managment-featured-image/meesho-account-management.webp"
+        imgAlt="Meesho Account Management Services - Professional E-commerce Support"
+        articleImgUrl="/Images/account-management/article/meeshoaccount.webp"
+        articleImgAlt="Meesho Account Management Services - Professional Support"
+      />
+    </ContentProtectionProvider>
   );
 }
 

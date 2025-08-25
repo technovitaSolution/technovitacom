@@ -1,6 +1,7 @@
 import React from 'react';
 import { Metadata } from 'next';
 import AccountTemplate from '@/components/AccountTemplate';
+import { ContentProtectionProvider } from '@/components/ContentProtection';
 
 export const metadata: Metadata = {
   title: 'Paytm Account Management Services | Technovita Solution',
@@ -35,13 +36,15 @@ export const metadata: Metadata = {
 
 export default function PaytmAccountManagement() {
   return (
-    <AccountTemplate
-      accountManagementService="Paytm Account Management Services"
-      accServiceName="Paytm"
-      imgUrl="/Images/account-management/account-managment-featured-image/paytm-account-management.webp"
-      imgAlt="Paytm Account Management Services - Professional E-commerce Support"
-      articleImgUrl="/Images/account-management/article/paytmaccount.webp"
-      articleImgAlt="Paytm Account Management Services - Professional Support"
-    />
+    <ContentProtectionProvider>
+      <AccountTemplate
+        accountManagementService="Paytm Account Management Services"
+        accServiceName="Paytm"
+        imgUrl="/Images/account-management/account-managment-featured-image/paytm-account-management.webp"
+        imgAlt="Paytm Account Management Services - Professional E-commerce Support"
+        articleImgUrl="/Images/account-management/article/paytmaccount.webp"
+        articleImgAlt="Paytm Account Management Services - Professional Support"
+      />
+    </ContentProtectionProvider>
   );
 }

@@ -5,6 +5,7 @@ import Link from 'next/link';
 import WhatsAppButton from '@/components/WhatsAppButton';
 import Testimonials from '@/components/Testimonials';
 import MultiStepForm from '@/components/MultiStepForm';
+import { ContentProtectionProvider } from '@/components/ContentProtection';
 
 export const metadata: Metadata = {
   title: 'How to Get Onboarded on Nykaa | Nykaa Seller Registration Guide 2024',
@@ -39,7 +40,8 @@ export const metadata: Metadata = {
 
 export default function NykaaOnboarding() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <ContentProtectionProvider>
+      <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-purple-500 to-pink-600 text-white py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -397,6 +399,7 @@ export default function NykaaOnboarding() {
           </div>
         </article>
       </main>
-    </div>
+      </div>
+    </ContentProtectionProvider>
   );
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Metadata } from 'next';
 import AccountTemplate from '@/components/AccountTemplate';
+import { ContentProtectionProvider } from '@/components/ContentProtection';
 
 export const metadata: Metadata = {
   title: 'Flipkart Account Management Services | Technovita Solution',
@@ -35,14 +36,16 @@ export const metadata: Metadata = {
 
 export default function FlipkartAccountManagement() {
   return (
-    <AccountTemplate
-      accountManagementService="Flipkart Account Management Services"
-      accServiceName="Flipkart"
-      imgUrl="/Images/account-management/account-managment-featured-image/Flipkart Account Management by Technovita.webp"
-      imgAlt="Flipkart Account Management Services - Professional E-commerce Support"
-      articleImgUrl="/Images/account-management/article/flipkartaccount.webp"
-      articleImgAlt="Flipkart Account Management Services - Professional Support"
-    />
+    <ContentProtectionProvider>
+      <AccountTemplate
+        accountManagementService="Flipkart Account Management Services"
+        accServiceName="Flipkart"
+        imgUrl="/Images/account-management/account-managment-featured-image/Flipkart Account Management by Technovita.webp"
+        imgAlt="Flipkart Account Management Services - Professional E-commerce Support"
+        articleImgUrl="/Images/account-management/article/flipkartaccount.webp"
+        articleImgAlt="Flipkart Account Management Services - Professional Support"
+      />
+    </ContentProtectionProvider>
   );
 }
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Metadata } from 'next';
 import AccountTemplate from '@/components/AccountTemplate';
+import { ContentProtectionProvider } from '@/components/ContentProtection';
 
 export const metadata: Metadata = {
   title: 'Myntra Account Management Services | Technovita Solution',
@@ -35,14 +36,16 @@ export const metadata: Metadata = {
 
 export default function MyntraAccountManagement() {
   return (
-    <AccountTemplate
-      accountManagementService="Myntra Account Management Services"
-      accServiceName="Myntra"
-      imgUrl="/Images/account-management/account-managment-featured-image/Myntra Account Management Solutions Graphic.webp"
-      imgAlt="Myntra Account Management Services - Professional E-commerce Support"
-      articleImgUrl="/Images/account-management/article/myntraaccount.webp"
-      articleImgAlt="Myntra Account Management Services - Professional Support"
-    />
+    <ContentProtectionProvider>
+      <AccountTemplate
+        accountManagementService="Myntra Account Management Services"
+        accServiceName="Myntra"
+        imgUrl="/Images/account-management/account-managment-featured-image/Myntra Account Management Solutions Graphic.webp"
+        imgAlt="Myntra Account Management Services - Professional E-commerce Support"
+        articleImgUrl="/Images/account-management/article/myntraaccount.webp"
+        articleImgAlt="Myntra Account Management Services - Professional Support"
+      />
+    </ContentProtectionProvider>
   );
 }
 
