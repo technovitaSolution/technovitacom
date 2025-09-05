@@ -270,6 +270,14 @@ export default async function ContactPage({ searchParams }: { searchParams: Prom
                   className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-pink-500 transition-colors duration-200 bg-white text-gray-900"
                 >
                   <option value="">Select a service</option>
+                  <optgroup label="Amazon.ca (Canada) Services">
+                    <option value="amazon-canada-account-onboarding">Amazon.ca Seller Account Onboarding</option>
+                    <option value="amazon-canada-listing-optimization">Listing Creation & Optimization (Amazon.ca)</option>
+                    <option value="amazon-canada-ppc-management">Amazon Advertising (PPC) - Amazon.ca</option>
+                    <option value="amazon-canada-seo-ranking">Amazon SEO & Ranking (Amazon.ca)</option>
+                    <option value="amazon-canada-suspension-appeal">Suspension Appeal Services (Amazon.ca)</option>
+                    <option value="amazon-canada-consulting">Amazon Consulting & Strategy (Amazon.ca)</option>
+                  </optgroup>
                   <optgroup label="Catalogue Services">
                     <option value="amazon-catalogue">Amazon Catalogue Services</option>
                     <option value="flipkart-catalogue">Flipkart Catalogue Services</option>
