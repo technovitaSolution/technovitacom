@@ -250,13 +250,63 @@ export default async function ContactPage({ searchParams }: { searchParams: Prom
                 <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
                   Phone Number
                 </label>
-                <input
-                  type="tel"
-                  id="phone"
-                  name="phone"
-                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-pink-500 transition-colors duration-200 bg-white text-gray-900 placeholder-gray-500"
-                  placeholder="Enter your phone number"
-                />
+                <div className="flex gap-3">
+                  <select
+                    id="countryCode"
+                    name="countryCode"
+                    defaultValue={"+1-us"}
+                    className="px-3 py-3 border-2 border-gray-300 rounded-lg bg-white text-gray-900 focus:ring-2 focus:ring-pink-500 focus:border-pink-500 transition-colors duration-200"
+                    aria-label="Country code"
+                  >
+                    <optgroup label="Americas">
+                      <option value="+1-us">🇺🇸 +1 (USA)</option>
+                      <option value="+1-ca">🇨🇦 +1 (Canada)</option>
+                      <option value="+52-mx">🇲🇽 +52 (Mexico)</option>
+                      <option value="+55-br">🇧🇷 +55 (Brazil)</option>
+                      <option value="+54-ar">🇦🇷 +54 (Argentina)</option>
+                      <option value="+57-co">🇨🇴 +57 (Colombia)</option>
+                      <option value="+56-cl">🇨🇱 +56 (Chile)</option>
+                      <option value="+51-pe">🇵🇪 +51 (Peru)</option>
+                    </optgroup>
+                    <optgroup label="Europe">
+                      <option value="+44-uk">🇬🇧 +44 (UK)</option>
+                      <option value="+49-de">🇩🇪 +49 (Germany)</option>
+                      <option value="+33-fr">🇫🇷 +33 (France)</option>
+                      <option value="+34-es">🇪🇸 +34 (Spain)</option>
+                      <option value="+39-it">🇮🇹 +39 (Italy)</option>
+                      <option value="+31-nl">🇳🇱 +31 (Netherlands)</option>
+                      <option value="+32-be">🇧🇪 +32 (Belgium)</option>
+                      <option value="+46-se">🇸🇪 +46 (Sweden)</option>
+                      <option value="+41-ch">🇨🇭 +41 (Switzerland)</option>
+                      <option value="+353-ie">🇮🇪 +353 (Ireland)</option>
+                      <option value="+351-pt">🇵🇹 +351 (Portugal)</option>
+                      <option value="+47-no">🇳🇴 +47 (Norway)</option>
+                      <option value="+45-dk">🇩🇰 +45 (Denmark)</option>
+                      <option value="+48-pl">🇵🇱 +48 (Poland)</option>
+                      <option value="+43-at">🇦🇹 +43 (Austria)</option>
+                      <option value="+358-fi">🇫🇮 +358 (Finland)</option>
+                      <option value="+30-gr">🇬🇷 +30 (Greece)</option>
+                      <option value="+420-cz">🇨🇿 +420 (Czech Republic)</option>
+                      <option value="+40-ro">🇷🇴 +40 (Romania)</option>
+                      <option value="+36-hu">🇭🇺 +36 (Hungary)</option>
+                    </optgroup>
+                    <optgroup label="Asia & Middle East">
+                      <option value="+91-in">🇮🇳 +91 (India)</option>
+                      <option value="+971-ae">🇦🇪 +971 (UAE)</option>
+                    </optgroup>
+                    <optgroup label="Oceania">
+                      <option value="+61-au">🇦🇺 +61 (Australia)</option>
+                    </optgroup>
+                  </select>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    className="flex-1 px-4 py-3 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-pink-500 transition-colors duration-200 bg-white text-gray-900 placeholder-gray-500"
+                    placeholder="Enter your phone number"
+                    inputMode="tel"
+                  />
+                </div>
               </div>
 
               {/* Service Interest */}

@@ -15,10 +15,19 @@ interface ContactFormData {
 export async function POST(request: NextRequest) {
   try {
     const formData = await request.formData();
+
+    // Combine country code with phone number (prefix)
+    const countryCodeRaw = (formData.get('countryCode') as string) || '';
+    const countryCodePrefix = countryCodeRaw.split('-')[0] || '';
+    const rawPhone = ((formData.get('phone') as string) || '').replace(/\D+/g, '');
+    const formattedPhone = rawPhone
+      ? `${countryCodePrefix}${rawPhone}`
+      : '';
+
     const contactData: ContactFormData = {
       name: formData.get('name') as string,
       email: formData.get('email') as string,
-      phone: formData.get('phone') as string,
+      phone: formattedPhone,
       service: formData.get('service') as string,
       message: formData.get('message') as string,
       source: formData.get('source') as string
