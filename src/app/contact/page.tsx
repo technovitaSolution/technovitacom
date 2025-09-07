@@ -204,6 +204,46 @@ export default async function ContactPage({ searchParams }: { searchParams: Prom
                 </div>
               </div>
             </div>
+
+            {/* Office Address */}
+            <div className="bg-white rounded-xl shadow-lg p-6">
+              <h3 className="text-xl font-semibold text-gray-900 mb-4 flex items-center">
+                <svg className="w-5 h-5 text-purple-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                Office Address
+              </h3>
+              <div className="space-y-3 text-gray-600">
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-1">Technovita Solution</h4>
+                  <p className="text-gray-700">
+                    A-82, Sector 4, Noida, Uttar Pradesh
+                  </p>
+                </div>
+                <div className="pt-3 border-t border-gray-200">
+                  <div className="space-y-2 text-sm">
+                    <div>
+                      <span className="font-medium text-gray-700">GSTIN/UIN:</span>
+                      <span className="ml-2 text-gray-600">09IPQPS8719D2ZZ</span>
+                    </div>
+                    <div>
+                      <span className="font-medium text-gray-700">State:</span>
+                      <span className="ml-2 text-gray-600">Uttar Pradesh (Code: 9)</span>
+                    </div>
+                    <div>
+                      <span className="font-medium text-gray-700">Email:</span>
+                      <a 
+                        href="mailto:info@technovitasolution.com"
+                        className="ml-2 text-blue-600 hover:text-blue-700 transition-colors duration-200"
+                      >
+                        info@technovitasolution.com
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Contact Form */}
