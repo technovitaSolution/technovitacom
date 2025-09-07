@@ -253,10 +253,22 @@ export default function EmployeeVerificationPage() {
               <Shield className="h-6 w-6 text-blue-600" />
               <h3 className="text-lg font-semibold text-gray-900">About This Verification</h3>
             </div>
-            <p className="text-gray-600 max-w-2xl mx-auto">
+            <p className="text-gray-600 max-w-2xl mx-auto mb-4">
               This verification system is provided by Technovita Solution to authenticate employment certificates. 
               All certificates are digitally verified and contain tamper-proof information.
             </p>
+            <div className="border-t border-gray-200 pt-4">
+              <p className="text-sm text-gray-600 mb-2">For further queries or assistance:</p>
+              <a 
+                href="mailto:hr@technovitasolution.com"
+                className="inline-flex items-center space-x-2 text-blue-600 hover:text-blue-700 font-medium transition-colors duration-200"
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+                <span>hr@technovitasolution.com</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
