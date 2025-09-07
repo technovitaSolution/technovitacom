@@ -57,6 +57,12 @@ export const sitemapConfig = {
       priority: 0.85,
       changefreq: 'weekly' as const,
       description: 'Flipkart Catalogue'
+    },
+    {
+      pattern: /employee-verification/,
+      priority: 0.9,
+      changefreq: 'monthly' as const,
+      description: 'Employee Certificate Verification'
     }
   ],
   
@@ -67,6 +73,7 @@ export const sitemapConfig = {
     '/privacy-policy',
     '/terms-of-service',
     '/cookie-policy',
+    '/employee-verification',
     '/services',
     '/services/amazon-seller-services-canada',
     '/services/account-management',
