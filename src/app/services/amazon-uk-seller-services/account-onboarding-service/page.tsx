@@ -6,74 +6,71 @@ import ContactForm from '@/components/ContactForm';
 import { ContentProtectionProvider } from '@/components/ContentProtection';
 
 export const metadata: Metadata = {
-  title: 'Amazon UAE Account Onboarding Service | Expert Amazon.ae Setup & Registration - Technovita Solution',
-  description: 'Professional Amazon UAE account onboarding service. Complete Amazon.ae seller account setup, documentation, verification, VAT registration, UAE compliance, and bank integration. Get onboarded in 7-14 days with Technovita Solution.',
+  title: 'Amazon UK Account Onboarding Service | Expert Amazon.co.uk Setup & Registration - Technovita Solution',
+  description: 'Professional Amazon UK account onboarding service. Complete Amazon.co.uk seller account setup, documentation, verification, VAT registration, HMRC compliance, and bank integration. Get onboarded in 7-14 days with Technovita Solution.',
   keywords: [
-    'amazon uae onboarding service',
-    'amazon uae account setup service',
-    'amazon.ae onboarding',
-    'amazon uae seller onboarding',
-    'professional amazon uae setup',
-    'amazon.ae account registration service',
-    'amazon seller account uae',
-    'amazon.ae seller setup',
-    'amazon uae account creation',
-    'amazon seller onboarding uae',
-    'amazon.ae registration service',
-    'amazon uae business account',
-    'amazon seller account setup uae',
-    'amazon.ae seller account creation',
-    'amazon uae vat registration',
-    'amazon.ae vat setup',
-    'amazon seller verification uae',
-    'amazon uae bank integration',
-    'amazon.ae compliance setup',
-    'amazon seller account management uae',
-    'amazon uae expert onboarding',
-    'amazon.ae professional setup',
-    'amazon seller services uae',
-    'amazon uae marketplace setup',
-    'amazon.ae business onboarding',
-    'amazon dubai seller setup',
-    'amazon abu dhabi seller setup',
-    'amazon gcc seller setup',
-    'amazon middle east seller setup',
-    'amazon uae tax compliance',
-    'amazon uae business license',
-    'amazon uae trade license'
+    'amazon uk onboarding service',
+    'amazon uk account setup service',
+    'amazon.co.uk onboarding',
+    'amazon uk seller onboarding',
+    'professional amazon uk setup',
+    'amazon.co.uk account registration service',
+    'amazon seller account uk',
+    'amazon.co.uk seller setup',
+    'amazon uk account creation',
+    'amazon seller onboarding uk',
+    'amazon.co.uk registration service',
+    'amazon uk business account',
+    'amazon seller account setup uk',
+    'amazon.co.uk seller account creation',
+    'amazon uk vat registration',
+    'amazon.co.uk vat setup',
+    'amazon seller verification uk',
+    'amazon uk bank integration',
+    'amazon.co.uk compliance setup',
+    'amazon seller account management uk',
+    'amazon uk expert onboarding',
+    'amazon.co.uk professional setup',
+    'amazon seller services uk',
+    'amazon uk marketplace setup',
+    'amazon.co.uk business onboarding',
+    'hmrc registration amazon uk',
+    'amazon uk tax compliance',
+    'amazon.co.uk seller registration'
   ],
   authors: [{ name: "Technovita Solution" }],
   creator: "Technovita Solution",
   publisher: "Technovita Solution",
   robots: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
   alternates: {
-    canonical: 'https://technovitasolution.com/services/amazon-uae-seller-services/account-onboarding-service'
+    canonical: 'https://technovitasolution.com/services/amazon-uk-seller-services/account-onboarding-service'
   },
   openGraph: {
-    title: 'Amazon UAE Account Onboarding Service | Expert Amazon.ae Setup & Registration - Technovita Solution',
-    description: 'Professional Amazon UAE account onboarding service. Complete Amazon.ae seller account setup, documentation, verification, VAT registration, UAE compliance, and bank integration. Get onboarded in 7-14 days with Technovita Solution.',
-    url: 'https://technovitasolution.com/services/amazon-uae-seller-services/account-onboarding-service',
+    title: 'Amazon UK Account Onboarding Service | Expert Amazon.co.uk Setup & Registration - Technovita Solution',
+    description: 'Professional Amazon UK account onboarding service. Complete Amazon.co.uk seller account setup, documentation, verification, VAT registration, HMRC compliance, and bank integration. Get onboarded in 7-14 days with Technovita Solution.',
+    url: 'https://technovitasolution.com/services/amazon-uk-seller-services/account-onboarding-service',
     siteName: 'Technovita Solution',
     images: [
       {
         url: '/Images/account-management/account-management-services.webp',
         width: 1200,
         height: 630,
-        alt: 'Amazon UAE Account Onboarding Service - Expert Amazon.ae Setup & Registration',
+        alt: 'Amazon UK Account Onboarding Service - Expert Amazon.co.uk Setup & Registration',
       },
     ],
-    locale: 'en_US',
+    locale: 'en_GB',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Amazon UAE Account Onboarding Service | Expert Amazon.ae Setup & Registration - Technovita Solution',
-    description: 'Professional Amazon UAE account onboarding service. Complete Amazon.ae seller account setup, documentation, verification, VAT registration, UAE compliance, and bank integration. Get onboarded in 7-14 days with Technovita Solution.',
+    title: 'Amazon UK Account Onboarding Service | Expert Amazon.co.uk Setup & Registration - Technovita Solution',
+    description: 'Professional Amazon UK account onboarding service. Complete Amazon.co.uk seller account setup, documentation, verification, VAT registration, HMRC compliance, and bank integration. Get onboarded in 7-14 days with Technovita Solution.',
     images: ['/Images/account-management/account-management-services.webp'],
   },
+
 };
 
-export default function AmazonUAEOnboardingService() {
+export default function AmazonUKOnboardingService() {
   return (
     <ContentProtectionProvider>
       <div className="min-h-screen bg-gray-50">
@@ -84,42 +81,39 @@ export default function AmazonUAEOnboardingService() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Service",
-            "name": "Amazon UAE Account Onboarding Service",
-            "description": "Professional Amazon UAE account onboarding service. Complete Amazon.ae seller account setup, documentation, verification, VAT registration, UAE compliance, and bank integration.",
+            "name": "Amazon UK Account Onboarding Service",
+            "description": "Professional Amazon UK account onboarding service. Complete Amazon.co.uk seller account setup, documentation, verification, VAT registration, HMRC compliance, and bank integration.",
             "provider": {
               "@type": "Organization",
               "name": "Technovita Solution",
               "url": "https://technovitasolution.com"
             },
             "serviceType": "E-commerce Account Setup",
-            "areaServed": {
-              "@type": "Country",
-              "name": "United Arab Emirates"
-            },
+
             "offers": {
               "@type": "Offer",
               "price": "0",
-              "priceCurrency": "AED",
-              "description": "Free consultation for Amazon UAE account onboarding service"
+              "priceCurrency": "GBP",
+              "description": "Free consultation for Amazon UK account onboarding service"
             },
             "hasOfferCatalog": {
               "@type": "OfferCatalog",
-              "name": "Amazon UAE Onboarding Services",
+              "name": "Amazon UK Onboarding Services",
               "itemListElement": [
                 {
                   "@type": "Offer",
                   "itemOffered": {
                     "@type": "Service",
-                    "name": "Amazon.ae Account Registration",
-                    "description": "Complete Amazon.ae seller account registration and setup"
+                    "name": "Amazon.co.uk Account Registration",
+                    "description": "Complete Amazon.co.uk seller account registration and setup"
                   }
                 },
                 {
                   "@type": "Offer",
                   "itemOffered": {
                     "@type": "Service",
-                    "name": "UAE VAT Registration",
-                    "description": "VAT registration and tax compliance setup for Amazon UAE"
+                    "name": "VAT Registration Setup",
+                    "description": "VAT registration and tax compliance setup for Amazon UK"
                   }
                 },
                 {
@@ -127,7 +121,7 @@ export default function AmazonUAEOnboardingService() {
                   "itemOffered": {
                     "@type": "Service",
                     "name": "Bank Account Integration",
-                    "description": "UAE bank account integration and verification"
+                    "description": "UK bank account integration and verification"
                   }
                 },
                 {
@@ -143,7 +137,7 @@ export default function AmazonUAEOnboardingService() {
                   "itemOffered": {
                     "@type": "Service",
                     "name": "Account Verification",
-                    "description": "Amazon.ae account verification and approval process"
+                    "description": "Amazon.co.uk account verification and approval process"
                   }
                 }
               ]
@@ -153,18 +147,18 @@ export default function AmazonUAEOnboardingService() {
       />
       
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-red-600 via-orange-600 to-yellow-700 text-white py-20 lg:py-28 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-green-600 via-emerald-600 to-teal-700 text-white py-20 lg:py-28 overflow-hidden">
         {/* Animated Background Elements */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 left-20 w-72 h-72 bg-white rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
           <div className="absolute top-40 right-20 w-72 h-72 bg-yellow-300 rounded-full mix-blend-multiply filter blur-xl animate-pulse animation-delay-2000"></div>
-          <div className="absolute -bottom-8 left-40 w-72 h-72 bg-pink-300 rounded-full mix-blend-multiply filter blur-xl animate-pulse animation-delay-4000"></div>
+          <div className="absolute -bottom-8 left-40 w-72 h-72 bg-blue-300 rounded-full mix-blend-multiply filter blur-xl animate-pulse animation-delay-4000"></div>
         </div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
             <div 
-              className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium mb-6 text-red-700 shadow-lg border border-white border-opacity-30"
+              className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium mb-6 text-green-700 shadow-lg border border-white border-opacity-30"
               style={{
                 background: 'rgba(255, 255, 255, 0.9)',
                 backdropFilter: 'blur(10px)'
@@ -173,13 +167,13 @@ export default function AmazonUAEOnboardingService() {
               <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
-              Professional Amazon.ae Onboarding
+              Professional Amazon.co.uk Onboarding
             </div>
             <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight max-w-5xl mx-auto">
-              Amazon UAE <span className="bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">Account Onboarding</span> Service
+              Amazon UK <span className="bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">Account Onboarding</span> Service
             </h1>
-            <p className="text-xl mb-8 text-red-100 leading-relaxed max-w-3xl mx-auto">
-              Get your Amazon.ae seller account set up professionally and quickly. Our expert onboarding service handles everything from registration to UAE compliance, ensuring you're ready to sell in 7-14 days.
+            <p className="text-xl mb-8 text-green-100 leading-relaxed max-w-3xl mx-auto">
+              Get your Amazon.co.uk seller account set up professionally and quickly. Our expert onboarding service handles everything from registration to VAT compliance, ensuring you're ready to sell in 7-14 days.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
@@ -191,7 +185,7 @@ export default function AmazonUAEOnboardingService() {
                 </svg>
                 Get Onboarded Now
               </Link>
-              <WhatsAppButton serviceName="Amazon UAE Onboarding Service" className="border-2 border-white text-white hover:bg-white hover:text-red-600 transition-all duration-300 transform hover:scale-105" />
+              <WhatsAppButton serviceName="Amazon UK Onboarding Service" className="border-2 border-white text-white hover:bg-white hover:text-green-600 transition-all duration-300 transform hover:scale-105" />
             </div>
           </div>
         </div>
@@ -201,13 +195,13 @@ export default function AmazonUAEOnboardingService() {
       <section className="py-20 bg-white" id="onboarding-service">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <ContactForm
-            title="Start Your Amazon UAE Onboarding Today"
-            subtitle="Skip the complexity and get your Amazon.ae seller account set up professionally. Our certified experts handle everything from documentation to UAE compliance, getting you ready to sell in just 7-14 days!"
+            title="Start Your Amazon UK Onboarding Today"
+            subtitle="Skip the complexity and get your Amazon.co.uk seller account set up professionally. Our certified experts handle everything from documentation to VAT compliance, getting you ready to sell in just 7-14 days!"
             ctaText="Get My Onboarding Started"
-            serviceName="Amazon UAE Onboarding Service"
+            serviceName="Amazon UK Onboarding Service"
             accentColor="from-yellow-400 to-orange-400"
             showWhatsApp={true}
-            formId="amazon-uae-onboarding-top"
+            formId="amazon-uk-onboarding-top"
           />
         </div>
       </section>
@@ -216,46 +210,46 @@ export default function AmazonUAEOnboardingService() {
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">Complete Amazon UAE Account Onboarding Service</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-6">Complete Amazon UK Account Onboarding Service</h2>
             <p className="text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
-              Our professional onboarding service takes care of every aspect of your Amazon.ae seller account setup. From initial registration to final UAE compliance verification, we ensure your account is ready for success.
+              Our professional onboarding service takes care of every aspect of your Amazon.co.uk seller account setup. From initial registration to final compliance verification, we ensure your account is ready for success.
             </p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
             <div>
-              <div className="bg-red-50 border-l-4 border-red-500 p-6 mb-8">
+              <div className="bg-green-50 border-l-4 border-green-500 p-6 mb-8">
                 <div className="flex">
                   <div className="flex-shrink-0">
-                    <svg className="h-6 w-6 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg className="h-6 w-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                   </div>
                   <div className="ml-3">
-                    <p className="text-sm text-red-700">
-                      <strong>Success Guarantee:</strong> We have a <strong>98% approval rate</strong> for Amazon UAE seller accounts and guarantee compliance with all UAE regulations and Amazon policies.
+                    <p className="text-sm text-green-700">
+                      <strong>Success Guarantee:</strong> We have a <strong>99% approval rate</strong> for Amazon UK seller accounts and guarantee compliance with all UK regulations and Amazon policies.
                     </p>
                   </div>
                 </div>
               </div>
 
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Why Choose Our Onboarding Service?</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">Why Choose Our UK Onboarding Service?</h3>
               
               <div className="space-y-4">
                 <div className="flex items-start">
-                  <div className="flex-shrink-0 w-6 h-6 bg-red-500 rounded-full flex items-center justify-center mr-4 mt-1">
+                  <div className="flex-shrink-0 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-4 mt-1">
                     <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">Fast 7-14 Day Setup</h4>
-                    <p className="text-gray-600 text-sm">Get your Amazon.ae account approved and ready to sell in just 1-2 weeks</p>
+                    <p className="text-gray-600 text-sm">Get your Amazon.co.uk account approved and ready to sell in just 1-2 weeks</p>
                   </div>
                 </div>
 
                 <div className="flex items-start">
-                  <div className="flex-shrink-0 w-6 h-6 bg-red-500 rounded-full flex items-center justify-center mr-4 mt-1">
+                  <div className="flex-shrink-0 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-4 mt-1">
                     <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
@@ -267,19 +261,19 @@ export default function AmazonUAEOnboardingService() {
                 </div>
                 
                 <div className="flex items-start">
-                  <div className="flex-shrink-0 w-6 h-6 bg-red-500 rounded-full flex items-center justify-center mr-4 mt-1">
+                  <div className="flex-shrink-0 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-4 mt-1">
                     <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
                   <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">UAE VAT Registration</h4>
-                    <p className="text-gray-600 text-sm">VAT registration and compliance setup included</p>
+                    <h4 className="font-semibold text-gray-900 mb-1">UK VAT Registration</h4>
+                    <p className="text-gray-600 text-sm">VAT registration and HMRC compliance setup included</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start">
-                  <div className="flex-shrink-0 w-6 h-6 bg-red-500 rounded-full flex items-center justify-center mr-4 mt-1">
+                  <div className="flex-shrink-0 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center mr-4 mt-1">
                     <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
@@ -293,12 +287,12 @@ export default function AmazonUAEOnboardingService() {
             </div>
 
             <div className="bg-white p-8 rounded-2xl shadow-xl">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Onboarding Process Timeline</h3>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">UK Onboarding Process Timeline</h3>
               
               <div className="space-y-6">
                 <div className="flex items-center">
-                  <div className="flex-shrink-0 w-10 h-10 bg-red-100 rounded-full flex items-center justify-center mr-4">
-                    <span className="text-red-600 font-bold">1</span>
+                  <div className="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                    <span className="text-green-600 font-bold">1</span>
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Initial Consultation</h4>
@@ -307,28 +301,28 @@ export default function AmazonUAEOnboardingService() {
                 </div>
                 
                 <div className="flex items-center">
-                  <div className="flex-shrink-0 w-10 h-10 bg-red-100 rounded-full flex items-center justify-center mr-4">
-                    <span className="text-red-600 font-bold">2</span>
+                  <div className="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                    <span className="text-green-600 font-bold">2</span>
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Account Creation</h4>
-                    <p className="text-gray-600 text-sm">Amazon.ae seller account setup (Days 2-3)</p>
+                    <p className="text-gray-600 text-sm">Amazon.co.uk seller account setup (Days 2-3)</p>
                   </div>
                 </div>
                 
                 <div className="flex items-center">
-                  <div className="flex-shrink-0 w-10 h-10 bg-red-100 rounded-full flex items-center justify-center mr-4">
-                    <span className="text-red-600 font-bold">3</span>
+                  <div className="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                    <span className="text-green-600 font-bold">3</span>
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">VAT & Compliance</h4>
-                    <p className="text-gray-600 text-sm">UAE VAT registration and setup (Days 4-7)</p>
+                    <p className="text-gray-600 text-sm">UK VAT registration and setup (Days 4-7)</p>
                   </div>
                 </div>
                 
                 <div className="flex items-center">
-                  <div className="flex-shrink-0 w-10 h-10 bg-red-100 rounded-full flex items-center justify-center mr-4">
-                    <span className="text-red-600 font-bold">4</span>
+                  <div className="flex-shrink-0 w-10 h-10 bg-green-100 rounded-full flex items-center justify-center mr-4">
+                    <span className="text-green-600 font-bold">4</span>
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Verification & Approval</h4>
@@ -337,14 +331,14 @@ export default function AmazonUAEOnboardingService() {
                 </div>
                 
                 <div className="flex items-center">
-                  <div className="flex-shrink-0 w-10 h-10 bg-red-500 rounded-full flex items-center justify-center mr-4">
+                  <div className="flex-shrink-0 w-10 h-10 bg-green-500 rounded-full flex items-center justify-center mr-4">
                     <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Ready to Sell!</h4>
-                    <p className="text-gray-600 text-sm">Your Amazon.ae account is live and compliant</p>
+                    <p className="text-gray-600 text-sm">Your Amazon.co.uk account is live and compliant</p>
                   </div>
                 </div>
               </div>
@@ -357,24 +351,24 @@ export default function AmazonUAEOnboardingService() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">What's Included in Our Technovita Solution UAE Onboarding Service</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-6">What's Included in Our UK Onboarding Service</h2>
             <p className="text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
-              Our comprehensive Amazon UAE onboarding serviceS covers every aspect of getting your seller account ready. Here's exactly what we handle for you:
+              Our comprehensive Amazon UK onboarding service covers every aspect of getting your seller account ready. Here's exactly what we handle for you:
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
             {/* Account Registration */}
             <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100">
-              <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6 mx-auto">
-                <svg className="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+                <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                 </svg>
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">Account Registration</h3>
               <ul className="text-gray-700 space-y-2 text-sm">
-                <li>• Amazon.ae seller account creation</li>
-                <li>• Professional account setup for amazon uae</li>
+                <li>• Amazon.co.uk seller account creation</li>
+                <li>• Professional account setup</li>
                 <li>• Business verification process</li>
                 <li>• Account type optimization</li>
               </ul>
@@ -403,12 +397,12 @@ export default function AmazonUAEOnboardingService() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">UAE VAT Setup</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">UK VAT Setup</h3>
               <ul className="text-gray-700 space-y-2 text-sm">
-                <li>• VAT registration</li>
-                <li>• Tax compliance setup</li>
-                <li>• Business license integration</li>
-                <li>• UAE regulation compliance</li>
+                <li>• VAT registration with HMRC</li>
+                <li>• EU VAT compliance setup</li>
+                <li>• UTR (Unique Taxpayer Reference)</li>
+                <li>• Tax compliance guidance</li>
               </ul>
             </div>
 
@@ -422,7 +416,7 @@ export default function AmazonUAEOnboardingService() {
               <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">Banking Integration</h3>
               <ul className="text-gray-700 space-y-2 text-sm">
                 <li>• Payment method setup</li>
-                <li>• Bank account verification</li>
+                <li>• UK bank account verification</li>
                 <li>• Currency conversion optimization</li>
                 <li>• Payment schedule configuration</li>
               </ul>
@@ -430,20 +424,20 @@ export default function AmazonUAEOnboardingService() {
 
             {/* Compliance */}
             <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100">
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6 mx-auto">
-                <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+                <svg className="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">UAE Compliance Setup</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">Compliance Setup</h3>
               <ul className="text-gray-700 space-y-2 text-sm">
                 <li>• Amazon policy compliance</li>
-                <li>• UAE regulation adherence</li>
+                <li>• UK regulation adherence</li>
                 <li>• Account health optimization</li>
                 <li>• Policy violation prevention</li>
               </ul>
             </div>
-            
+              
             {/* Ongoing Support */}
             <div className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-100">
               <div className="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mb-6 mx-auto">
@@ -463,62 +457,49 @@ export default function AmazonUAEOnboardingService() {
         </div>
       </section>
 
-      {/* WhatsApp CTA */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <div className="bg-gradient-to-r from-red-50 to-orange-50 border border-red-200 rounded-2xl p-8">
-              <h4 className="text-2xl font-bold text-gray-900 mb-4">Ready to Get Started with Professional Onboarding?</h4>
-              <p className="text-gray-700 mb-6">Our Amazon UAE onboarding specialists are ready to handle your complete account setup. Get started today and start  selling on Amazon.ae in just 7-14 days with technovita solution</p>
-              <WhatsAppButton serviceName="Amazon UAE Onboarding Service" className="bg-red-600 hover:bg-red-700" />
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* FAQ Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
             <p className="text-xl text-gray-700">
-              Common questions about our Amazon UAE onboarding service
+              Common questions about our Amazon UK onboarding service
             </p>
           </div>
 
           <div className="space-y-8">
-            <div className="bg-gray-50 p-8 rounded-2xl">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">How long does the onboarding process take?</h3>
+            <div className="bg-white p-8 rounded-2xl shadow-lg">
+              <h3 className="text-xl font-bold text-gray-900 mb-4">How long does the UK onboarding process take?</h3>
               <p className="text-gray-700">
-                Our Amazon UAE onboarding process typically takes 7-14 business days from start to finish. This includes account creation, documentation verification, VAT registration, and final approval. We handle everything efficiently to get you selling as quickly as possible.
+                Our Amazon UK onboarding process typically takes 7-14 business days from start to finish. This includes account creation, documentation verification, VAT registration, and final approval. We handle everything efficiently to get you selling as quickly as possible.
               </p>
             </div>
 
-            <div className="bg-gray-50 p-8 rounded-2xl">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Do I need to be located in UAE to sell on Amazon.ae?</h3>
+            <div className="bg-white p-8 rounded-2xl shadow-lg">
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Do I need to be located in the UK to sell on Amazon.co.uk?</h3>
               <p className="text-gray-700">
-                No, you don't need to be physically located in UAE to sell on Amazon.ae. However, you do need proper VAT registration and compliance with UAE regulations. Our service handles all the necessary registrations and ensures full compliance regardless of your location to make your journey to start selling on amzon hassle free so that you can foucs on scaling of your business and we can take care of all the other things.
+                No, you don't need to be physically located in the UK to sell on Amazon.co.uk. However, you do need proper VAT registration and compliance with UK regulations. Our service handles all the necessary registrations and ensures full compliance regardless of your location.
               </p>
             </div>
 
-            <div className="bg-gray-50 p-8 rounded-2xl">
+            <div className="bg-white p-8 rounded-2xl shadow-lg">
               <h3 className="text-xl font-bold text-gray-900 mb-4">What documents do I need to provide?</h3>
               <p className="text-gray-700">
-                You'll need government-issued ID, business registration documents (if applicable), bank account information, and VAT registration numbers. We provide a complete checklist and help you prepare all required documentation properly.
+                You'll need government-issued ID, business registration documents (if applicable), UK bank account information, and tax identification numbers. We provide a complete checklist and help you prepare all required documentation properly.
               </p>
             </div>
 
-            <div className="bg-gray-50 p-8 rounded-2xl">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Is there ongoing support after account setup?</h3>
+            <div className="bg-white p-8 rounded-2xl shadow-lg">
+              <h3 className="text-xl font-bold text-gray-900 mb-4">Is VAT registration mandatory for Amazon UK?</h3>
               <p className="text-gray-700">
-                Yes! Our service includes 30 days of post-onboarding support. During this period, we monitor your account health, provide optimization recommendations, and are available to answer any questions about selling on Amazon.ae.
+                VAT registration is required if you exceed the UK VAT threshold (£85,000 annually) or if you're selling goods stored in UK fulfillment centers. Our service includes VAT registration and ensures full HMRC compliance from day one.
               </p>
             </div>
 
-            <div className="bg-gray-50 p-8 rounded-2xl">
+            <div className="bg-white p-8 rounded-2xl shadow-lg">
               <h3 className="text-xl font-bold text-gray-900 mb-4">What if my account gets rejected?</h3>
               <p className="text-gray-700">
-                With our 98% approval rate, rejections are rare. However, if your account is rejected, we work with you at no additional cost to address the issues and resubmit your application. We guarantee approval when all requirements are met.
+                With our 99% approval rate, rejections are rare. However, if your account is rejected, we work with you at no additional cost to address the issues and resubmit your application. We guarantee approval when all requirements are met.
               </p>
             </div>
           </div>
@@ -526,46 +507,28 @@ export default function AmazonUAEOnboardingService() {
       </section>
 
       {/* Final Contact Form Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Ready to Start Your Amazon UAE Journey?</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Ready to Start Your Amazon UK Journey?</h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-              Join hundreds of successful sellers who have used our professional onboarding service to launch their Amazon.ae businesses. Get started today with expert guidance and support.
+              Join hundreds of successful sellers who have used our professional onboarding service to launch their Amazon.co.uk businesses. Get started today with expert guidance and support.
             </p>
           </div>
           
           <ContactForm
-            title="Complete Your Amazon UAE Onboarding"
-            subtitle="Ready to get your Amazon.ae seller account set up professionally? Our experts will handle everything from registration to compliance, ensuring you're ready to succeed in the UAE marketplace."
+            title="Complete Your Amazon UK Onboarding"
+            subtitle="Ready to get your Amazon.co.uk seller account set up professionally? Our experts will handle everything from registration to VAT compliance, ensuring you're ready to succeed in the UK marketplace."
             ctaText="Start My Professional Onboarding"
-            serviceName="Amazon UAE Professional Onboarding"
+            serviceName="Amazon UK Professional Onboarding"
             accentColor="from-yellow-400 to-orange-400"
             showWhatsApp={true}
-            formId="amazon-uae-onboarding-final"
+            formId="amazon-uk-onboarding-final"
           />
-        </div>
-      </section>
-
-      {/* Conclusion Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center bg-gradient-to-r from-red-600 to-orange-600 text-white p-8 rounded-2xl">
-            <h4 className="text-2xl font-bold mb-4">Start Selling on Amazon UAE Today</h4>
-            <p className="text-xl mb-6">
-              Don't let complexity hold you back from accessing the lucrative UAE market. Our professional onboarding service ensures you launch with confidence and compliance.
-            </p>
-            <div className="text-lg font-semibold mb-4">
-              📞 <strong>Call Now:</strong> +91 7042163504<br/>
-              📧 <strong>Email:</strong> info@technovitasolution.com
-            </div>
-            <p className="text-red-100">
-              Get your Amazon UAE account set up professionally and start selling in just 7-14 days.
-            </p>
-          </div>
         </div>
       </section>
       </div>
     </ContentProtectionProvider>
   );
 }
+

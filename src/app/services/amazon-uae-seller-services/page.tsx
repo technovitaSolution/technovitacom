@@ -273,7 +273,7 @@ export default function AmazonSellerServicesUAE() {
             <div className="relative animate-fade-in-right">
               <div className="absolute -inset-4 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-lg blur opacity-30 animate-pulse"></div>
               <Image
-                src="/Images/amazon-uae/amazon-uae-seller-services.webp"
+                src="/Images/amazon-uae/amazon-uae-seller-services-technovita.webp"
                 alt="Amazon Seller Services UAE - Professional Support"
                 width={600}
                 height={400}
