@@ -189,7 +189,7 @@ const RefundPolicy: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">Submit Refund Request</h3>
-                  <p className="text-gray-700 mb-2">Send a detailed refund request to <a href="mailto:refunds@technovitasolution.com" className="text-pink-600 hover:text-pink-700 underline">refunds@technovitasolution.com</a> including:</p>
+                  <p className="text-gray-700 mb-2">Send a detailed refund request to <a href="mailto:info@technovitasolution.com" className="text-pink-600 hover:text-pink-700 underline">info@technovitasolution.com</a> including:</p>
                   <ul className="list-disc list-inside text-gray-600 text-sm space-y-1 ml-4">
                     <li>Service agreement/invoice number</li>
                     <li>Reason for refund request</li>
@@ -481,9 +481,9 @@ const RefundPolicy: React.FC = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-3">Refund Department</h3>
+                <h3 className="text-lg font-semibold text-gray-900 mb-3">Customer Support</h3>
                 <div className="space-y-2 text-gray-700">
-                  <p>Email: <a href="mailto:refunds@technovitasolution.com" className="text-pink-600 hover:text-pink-700 underline">refunds@technovitasolution.com</a></p>
+                  <p>Email: <a href="mailto:info@technovitasolution.com" className="text-pink-600 hover:text-pink-700 underline">info@technovitasolution.com</a></p>
                   <p>Phone: <a href="tel:+917042163504" className="text-pink-600 hover:text-pink-700">+91 7042163504</a></p>
                   <p>Support Hours: Monday-Friday, 9 AM - 6 PM IST</p>
                 </div>
