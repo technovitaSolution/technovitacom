@@ -136,47 +136,6 @@ const RefundPolicy: React.FC = () => {
             </div>
           </section>
 
-          {/* Refund Eligibility */}
-          <section className="mb-12">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">Refund Eligibility Criteria</h2>
-            
-            <div className="space-y-6">
-              <div className="bg-yellow-50 p-6 rounded-lg border border-yellow-200">
-                <h3 className="text-lg font-semibold text-yellow-800 mb-3">Eligible for Full Refund</h3>
-                <ul className="text-yellow-700 space-y-2 text-sm">
-                  <li>• Request submitted within 60 days of service commencement</li>
-                  <li>• Service deliverables not meeting agreed specifications</li>
-                  <li>• Failure to achieve basic service objectives despite good faith efforts</li>
-                  <li>• Technical issues preventing service completion on our end</li>
-                  <li>• Dissatisfaction with service quality or approach</li>
-                  <li>• Services not delivered within agreed timeline (with reasonable extensions)</li>
-                </ul>
-              </div>
-
-              <div className="bg-green-50 p-6 rounded-lg border border-green-200">
-                <h3 className="text-lg font-semibold text-green-800 mb-3">Partial Refund Scenarios</h3>
-                <ul className="text-green-700 space-y-2 text-sm">
-                  <li>• Services partially completed with some deliverables provided</li>
-                  <li>• Client-requested scope changes after service commencement</li>
-                  <li>• Early termination due to client circumstances</li>
-                  <li>• Platform policy changes affecting service delivery</li>
-                  <li>• Refund requested after 60-day period but within 90 days</li>
-                </ul>
-              </div>
-
-              <div className="bg-red-50 p-6 rounded-lg border border-red-200">
-                <h3 className="text-lg font-semibold text-red-800 mb-3">Non-Refundable Situations</h3>
-                <ul className="text-red-700 space-y-2 text-sm">
-                  <li>• Services fully completed as per agreement</li>
-                  <li>• Client non-cooperation or failure to provide required information</li>
-                  <li>• Refund requests after 90 days from service commencement</li>
-                  <li>• External factors beyond our control (platform suspensions, policy changes)</li>
-                  <li>• Services terminated due to client violation of terms</li>
-                  <li>• Third-party fees already incurred (advertising costs, platform fees)</li>
-                </ul>
-              </div>
-            </div>
-          </section>
 
           {/* Refund Process */}
           <section className="mb-12">
