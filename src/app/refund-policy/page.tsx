@@ -235,46 +235,6 @@ const RefundPolicy: React.FC = () => {
           </section>
 
 
-          {/* Dispute Resolution */}
-          <section className="mb-12">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">Refund Disputes and Appeals</h2>
-            
-            <div className="bg-gray-50 p-6 rounded-lg">
-              <h3 className="text-lg font-semibold text-gray-900 mb-4">If You Disagree with Our Refund Decision</h3>
-              
-              <div className="space-y-4">
-                <div className="flex items-start space-x-3">
-                  <div className="flex-shrink-0 w-6 h-6 bg-purple-100 rounded-full flex items-center justify-center mt-1">
-                    <span className="text-purple-600 text-sm font-bold">1</span>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">Internal Appeal Process</h4>
-                    <p className="text-gray-700 text-sm">Submit an appeal to our senior management team with additional evidence or clarification within 15 days of our decision.</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-3">
-                  <div className="flex-shrink-0 w-6 h-6 bg-purple-100 rounded-full flex items-center justify-center mt-1">
-                    <span className="text-purple-600 text-sm font-bold">2</span>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">Third-Party Mediation</h4>
-                    <p className="text-gray-700 text-sm">If internal appeal fails, we're open to third-party mediation through recognized dispute resolution services.</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-3">
-                  <div className="flex-shrink-0 w-6 h-6 bg-purple-100 rounded-full flex items-center justify-center mt-1">
-                    <span className="text-purple-600 text-sm font-bold">3</span>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-1">Consumer Protection</h4>
-                    <p className="text-gray-700 text-sm">You maintain all rights under applicable consumer protection laws and may pursue legal remedies as permitted by law.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
 
           {/* Policy Changes */}
           <section className="mb-12">
