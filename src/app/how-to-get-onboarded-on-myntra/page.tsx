@@ -40,7 +40,6 @@ export const metadata: Metadata = {
 
 export default function MyntraOnboarding() {
   return (
-    <ContentProtectionProvider>
       <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-pink-500 to-purple-600 text-white py-16 lg:py-24">
@@ -326,6 +325,5 @@ export default function MyntraOnboarding() {
         </article>
       </main>
       </div>
-    </ContentProtectionProvider>
   );
 }
