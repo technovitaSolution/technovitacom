@@ -4259,6 +4259,23 @@ export default function AmazonFBACalculatorPage() {
           </div>
         </div>
       </div>
+      <div className="bg-white shadow-md rounded-2xl p-6 max-w-2xl mx-auto">
+  <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+    Amazon.in Payment Cycles
+  </h2>
+  <p className="text-gray-600 mb-3">
+    You are eligible to get paid for the order <span className="font-medium">7 days after the order is delivered</span>. 
+    Amazon ensures payment for your sales (minus the Amazon Seller fees) is deposited securely 
+    into your bank account every 7 days, including your Pay on Delivery orders.
+  </p>
+  <p className="text-gray-600 mb-3">
+    Eligible sellers will also receive options for faster payment cycles.
+  </p>
+  <p className="text-gray-600">
+    You can view your deposited balance along with tips to grow and expand your business 
+    in your <span className="font-medium">Seller Central</span> account.
+  </p>
+</div>
 
       {/* FAQ Section */}
       <div className="py-16 px-4 bg-gray-50">
