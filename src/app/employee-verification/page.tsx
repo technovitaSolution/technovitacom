@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import Image from 'next/image';
 import { CheckCircle, XCircle, Search, Shield, Calendar, User, Award } from 'lucide-react';
 
 interface CertificateData {
@@ -43,7 +42,7 @@ export default function EmployeeVerificationPage() {
       } else {
         setError(data.error || 'Certificate not found');
       }
-    } catch (err) {
+    } catch {
       setError('An error occurred while verifying the certificate');
     } finally {
       setIsLoading(false);

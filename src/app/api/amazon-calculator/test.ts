@@ -170,6 +170,6 @@ export async function runCalculatorTests() {
 
 // Console test runner (for development)
 if (typeof window !== 'undefined') {
-  (window as any).testCalculator = runCalculatorTests;
+  (window as unknown as { testCalculator: () => Promise<unknown[]> }).testCalculator = runCalculatorTests;
   console.log('Calculator tests loaded. Run testCalculator() in console to test.');
 }

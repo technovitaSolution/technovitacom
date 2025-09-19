@@ -1,6 +1,7 @@
 'use client';
 
 import React, { forwardRef, useRef, useEffect } from 'react';
+import Image from 'next/image';
 import { useContentProtection, useElementProtection } from '@/hooks/useContentProtection';
 import { ProtectionConfig, protectionStyles } from '@/lib/content-protection';
 
@@ -97,21 +98,21 @@ export const Watermark: React.FC<{
  */
 export const ProtectedImage = forwardRef<
   HTMLImageElement,
-  React.ImgHTMLAttributes<HTMLImageElement> & {
+  React.ComponentProps<typeof Image> & {
     protectionConfig?: ProtectionConfig;
   }
->(({ protectionConfig, className = '', ...props }, ref) => {
+>(({ protectionConfig, className = '', alt = "Protected content", ...props }, ref) => {
   const elementRef = useRef<HTMLImageElement>(null);
   const finalRef = (ref || elementRef) as React.RefObject<HTMLImageElement>;
   
   useElementProtection(finalRef, protectionConfig);
   
   return (
-    <img
+    <Image
       ref={finalRef}
       className={`content-protected ${className}`}
       draggable={false}
-      alt={props.alt || "Protected content"}
+      alt={alt}
       {...props}
     />
   );

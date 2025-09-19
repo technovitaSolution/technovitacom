@@ -1,8 +1,8 @@
 'use client';
 
-import { useState, useEffect } from 'react';
-import { PieChart, Pie, Cell, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip as RechartsTooltip, ResponsiveContainer, LineChart, Line } from 'recharts';
-import { Calculator, TrendingUp, Package, Truck, CreditCard, Info } from 'lucide-react';
+import { useState, useEffect, useCallback } from 'react';
+import { PieChart, Pie, Cell, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip as RechartsTooltip, ResponsiveContainer } from 'recharts';
+import { Calculator, TrendingUp, Package, Truck, CreditCard } from 'lucide-react';
 import InfoTooltip from './Tooltip';
 import { AMAZON_CATEGORIES, FULFILLMENT_METHODS, STEP_LEVELS, SHIPPING_REGIONS } from '@/lib/amazon-categories';
 import type { CalculatorInput, CalculatorResult } from '@/app/api/amazon-calculator/route';
@@ -64,7 +64,7 @@ export default function AmazonCalculator() {
     }
   };
 
-  const handleCalculate = async () => {
+  const handleCalculate = useCallback(async () => {
     // Validation
     if (!input.categoryId || !input.subcategoryId) {
       setError('Please select a category and subcategory');
@@ -94,10 +94,10 @@ export default function AmazonCalculator() {
     try {
       const calculationResult = await calculateFees(input);
       setResult(calculationResult);
-    } catch (err) {
+    } catch {
       // Error is already handled in calculateFees
     }
-  };
+  }, [input]);
 
   const handleCompareAllMethods = async () => {
     // Use the same validation as handleCalculate
@@ -131,7 +131,7 @@ export default function AmazonCalculator() {
       );
       setComparisonResults(results);
       setComparisonMode(true);
-    } catch (err) {
+    } catch {
       // Error is already handled in calculateFees
     }
   };
@@ -145,7 +145,7 @@ export default function AmazonCalculator() {
     }, 1000); // Increased debounce time for better performance
 
     return () => clearTimeout(timer);
-  }, [input]);
+  }, [input, handleCalculate]);
 
   const pieChartData = result ? [
     { name: 'Profit', value: Math.max(result.netProfit, 0), color: COLORS[0] },
@@ -536,10 +536,10 @@ export default function AmazonCalculator() {
                     <span className="text-black">GST on Fees ({input.gstPercent}%)</span>
                     <span className="font-semibold text-red-600">-₹{result.gstOnFees.toLocaleString()}</span>
                   </div>
-                  {input.additionalCosts > 0 && (
+                  {(input.additionalCosts ?? 0) > 0 && (
                     <div className="flex justify-between py-2">
                       <span className="text-black">Additional Costs</span>
-                      <span className="font-semibold text-red-600">-₹{input.additionalCosts.toLocaleString()}</span>
+                      <span className="font-semibold text-red-600">-₹{(input.additionalCosts ?? 0).toLocaleString()}</span>
                     </div>
                   )}
                   <div className="flex justify-between py-2 border-t border-gray-200 pt-2 font-semibold text-lg">
@@ -562,7 +562,7 @@ export default function AmazonCalculator() {
                         cx="50%"
                         cy="50%"
                         labelLine={false}
-                        label={({ name, percent }) => `${name} ${(percent * 100).toFixed(0)}%`}
+                        label={({ name, percent }) => `${name} ${((percent as number) * 100).toFixed(0)}%`}
                         outerRadius={80}
                         fill="#8884d8"
                         dataKey="value"

@@ -3,8 +3,35 @@
 import { useState } from 'react';
 import { testCases, runCalculatorTests } from '../api/amazon-calculator/test';
 
+interface TestResult {
+  testCase: string;
+  passed: boolean;
+  result?: {
+    referralFee: number;
+    closingFee: number;
+    shippingFee: number;
+    totalAmazonFees: number;
+    gstOnFees: number;
+    netProfit: number;
+    profitMargin: number;
+  } | null;
+  error?: string;
+  expected: {
+    referralFee?: number;
+    closingFee?: number;
+    netProfit?: number;
+    profitMargin?: number;
+  };
+  checks: {
+    referralFee?: boolean;
+    closingFee?: boolean;
+    netProfit?: boolean;
+    profitMargin?: boolean;
+  };
+}
+
 export default function TestCalculatorPage() {
-  const [testResults, setTestResults] = useState<any[]>([]);
+  const [testResults, setTestResults] = useState<TestResult[]>([]);
   const [loading, setLoading] = useState(false);
 
   const handleRunTests = async () => {
