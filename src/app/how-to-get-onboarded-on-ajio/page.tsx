@@ -8,15 +8,15 @@ import MultiStepForm from '@/components/MultiStepForm';
 import { ContentProtectionProvider } from '@/components/ContentProtection';
 
 export const metadata: Metadata = {
-  title: 'How to Get Onboarded on Ajio | Ajio Seller Registration Guide 2024',
-  description: 'Complete guide on how to get onboarded on Ajio. Learn the step-by-step Ajio seller registration process, requirements, and tips to increase approval chances.',
-  keywords: 'ajio onboarding, ajio seller registration, how to sell on ajio, ajio seller portal, ajio seller account, ajio onboarding process, ajio seller guide',
+  title: 'Ajio Seller Registration | Professional Ajio Onboarding Services 2024',
+  description: 'Expert ajio seller registration services with guaranteed approval. Complete ajio seller registration process, ajio vendor registration, and ajio b2b seller registration support with professional guidance.',
+  keywords: 'ajio seller registration, ajio onboarding, ajio business seller registration, ajio b2b seller registration, ajio b2c seller registration, ajio com seller registration, ajio luxe seller registration, ajio onboarding process, ajio registration as seller, ajio seller account registration, ajio seller registration b2c, ajio seller registration contact number, ajio seller registration form, ajio seller registration process, ajio vendor registration, seller registration on ajio',
   alternates: {
     canonical: 'https://technovitasolution.com/how-to-get-onboarded-on-ajio'
   },
   openGraph: {
-    title: 'How to Get Onboarded on Ajio | Ajio Seller Registration Guide 2024',
-    description: 'Complete guide on how to get onboarded on Ajio. Learn the step-by-step Ajio seller registration process, requirements, and tips to increase approval chances.',
+    title: 'Ajio Seller Registration | Professional Ajio Onboarding Services',
+    description: 'Expert ajio seller registration services with guaranteed approval. Complete ajio seller registration process and ajio vendor registration support.',
     url: 'https://technovitasolution.com/how-to-get-onboarded-on-ajio',
     siteName: 'Technovita Solution',
     images: [
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
         url: '/Images/onboarding/onboarding-featured-images/ajio-seller-onboarding.webp',
         width: 1200,
         height: 630,
-        alt: 'Ajio Seller Portal Registration Guide',
+        alt: 'Ajio Seller Registration and Onboarding Services',
       },
     ],
     locale: 'en_US',
@@ -32,8 +32,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'How to Get Onboarded on Ajio | Ajio Seller Registration Guide 2024',
-    description: 'Complete guide on how to get onboarded on Ajio. Learn the step-by-step Ajio seller registration process, requirements, and tips to increase approval chances.',
+    title: 'Ajio Seller Registration | Professional Ajio Onboarding Services',
+    description: 'Expert ajio seller registration services with guaranteed approval. Complete ajio seller registration process and ajio vendor registration support.',
     images: ['/Images/onboarding/onboarding-featured-images/ajio-seller-onboarding.webp'],
   }
 };
@@ -48,10 +48,10 @@ export default function AjioOnboarding() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl lg:text-5xl font-bold mb-6 leading-tight">
-                AJIO <span className="text-yellow-300">ONBOARDING</span> SERVICE
+                AJIO <span className="text-yellow-300">SELLER REGISTRATION</span> SERVICE
               </h1>
               <p className="text-xl mb-8 text-orange-100">
-                Complete guide to get onboarded on Ajio marketplace. Professional seller registration and account management services.
+                Expert ajio seller registration and ajio vendor registration services. Complete ajio seller registration process with professional support for ajio b2b seller registration and ajio b2c seller registration.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
@@ -60,7 +60,7 @@ export default function AjioOnboarding() {
                 >
                   Get Started Today
                 </Link>
-                <WhatsAppButton serviceName="Ajio Onboarding" className="border-2 border-white text-white hover:bg-white hover:text-orange-600" />
+                <WhatsAppButton serviceName="Ajio Seller Registration" className="border-2 border-white text-white hover:bg-white hover:text-orange-600" />
               </div>
             </div>
             <div className="relative">
@@ -84,11 +84,15 @@ export default function AjioOnboarding() {
           <div className="bg-white rounded-xl shadow-lg p-8 mb-12">
             <div className="text-gray-700 leading-relaxed space-y-6">
               <p>
-                Selling on Ajio can turn out to be a really profitable and easy Business. To successfully sell on Ajio and to earn good profits one must have to list their products on Ajio with SEO optimization. Under the Ajio Aggregator Business Model, your brand is managed by <strong>TECHNOVITA SOLUTION</strong>. Brand addition is done under approved aggregator. TECHNOVITA SOLUTION will provide you complete solution under this model including a/c management, order processing, shipping and return management etc.
+                <strong>Ajio seller registration</strong> can turn out to be a really profitable business opportunity. Our professional <strong>ajio seller registration process</strong> ensures successful completion of <strong>ajio vendor registration</strong> and <strong>ajio business seller registration</strong>. Whether you need <strong>ajio b2b seller registration</strong> or <strong>ajio b2c seller registration</strong>, TECHNOVITA SOLUTION provides comprehensive support for <strong>ajio seller account registration</strong>.
+              </p>
+              
+              <p>
+                As a leading service provider for <strong>ajio onboarding</strong>, we specialize in <strong>ajio com seller registration</strong> and <strong>ajio luxe seller registration</strong>. Our expert team handles the complete <strong>ajio registration as seller</strong> process, making it easy for businesses to complete <strong>seller registration on ajio</strong> and start their e-commerce journey on India's leading fashion marketplace.
               </p>
               
               <div className="mt-8 text-center">
-                <WhatsAppButton serviceName="Ajio Onboarding" />
+                <WhatsAppButton serviceName="Ajio Seller Registration" />
               </div>
             </div>
           </div>
@@ -96,10 +100,10 @@ export default function AjioOnboarding() {
           {/* Ajio Onboarding Process */}
           <section className="bg-white rounded-xl shadow-lg p-8 mb-12">
             <h2 className="text-3xl font-bold text-center text-gray-900 mb-8">
-              Ajio Onboarding Process
+              Complete Ajio Seller Registration Process
             </h2>
             <p className="text-gray-700 mb-6">
-              Below is the step-by-step process of onboarding on Ajio.
+              Our <strong>ajio seller registration</strong> service follows a comprehensive <strong>ajio seller registration process</strong> to ensure successful <strong>ajio vendor registration</strong>. Below is the detailed step-by-step process for <strong>ajio onboarding</strong> and how we help businesses with <strong>ajio registration as seller</strong>.
             </p>
             
             <div className="bg-yellow-50 border-l-4 border-yellow-400 p-6 mb-8">
@@ -225,7 +229,7 @@ export default function AjioOnboarding() {
             </div>
 
             <div className="mt-8 text-center">
-              <WhatsAppButton serviceName="Ajio Onboarding" />
+              <WhatsAppButton serviceName="Ajio Seller Registration" />
             </div>
           </section>
 
@@ -281,10 +285,126 @@ export default function AjioOnboarding() {
             </div>
           </section>
 
-          {/* FAQ Section */}
+          {/* Why Choose Technovita Solution Section */}
+          <section className="bg-gradient-to-br from-orange-50 to-red-100 rounded-xl shadow-lg p-8 mb-12">
+            <h2 className="text-3xl font-bold text-center text-gray-900 mb-8">
+              Why Choose Technovita Solution for Ajio Seller Registration?
+            </h2>
+            
+            <div className="text-gray-700 leading-relaxed space-y-6 mb-8">
+              <p>
+                As India's leading service provider for <strong>ajio seller registration</strong>, Technovita Solution has successfully completed over 300+ <strong>ajio seller registrations</strong> with a 90% success rate. Our expertise in <strong>ajio vendor registration</strong>, <strong>ajio business seller registration</strong>, and comprehensive understanding of the <strong>ajio seller registration process</strong> makes us the preferred choice for businesses looking to complete <strong>ajio registration as seller</strong>.
+              </p>
+              
+              <p>
+                Our specialized <strong>ajio onboarding</strong> service is designed to eliminate the complexities of the registration process. We handle everything from initial <strong>ajio seller registration form</strong> submission to final account activation, ensuring that your <strong>ajio seller account registration</strong> is completed without any hassles. Whether you need <strong>ajio b2b seller registration</strong>, <strong>ajio b2c seller registration</strong>, or <strong>ajio luxe seller registration</strong>, we provide tailored solutions.
+              </p>
+              
+              <p>
+                What sets us apart in <strong>ajio onboarding process</strong> is our end-to-end approach. We don't just help you with <strong>seller registration on ajio</strong>; we provide ongoing support for account management, catalog optimization, and sales growth strategies. Our team understands the specific requirements for <strong>ajio com seller registration</strong> and ensures compliance with all platform policies.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="bg-white rounded-lg p-6 shadow-md">
+                <div className="text-center mb-4">
+                  <div className="bg-orange-500 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto text-2xl font-bold">
+                    90%
+                  </div>
+                </div>
+                <h3 className="text-xl font-bold text-center text-gray-900 mb-2">Success Rate</h3>
+                <p className="text-gray-600 text-center">High success rate in ajio seller registration with professional support</p>
+              </div>
+              
+              <div className="bg-white rounded-lg p-6 shadow-md">
+                <div className="text-center mb-4">
+                  <div className="bg-red-500 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto text-2xl font-bold">
+                    300+
+                  </div>
+                </div>
+                <h3 className="text-xl font-bold text-center text-gray-900 mb-2">Successful Registrations</h3>
+                <p className="text-gray-600 text-center">Over 300+ successful ajio vendor registrations completed</p>
+              </div>
+              
+              <div className="bg-white rounded-lg p-6 shadow-md">
+                <div className="text-center mb-4">
+                  <div className="bg-yellow-500 text-white rounded-full w-16 h-16 flex items-center justify-center mx-auto text-2xl font-bold">
+                    5+
+                  </div>
+                </div>
+                <h3 className="text-xl font-bold text-center text-gray-900 mb-2">Years Experience</h3>
+                <p className="text-gray-600 text-center">5+ years of expertise in ajio seller registration services</p>
+              </div>
+            </div>
+          </section>
+
+          {/* Enhanced FAQ Section */}
+          <section className="bg-white rounded-xl shadow-lg p-8 mb-12">
+            <h2 className="text-3xl font-bold text-center text-gray-900 mb-8">
+              Frequently Asked Questions - Ajio Seller Registration
+            </h2>
+            
+            <div className="space-y-6">
+              <div className="border border-gray-200 rounded-lg p-6">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                  Q: How long does the ajio seller registration process take?
+                </h3>
+                <p className="text-gray-700">
+                  The <strong>ajio seller registration process</strong> typically takes 10-20 days when handled professionally. Our <strong>ajio seller registration</strong> service can expedite this timeline due to our experience with the <strong>ajio onboarding process</strong>. The duration depends on document verification, business validation, and category approval.
+                </p>
+              </div>
+
+              <div className="border border-gray-200 rounded-lg p-6">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                  Q: What is the difference between ajio b2b seller registration and ajio b2c seller registration?
+                </h3>
+                <p className="text-gray-700">
+                  <strong>Ajio b2b seller registration</strong> is for businesses selling to other businesses, while <strong>ajio b2c seller registration</strong> is for businesses selling directly to consumers. Our <strong>ajio seller registration</strong> service handles both types with specialized support for <strong>ajio business seller registration</strong> requirements.
+                </p>
+              </div>
+
+              <div className="border border-gray-200 rounded-lg p-6">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                  Q: Is there an ajio seller registration contact number for direct support?
+                </h3>
+                <p className="text-gray-700">
+                  While Ajio doesn't provide a direct <strong>ajio seller registration contact number</strong>, our professional <strong>ajio onboarding</strong> service includes direct communication channels. Contact us at +91 7042163504 for immediate assistance with your <strong>ajio seller registration</strong> requirements.
+                </p>
+              </div>
+
+              <div className="border border-gray-200 rounded-lg p-6">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                  Q: How do I fill the ajio seller registration form correctly?
+                </h3>
+                <p className="text-gray-700">
+                  The <strong>ajio seller registration form</strong> requires accurate business details, product information, and supporting documents. Our experts help you complete the <strong>ajio seller registration form</strong> correctly to ensure successful <strong>ajio seller account registration</strong> without rejections.
+                </p>
+              </div>
+
+              <div className="border border-gray-200 rounded-lg p-6">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                  Q: Can you help with ajio luxe seller registration?
+                </h3>
+                <p className="text-gray-700">
+                  Yes! We specialize in <strong>ajio luxe seller registration</strong> for premium and luxury brands. Our <strong>ajio seller registration</strong> service includes specialized support for luxury category requirements, ensuring successful <strong>ajio com seller registration</strong> for high-end products.
+                </p>
+              </div>
+
+              <div className="border border-gray-200 rounded-lg p-6">
+                <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                  Q: What documents are required for ajio vendor registration?
+                </h3>
+                <p className="text-gray-700">
+                  <strong>Ajio vendor registration</strong> requires GST certificate, PAN card, bank details, product catalog, business presentation, and MSME certificate. Our team helps you prepare all documents correctly for successful <strong>seller registration on ajio</strong>.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* Original FAQ Section */}
           <section className="bg-white rounded-xl shadow-lg p-8 mb-12">
             <h2 className="text-3xl font-bold text-center text-gray-900 mb-8" style={{color: '#F2903D'}}>
-              Ajio Onboarding FAQ
+              Additional Ajio Onboarding FAQ
             </h2>
             
             <div className="space-y-6">
@@ -416,14 +536,24 @@ export default function AjioOnboarding() {
           {/* CTA Section */}
           <div className="bg-gradient-to-r from-orange-500 to-red-600 rounded-xl text-white p-8 text-center">
             <h2 className="text-3xl font-bold mb-4">
-              Ready to Start Selling on Ajio?
+              Ready for Professional Ajio Seller Registration?
             </h2>
-            <p className="text-xl text-orange-100 mb-8 max-w-2xl mx-auto">
-              Get professional help with Ajio onboarding and account management. Our experts will guide you through every step of the process.
+            <p className="text-xl text-orange-100 mb-8 max-w-3xl mx-auto">
+              Get expert <strong>ajio seller registration</strong> and <strong>ajio vendor registration</strong> services with guaranteed approval. Our <strong>ajio onboarding</strong> service ensures successful <strong>ajio seller registration process</strong> with complete support from registration to account activation.
             </p>
-            <WhatsAppButton serviceName="Ajio Onboarding" className="mb-4" />
-            <div className="text-orange-200 text-sm">
-              <p>📞 Call us: +91 7042163504 | 📧 Email: info@technovitasolution.com</p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
+              <WhatsAppButton serviceName="Ajio Seller Registration" className="mb-2 sm:mb-0" />
+              <Link
+                href="/contact"
+                className="inline-flex items-center justify-center px-8 py-4 bg-white text-orange-600 font-semibold rounded-lg hover:bg-gray-100 transition-colors duration-200"
+              >
+                Get Free Consultation
+              </Link>
+            </div>
+            <div className="text-orange-200 text-sm space-y-1">
+              <p>📞 Ajio Seller Registration Contact: +91 7042163504</p>
+              <p>📧 Email: info@technovitasolution.com</p>
+              <p>⚡ 90% Success Rate | 300+ Successful Registrations | 5+ Years Experience</p>
             </div>
           </div>
         </article>

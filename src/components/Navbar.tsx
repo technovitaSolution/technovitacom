@@ -261,9 +261,9 @@ const Navbar: React.FC = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
         </svg>
       ),
-      title: "Amazon Calculator",
-      description: "Calculate fees, profits and pricing for Amazon marketplace",
-      href: "https://sellerguide.technovitasolution.in/calculator/amazon",
+      title: "Amazon FBA Calculator",
+      description: "Calculate fees, profits and pricing for Amazon India marketplace",
+      href: "/amazon-fba-calculator",
       badge: "POPULAR" as const
     },
     {
@@ -594,26 +594,32 @@ const Navbar: React.FC = () => {
                 
                 {isMobileCalculatorsOpen && (
                   <div className="mt-2 pl-4 space-y-2 border-l-2 border-blue-100">
-                    {calculatorsMenuItems.map((item, index) => (
-                      <a 
-                        key={index}
-                        href={item.href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex items-center space-x-2 text-sm text-gray-600 hover:text-blue-600 py-1"
-                      >
-                        <span>{item.title}</span>
-                        {item.badge && (
-                          <span className={`px-1.5 py-0.5 text-xs font-medium rounded-full ${
-                            item.badge === 'NEW' ? 'bg-green-100 text-green-800' :
-                            item.badge === 'POPULAR' ? 'bg-purple-100 text-purple-800' :
-                            'bg-red-100 text-red-800'
-                          }`}>
-                            {item.badge}
-                          </span>
-                        )}
-                      </a>
-                    ))}
+                    {calculatorsMenuItems.map((item, index) => {
+                      const isExternal = item.href.startsWith('http');
+                      const Component = isExternal ? 'a' : Link;
+                      const props = isExternal 
+                        ? { href: item.href, target: "_blank", rel: "noopener noreferrer" }
+                        : { href: item.href };
+                      
+                      return (
+                        <Component 
+                          key={index}
+                          {...props}
+                          className="flex items-center space-x-2 text-sm text-gray-600 hover:text-blue-600 py-1"
+                        >
+                          <span>{item.title}</span>
+                          {item.badge && (
+                            <span className={`px-1.5 py-0.5 text-xs font-medium rounded-full ${
+                              item.badge === 'NEW' ? 'bg-green-100 text-green-800' :
+                              item.badge === 'POPULAR' ? 'bg-purple-100 text-purple-800' :
+                              'bg-red-100 text-red-800'
+                            }`}>
+                              {item.badge}
+                            </span>
+                          )}
+                        </Component>
+                      );
+                    })}
                   </div>
                 )}
               </div>

@@ -63,6 +63,12 @@ export const sitemapConfig = {
       priority: 0.9,
       changefreq: 'monthly' as const,
       description: 'Employee Certificate Verification'
+    },
+    {
+      pattern: /amazon-fba-calculator/,
+      priority: 0.95,
+      changefreq: 'weekly' as const,
+      description: 'Amazon FBA Calculator'
     }
   ],
   
@@ -81,6 +87,7 @@ export const sitemapConfig = {
     '/services/onboarding-services',
     '/services/sales-boost',
     '/services/account-creation',
+    '/amazon-fba-calculator',
   ],
   
   // Directories to exclude from sitemap
