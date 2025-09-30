@@ -12,9 +12,87 @@ interface ContactFormData {
   source: string;
 }
 
+// Simple in-memory rate limiter (best-effort; may reset between deployments)
+const ipToTimestamps: Map<string, number[]> = new Map();
+const RATE_LIMIT_WINDOW_MS = 60_000; // 1 minute
+const RATE_LIMIT_MAX_REQUESTS = 5; // per IP per window
+
+function getClientIp(req: NextRequest): string {
+  const xff = req.headers.get('x-forwarded-for');
+  if (xff) {
+    return xff.split(',')[0].trim();
+  }
+  const realIp = req.headers.get('x-real-ip');
+  if (realIp) return realIp;
+  return 'unknown';
+}
+
+function isRateLimited(ip: string): boolean {
+  const now = Date.now();
+  const timestamps = ipToTimestamps.get(ip) || [];
+  const recent = timestamps.filter((t) => now - t < RATE_LIMIT_WINDOW_MS);
+  recent.push(now);
+  ipToTimestamps.set(ip, recent);
+  return recent.length > RATE_LIMIT_MAX_REQUESTS;
+}
+
+function isValidEmail(email: string): boolean {
+  const re = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
+  return re.test(email);
+}
+
+function looksLikeSpam(message: string): boolean {
+  const lower = message.toLowerCase();
+  const hasLink = /https?:\/\//i.test(message) || /www\./i.test(message);
+  const blacklisted = ['viagra', 'sex', 'porn', 'crypto', 'loan', 'casino', 'betting'];
+  const hasBlacklist = blacklisted.some((w) => lower.includes(w));
+  const tooShort = lower.trim().length < 10;
+  const repeatedChars = /(.)\1{7,}/.test(lower);
+  return hasLink || hasBlacklist || tooShort || repeatedChars;
+}
+
+function isSameOrigin(req: NextRequest): boolean {
+  const origin = req.headers.get('origin') || '';
+  const referer = req.headers.get('referer') || '';
+  const host = req.headers.get('host') || '';
+  const allowedHosts = [
+    'technovitasolution.com',
+    'www.technovitasolution.com',
+    'localhost:3000',
+    '127.0.0.1:3000',
+  ];
+  const isAllowed = (val: string) => allowedHosts.some((h) => val.includes(h));
+  if (!origin && !referer) return true; // allow non-browser clients if other checks pass
+  return isAllowed(origin) || isAllowed(referer) || isAllowed(host);
+}
+
 export async function POST(request: NextRequest) {
   try {
     const formData = await request.formData();
+
+    // Honeypot check: bots often fill hidden fields
+    const honey = (formData.get('company') as string) || '';
+    if (honey.trim() !== '') {
+      return NextResponse.redirect(new URL('/contact?error=true', request.url));
+    }
+
+    // Timing check: require at least 3 seconds on page
+    const formTsRaw = (formData.get('form_ts') as string) || '';
+    const formTs = Number(formTsRaw);
+    if (!Number.isFinite(formTs) || Date.now() - formTs < 3000) {
+      return NextResponse.redirect(new URL('/contact?error=true', request.url));
+    }
+
+    // Same-origin check
+    if (!isSameOrigin(request)) {
+      return NextResponse.redirect(new URL('/contact?error=true', request.url));
+    }
+
+    // Rate limit per IP
+    const ip = getClientIp(request);
+    if (isRateLimited(ip)) {
+      return NextResponse.redirect(new URL('/contact?error=true', request.url));
+    }
 
     // Combine country code with phone number (prefix)
     const countryCodeRaw = (formData.get('countryCode') as string) || '';
@@ -39,6 +117,18 @@ export async function POST(request: NextRequest) {
         { success: false, message: 'Missing required fields' },
         { status: 400 }
       );
+    }
+
+    // Additional validation
+    if (!isValidEmail(contactData.email)) {
+      return NextResponse.json(
+        { success: false, message: 'Invalid email address' },
+        { status: 400 }
+      );
+    }
+
+    if (looksLikeSpam(contactData.message)) {
+      return NextResponse.redirect(new URL('/contact?error=true', request.url));
     }
 
     // Format the email content

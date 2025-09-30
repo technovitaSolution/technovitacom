@@ -216,6 +216,13 @@ export default async function ContactPage({ searchParams }: { searchParams: Prom
             <form action="/api/contact" method="POST" className="space-y-6">
               {/* Hidden field to identify form source */}
               <input type="hidden" name="source" value="technovitasolution.com contact us page" />
+              {/* Anti-bot: honeypot (leave empty) */}
+              <div className="hidden" aria-hidden="true">
+                <label htmlFor="company" className="sr-only">Company</label>
+                <input type="text" id="company" name="company" tabIndex={-1} autoComplete="off" defaultValue="" />
+              </div>
+              {/* Anti-bot: form render timestamp */}
+              <input type="hidden" name="form_ts" value={`${Date.now()}`} />
               
               {/* Name */}
               <div>
