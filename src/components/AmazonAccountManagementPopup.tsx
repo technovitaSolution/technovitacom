@@ -3,17 +3,16 @@
 import { useState, useEffect } from 'react';
 import { X, Gift, CheckCircle } from 'lucide-react';
 
-interface NykaaAccountManagementPopupProps {
+interface AmazonAccountManagementPopupProps {
   isOpen: boolean;
   onClose: () => void;
   onExitIntent: () => void;
 }
 
-export default function NykaaAccountManagementPopup({ 
+export default function AmazonAccountManagementPopup({ 
   isOpen, 
-  onClose, 
-  onExitIntent: _onExitIntent 
-}: NykaaAccountManagementPopupProps) {
+  onClose
+}: AmazonAccountManagementPopupProps) {
   const [formData, setFormData] = useState({
     name: '',
     mobile: ''
@@ -51,8 +50,8 @@ export default function NykaaAccountManagementPopup({
       console.log('Submitting form data:', {
         name: formData.name,
         mobile: formData.mobile,
-        offer: 'Nykaa Account Management - 1 Month Free',
-        source: 'Nykaa Calculator Popup 1'
+        offer: 'Amazon Account Management - 1 Month Free',
+        source: 'Amazon Calculator Popup 1'
       });
 
       const response = await fetch('/api/nykaa-popup-lead', {
@@ -63,8 +62,8 @@ export default function NykaaAccountManagementPopup({
         body: JSON.stringify({
           name: formData.name,
           mobile: formData.mobile,
-          offer: 'Nykaa Account Management - 1 Month Free',
-          source: 'Nykaa Calculator Popup 1'
+          offer: 'Amazon Account Management - 1 Month Free',
+          source: 'Amazon Calculator Popup 1'
         }),
       });
 
@@ -130,7 +129,7 @@ export default function NykaaAccountManagementPopup({
         {/* Popup Container */}
         <div className="relative w-full max-w-sm sm:max-w-md bg-white rounded-2xl sm:rounded-3xl shadow-2xl overflow-hidden animate-in zoom-in-95 duration-300">
           {/* Background Pattern */}
-          <div className="absolute inset-0 bg-gradient-to-br from-pink-50 via-purple-50 to-indigo-50 opacity-50"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-orange-50 via-yellow-50 to-red-50 opacity-50"></div>
           
           {/* Close Button */}
           <button
@@ -147,14 +146,14 @@ export default function NykaaAccountManagementPopup({
               <>
                 {/* Header */}
                 <div className="text-center mb-4 sm:mb-6">
-                  <div className="inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-pink-100 rounded-full mb-3 sm:mb-4">
-                    <Gift className="h-6 w-6 sm:h-8 sm:w-8 text-pink-600" />
+                  <div className="inline-flex items-center justify-center w-12 h-12 sm:w-16 sm:h-16 bg-orange-100 rounded-full mb-3 sm:mb-4">
+                    <Gift className="h-6 w-6 sm:h-8 sm:w-8 text-orange-600" />
                   </div>
                   <h2 className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 mb-2">
-                    🎀 Get 1 Month of Nykaa Account Management Absolutely FREE!
+                    🚀 Get 1 Month of Amazon Account Management Absolutely FREE!
                   </h2>
                   <p className="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                    Boost visibility, grow faster, and dominate Nykaa—don't miss this chance.
+                    Boost your Amazon sales, optimize listings, and dominate the marketplace—don't miss this chance.
                   </p>
                 </div>
 
@@ -162,15 +161,15 @@ export default function NykaaAccountManagementPopup({
                 <div className="space-y-2 sm:space-y-3 mb-4 sm:mb-6">
                   <div className="flex items-center space-x-2 sm:space-x-3">
                     <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 flex-shrink-0" />
-                    <span className="text-xs sm:text-sm text-gray-700">Professional account optimization</span>
+                    <span className="text-xs sm:text-sm text-gray-700">Professional Amazon account optimization</span>
                   </div>
                   <div className="flex items-center space-x-2 sm:space-x-3">
                     <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 flex-shrink-0" />
-                    <span className="text-xs sm:text-sm text-gray-700">Increased product visibility</span>
+                    <span className="text-xs sm:text-sm text-gray-700">Increased product visibility & sales</span>
                   </div>
                   <div className="flex items-center space-x-2 sm:space-x-3">
                     <CheckCircle className="h-4 w-4 sm:h-5 sm:w-5 text-green-500 flex-shrink-0" />
-                    <span className="text-xs sm:text-sm text-gray-700">Expert growth strategies</span>
+                    <span className="text-xs sm:text-sm text-gray-700">Expert Amazon growth strategies</span>
                   </div>
                 </div>
 
@@ -186,7 +185,7 @@ export default function NykaaAccountManagementPopup({
                       value={formData.name}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-colors placeholder-gray-500 text-gray-900"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors placeholder-gray-500 text-gray-900"
                       placeholder="Enter your full name"
                     />
                   </div>
@@ -201,7 +200,7 @@ export default function NykaaAccountManagementPopup({
                       value={formData.mobile}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-pink-500 focus:border-transparent transition-colors placeholder-gray-500 text-gray-900"
+                      className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors placeholder-gray-500 text-gray-900"
                       placeholder="Enter your mobile number"
                     />
                   </div>
@@ -209,7 +208,7 @@ export default function NykaaAccountManagementPopup({
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="w-full bg-gradient-to-r from-pink-500 to-purple-600 text-white font-bold py-4 px-6 rounded-xl hover:from-pink-600 hover:to-purple-700 transition-all duration-200 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+                    className="w-full bg-gradient-to-r from-orange-500 to-red-600 text-white font-bold py-4 px-6 rounded-xl hover:from-orange-600 hover:to-red-700 transition-all duration-200 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
                   >
                     {isSubmitting ? 'Claiming...' : 'Claim My Free Month Now'}
                   </button>
@@ -225,7 +224,7 @@ export default function NykaaAccountManagementPopup({
                   🎉 Congratulations!
                 </h3>
                 <p className="text-gray-600 text-sm">
-                  Your free month of Nykaa Account Management has been claimed. 
+                  Your free month of Amazon Account Management has been claimed. 
                   Our team will contact you within 24 hours.
                 </p>
               </div>
@@ -243,12 +242,12 @@ export default function NykaaAccountManagementPopup({
               Wait! Don't Miss Out!
             </h3>
             <p className="text-gray-600 text-sm mb-4">
-              Sellers who skip this free month lose the edge—are you sure you want to miss out on this exclusive offer?
+              Sellers who skip this free month lose the edge—are you sure you want to miss out on this exclusive Amazon offer?
             </p>
             <div className="flex space-x-3">
               <button
                 onClick={handleStay}
-                className="flex-1 bg-gradient-to-r from-pink-500 to-purple-600 text-white py-2 px-4 rounded-lg text-sm font-medium hover:from-pink-600 hover:to-purple-700 transition-colors"
+                className="flex-1 bg-gradient-to-r from-orange-500 to-red-600 text-white py-2 px-4 rounded-lg text-sm font-medium hover:from-orange-600 hover:to-red-700 transition-colors"
               >
                 Stay & Claim
               </button>

@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import AmazonCalculator from '../../components/AmazonCalculator';
 import CalculatorSchema from '@/components/CalculatorSchema';
+import PopupManager from '@/components/PopupManager';
 
 export const metadata: Metadata = {
   title: 'Amazon FBA Calculator 2025 | Amazon Profit Calculator | Revenue Calculator 2025',
@@ -24,7 +25,9 @@ export const metadata: Metadata = {
 
 export default function AmazonFBACalculatorPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-orange-50">
+    <>
+      <PopupManager />
+      <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-orange-50">
       <CalculatorSchema />
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-12 px-4">
@@ -4368,5 +4371,6 @@ export default function AmazonFBACalculatorPage() {
         </div>
       </div>
     </div>
+    </>
   );
 }

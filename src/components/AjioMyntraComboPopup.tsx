@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { X, Gift, Star, CheckCircle, Zap } from 'lucide-react';
+import { X, CheckCircle, Zap } from 'lucide-react';
 
 interface AjioMyntraComboPopupProps {
   isOpen: boolean;
@@ -12,7 +12,7 @@ interface AjioMyntraComboPopupProps {
 export default function AjioMyntraComboPopup({ 
   isOpen, 
   onClose, 
-  onExitIntent 
+  onExitIntent: _onExitIntent 
 }: AjioMyntraComboPopupProps) {
   const [formData, setFormData] = useState({
     name: '',
@@ -88,9 +88,10 @@ export default function AjioMyntraComboPopup({
         console.error('API Error:', response.status, errorText);
         throw new Error(`API Error: ${response.status} - ${errorText}`);
       }
-    } catch (error) {
+    } catch (error: unknown) {
       console.error('Error submitting form:', error);
-      alert(`Something went wrong. Please try again. Error: ${error.message}`);
+      const message = error instanceof Error ? error.message : String(error);
+      alert(`Something went wrong. Please try again. Error: ${message}`);
     } finally {
       setIsSubmitting(false);
     }

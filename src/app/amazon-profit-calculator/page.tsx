@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import AmazonCalculator from '../../components/AmazonCalculator';
 import CalculatorSchema from '@/components/CalculatorSchema';
+import PopupManager from '@/components/PopupManager';
 
 export const metadata: Metadata = {
   title: 'Amazon Profit Calculator India | Free FBA Profit Calculator 2025',
@@ -24,7 +25,9 @@ export const metadata: Metadata = {
 
 export default function AmazonProfitCalculatorPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-green-50">
+    <>
+      <PopupManager />
+      <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-green-50">
       <CalculatorSchema />
       
       {/* Hero Section */}
@@ -232,5 +235,6 @@ export default function AmazonProfitCalculatorPage() {
         </div>
       </div>
     </div>
+    </>
   );
 }

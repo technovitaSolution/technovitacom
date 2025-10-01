@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import AmazonCalculator from '../../components/AmazonCalculator';
 import CalculatorSchema from '@/components/CalculatorSchema';
+import PopupManager from '@/components/PopupManager';
 
 export const metadata: Metadata = {
   title: 'Amazon Revenue Calculator India | Free Seller Revenue Calculator 2025',
@@ -24,7 +25,9 @@ export const metadata: Metadata = {
 
 export default function AmazonRevenueCalculatorPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 via-white to-blue-50">
+    <>
+      <PopupManager />
+      <div className="min-h-screen bg-gradient-to-br from-green-50 via-white to-blue-50">
       <CalculatorSchema />
       
       {/* Hero Section */}
@@ -318,5 +321,6 @@ export default function AmazonRevenueCalculatorPage() {
         </div>
       </div>
     </div>
+    </>
   );
 }
