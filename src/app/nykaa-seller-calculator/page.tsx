@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { Calculator, IndianRupee, Package, Truck, Info, CheckCircle, AlertCircle } from 'lucide-react';
 import Image from 'next/image';
+import PopupManager from '@/components/PopupManager';
 /* Head is handled via generateMetadata in head.tsx */
 
 export default function NykaaSellerCalculatorPage() {
@@ -60,6 +61,7 @@ export default function NykaaSellerCalculatorPage() {
 
   return (
     <>
+      <PopupManager />
       <div className="min-h-screen bg-gradient-to-br from-pink-50 via-purple-50 to-indigo-50">
       {/* Header */}
       <div className="bg-white shadow-sm border-b">
