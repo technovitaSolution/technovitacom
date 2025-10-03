@@ -286,6 +286,24 @@ export default function OnboardingServices() {
           </div>
         </div>
 
+        {/* Related Services */}
+        <div className="bg-white rounded-xl shadow-lg p-8 mb-8">
+          <h2 className="text-2xl font-bold text-center text-gray-900 mb-6">
+            Learn More About Our Services
+          </h2>
+          <div className="text-center">
+            <p className="text-gray-600 mb-4">
+              Want to understand more about our comprehensive seller onboarding process?
+            </p>
+            <Link 
+              href="/seller-onboarding-service" 
+              className="inline-block bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors duration-200 font-semibold"
+            >
+              Read Our Detailed Seller Onboarding Guide
+            </Link>
+          </div>
+        </div>
+
         {/* CTA Section */}
         <div className="bg-gradient-to-r from-blue-600 to-purple-700 rounded-xl text-white p-8 text-center">
           <h2 className="text-3xl font-bold mb-4">
