@@ -168,6 +168,22 @@ const Footer: React.FC = () => {
                   </Link>
                 </div>
               </div>
+
+              <div className="flex items-start space-x-3">
+                <div className="flex-shrink-0 w-5 h-5 text-pink-400 mt-0.5">
+                  <svg fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                  </svg>
+                </div>
+                <div>
+                  <p className="text-sm font-medium text-white">HR Email</p>
+                  <Link href="mailto:hr@technovitasolution.com" className="text-sm text-gray-300 hover:text-pink-400 transition-colors">
+                    hr@technovitasolution.com
+                  </Link>
+                  <p className="text-xs text-gray-400 mt-0.5">(Only for HR related works)</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

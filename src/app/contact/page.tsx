@@ -159,6 +159,27 @@ export default async function ContactPage({ searchParams }: { searchParams: Prom
                 </div>
               </div>
 
+              {/* HR Email */}
+              <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
+                <div className="flex items-center">
+                  <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-lg flex items-center justify-center mr-4">
+                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-1">HR Email</h3>
+                    <a 
+                      href="mailto:hr@technovitasolution.com"
+                      className="text-purple-600 hover:text-purple-700 font-medium text-lg transition-colors duration-200"
+                    >
+                      hr@technovitasolution.com
+                    </a>
+                    <p className="text-sm text-gray-500 mt-1">(Only for HR related works)</p>
+                  </div>
+                </div>
+              </div>
+
               {/* WhatsApp */}
               <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300">
                 <div className="flex items-center">
